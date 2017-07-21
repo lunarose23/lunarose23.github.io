@@ -5125,10 +5125,53 @@ a.preheader { color:#1369ab; text-decoration:none; font-size:14px; font-weight:7
 /* MMENU
 *  ------------------------------------------------------------------------  */
 
+/* option 1 dark background */
+.mm-menu { background: #333333; }
+.mm-title, .mm-listview li a, .mm-panels a.button  { color: white!important; }
+.mm-menu, .mm-menu .mm-listview, .mm-menu .mm-listview>li .mm-next:after, .mm-menu .mm-btn:after, .mm-menu .mm-btn:before { border-color: rgba(255,255,255,0.5); }
+.mm-spacer, .mm-border { border-color: transparent!important; }
+.mm-panels a.button { background-color: #63af5e;}
+.mm-listview li:hover a { color: #63af5e!important;}
+.mm-listview li:hover a.button { background-color: white!important;}
 .mm-title{ text-transform: uppercase; font-weight: bold; text-decoration: none!important; }
 .mm-listview a:link, .mm-listview a:active { text-decoration: none; font-weight: bold; text-transform: uppercase; }
-.mm-listview li:hover { color: #a5a5a5;}
 .mm-listview img.members-only { float: right; }
 .mm-panels a:focus { outline: thin dotted; }
-.mm-panels #logo { margin: 0 0 0 0; }
+.mm-panels #logo { 
+	margin: 0 0 0 0; 
+	float: left;
+    position: relative;
+    top: 15px;
+    width: 95%;
+    height: 92px;
+    background: url(http://www.mncpa.org/sup/img/template/mncpa-logo-white.png) top left no-repeat;
+    background-size: contain;
+}
 .mm-panels .hide { display: none; }
+.mm-panels a.button { text-align: center; line-height: 40px}
+
+
+/* option 2 light background */
+/*
+.mm-menu { background: #e2e2e2; }
+.mm-panels a.button  { color: white!important; }
+.mm-spacer, .mm-border { border-color: transparent!important; }
+.mm-panels a.button { background-color: #63af5e;}
+.mm-listview li:hover a.button { background-color: white!important;}
+.mm-listview li:hover { color: #a5a5a5;}
+.mm-title{ text-transform: uppercase; font-weight: bold; text-decoration: none!important; }
+.mm-listview a:link, .mm-listview a:active { text-decoration: none; font-weight: bold; text-transform: uppercase; }
+.mm-listview img.members-only { float: right; }
+.mm-panels a:focus { outline: thin dotted; }
+.mm-panels #logo { 
+	margin: 0 0 0 0; 
+	float: left;
+    position: relative;
+    top: 15px;
+    width: 136px;
+    height: 92px;
+    background: url(http://www.mncpa.org/sup/img/mobi/template/mncpa-logo.png) top left no-repeat;
+}
+.mm-panels .hide { display: none; }
+.mm-panels a.button { text-align: center; line-height: 40px}
+*/
