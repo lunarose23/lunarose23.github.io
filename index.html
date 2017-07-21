@@ -569,7 +569,19 @@ function __doPostBack(eventTarget, eventArgument) {
     </div>
 	<!-- ========================================================= --> 
 
-		
+<!-- mmenu init and options -->		
+<script type="text/javascript">
+   $(document).ready(function() {
+      $("#mobile-menu").mmenu({
+         // options
+      }, {
+         // configuration
+         offCanvas: {
+            pageSelector: "#page-wrapper"
+         }
+      });
+   });
+</script>
 
 	
     
