@@ -6,7 +6,7 @@
 <head id="Head1"><meta name="credits" content="Programming by Sierra Bravo Corp http://www.sierrabravo.com. Design by iMarc http://imarc.net." /><meta id="HeaderKeywords" name="keywords" /><meta id="HeaderDescription" name="description" content="Article archive from the MNCPA member magazine, The Footnote." /><meta http-equiv="content-type" content="text/html; charset=utf-8" /><title>
 	MNCPA Footnote: Monthly member magazine of the Minnesota Society of CPAs
 </title>
-    <script type="text/javascript" src="http://www.mncpa.org/sup/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/jquery.scrollTo-1.4.2-min.js"></script>
@@ -14,6 +14,8 @@
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/inlinefieldlabel.js"></script>
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/plugins/hoverintent.min.js"></script>
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/nav.js"></script>
+    <!-- mmenu jquery file -->
+    <script type="text/javascript" src="/jquery.mmenu/jquery.mmenu.all.js"></script>
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/search_text.js"></script>
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/swfobject.js"></script>
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/plugins/cookie.js"></script>
@@ -74,6 +76,8 @@
     
     <meta id="Viewport" name="viewport" content="width=device-width" />
 	
+    <!-- Mmenu style sheet -->
+    <link rel="stylesheet" type="text/css" href="/jquery.mmenu/jquery.mmenu.all.css" media="all" />
 	<!-- <~> Main MNCPA.org style sheet -->
 	<link rel="stylesheet" type="text/css" href="site.css" media="all" />
 	<!-- <~> -->
@@ -104,6 +108,7 @@
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/shared.js"></script>
 </head>
 <body class="two_col no_advertisement">
+<div id="page-wrapper"><!-- beging page wrapper for mmenu -->
 
 <noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-KGS2HV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -180,7 +185,8 @@ function __doPostBack(eventTarget, eventArgument) {
     <div id="header_container_interior">
         <div id="header">
             <div id="logo"><a href="/"><img src="http://www.mncpa.org/sup/img/template/mncpa-logo-white.png" alt="Minnesota Society of Certified Public Accountants" /></a></div>
-            <a id="mobileSearch" href="#"><span>Show search</span></a>
+            <a id="mobileMenuButton" class="showOnMobileOnly mobile-icons" href="#mobile-menu"><span>Show Menu</span></a>
+            <a id="mobileSearchButton" class="showOnMobileOnly mobile-icons" href="#"><span>Show search</span></a>
             <div class="site_search">
                 <fieldset class="inline_labels">
                     <div onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;SearchGo&#39;)">
@@ -189,7 +195,7 @@ function __doPostBack(eventTarget, eventArgument) {
                         <input name="ctl00$ctl00$ctl00$Search" type="text" id="Search" class="search_field" />
                         <input type="submit" name="ctl00$ctl00$ctl00$SearchGo" value="" id="SearchGo" class="search_go" ImageAlign="AbsMiddle" />
                     
-</div>
+                    </div>
                 </fieldset>
             </div>
 			
@@ -198,7 +204,104 @@ function __doPostBack(eventTarget, eventArgument) {
     </div>
 	
 	
-	
+	<nav id="mobile-menu">
+       <ul>
+            <li><a href="/"><div id="logo" alt="Minnesota Society of Certified Public Accountants"><span class="hide">Home</span></div></a></li>
+            <li><a href="/my-mncpa/">My MNCOA</a>
+             <ul>
+                <li><a href="/my-mncpa/my-account/">My Account</a></li>
+                <li><a href="/my-mncpa/my-cpe/">My CPE</a></li>
+                <li><a href="/my-mncpa/email-subscriptions.aspx">My Email Subscriptions<img class="members-only" src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
+                <li><a href="/my-mncpa/my-legislators/">My Legislators <img class="members-only" src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
+                <li><a href="/my-mncpa/member-savings/">Member Savings <img class="members-only" src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
+                <li><a href="/member-directory/">Member Directory <img class="members-only" src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
+                <li><a href="/my-mncpa/membership-faq.aspx">Membership FAQ</a></li>
+                <li><a href="/Firm-Admin/Login.aspx">Firm Administration</a></li>
+             </ul>
+            </li>       
+            <li><a href="/cpe/">CPE</a>
+                <ul>
+                    <li><a href="/my-mncpa/my-cpe/">My CPE</a></li>
+                    <li class="showOnMobileOnly"><a href="/cpe/search-mn-cpe.aspx">Search CPE Catalog</a></li>
+                    <li class="showOnDesktopOnly"><a href="/cpe/catalog/mn-cpe.aspx">Search CPE Catalog</a></li>
+                    <li><a href="/cpe/programs-and-products/">CPE Programs &amp; Products</a></li>
+                    <li><a href="/cpe/mn-cpe-calendar.aspx">CPE Calendar</a></li>
+                    <li><a href="/cpe/on-site-training/">On-site Training</a></li>
+                    <li><a href="/cpe/directions-and-travel/">Directions &amp; Travel</a></li>
+                    <li><a href="/cpe/cpe-rules/">CPE Rules</a></li>
+                    <li><a href="/market-to-cpas/">Exhibiting &amp; Sponsorships</a></li>
+                    <li><a href="/cpe/faq/">FAQ</a></li>
+                </ul>
+            </li>
+            <li><a href="/publications/">Publications &amp; News</a>
+                <ul>
+                    <li><a href="http://www.mncpa.org/publications/footnote/">Footnote</a>
+                        <ul>
+                            <li><a href="/">Issue Archive</a></li>
+                            <li><a href="/">Regular Columns</a></li>
+                            <li><a href="/">Articles by Topic</a></li>
+                            <li><a href="/">Write for Footnote</a></li>
+                            <li><a href="/">Advertise</a></li>
+                            <li><a href="/">Digital Footnote</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/publications/mncpa-publications.aspx">eNewsletters</a></li>
+                    <li><a href="/perspectives/">MNCPA Perspectives</a></li>
+                    <li><a href="/publications/tax-podcasts/">Tax Podcasts</a></li>
+                    <li><a href="/topics/">Topics of Interest</a></li>
+                    <li><a href="/involvement/legislative/">Legislative Activities</a></li>
+                    <li><a href="/press/">Press Room</a></li>
+                </ul>
+            </li>
+            <li><a href="/resources/">Techical Resources</a>
+                <ul>
+                    <li><a href="/boa-rules-certification/">Rules &amp; Certification</a></li>
+                    <li><a href="/resources/tax/">Tax</a></li>
+                    <li><a href="/resources/human-resources/">Human Resources</a></li>
+                    <li><a href="/resources/firm-management/">Firm Management</a></li>
+                    <li><a href="/resources/report-review/">Report Review</a></li>
+                    <li><a href="/resources/peer-review/">Peer Review</a></li>
+                    <li><a href="/resources/ethics/">Professional Ethics</a></li>
+                </ul>
+            </li>
+            <li><a href="/involvement/">Involvement</a>
+                <ul>
+                    <li><a href="/member-directory/">Member Directory <img class="members-only" src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
+                    <li><a href="/involvement/mncpa-connect/">MNCPA Connect <img class="members-only" src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
+                    <li><a href="/involvement/events/">Events</a></li>
+                    <li><a href="/involvement/volunteer/">Volunteer</a></li>
+                    <li><a href="/involvement/member-groups/">Member Groups</a></li>
+                    <li><a href="/involvement/member-recognition/">Member Recognition</a></li>
+                    <li><a href="/involvement/legislative/">Legislative Activities</a></li>
+                    <li><a href="/involvement/financial-literacy/">Financial Literacy</a></li>
+                    <li><a href="/involvement/accountants-concerned-for-accountants.aspx">Accountants Concerned for Accountants</a></li>
+                </ul>
+            </li>
+            <li><a href="/cpa-careers/">Careers</a>
+                <ul>
+                    <li><a href="/cpa-careers/cpa-classifieds/">Classifieds</a></li>
+                    <li><a href="/cpa-careers/clips/">Leading Edge Career Clips</a></li>
+                    <li><a href="/cpa-careers/job-seeker-resources/">Job Seeker Resources</a></li>
+                    <li><a href="/cpa-careers/graduate-accounting-degrees.aspx">Graduate Accounting Programs</a></li>
+                    <li><a href="/cpa-careers/find-cpa-accounting-employees/">Find Employees</a></li>
+                    <li><a href="/cpa-careers/market-my-firm/">Market My Firm</a></li>
+                    <li><a href="/becoming-a-cpa/">Become a CPA</a></li>
+                </ul>
+            </li>
+            <li><a href="/about/">About Us</a>
+                <ul>
+                    <li><a href="/about/mncpa-info/">MNCPA Info</a></li>
+                    <li><a href="/about/contact-us/">Contact Us</a></li>
+                    <li><a href="/join/">Join the MNCPA</a></li>
+                    <li><a href="/press/">Press Room</a></li>
+                    <li><a href="/market-to-cpas/">Marketing Opportunities</a></li>
+                    <li><a href="/minneapolis-meeting-room-rental.aspx">Facility Rental</a></li>
+                </ul>
+            </li>
+            <li class="mm-spacer"></li>
+            <li class="mm-border"><a class="button" href="/my-mncpa/login/">Login</a></li>
+       </ul>
+    </nav>
 
 	<div id="nav">
 		<div class="nav_interior">
@@ -242,7 +345,6 @@ function __doPostBack(eventTarget, eventArgument) {
 						<li><a href="/publications/tax-podcasts/">Tax Podcasts</a></li>
 						<li><a href="/topics/">Topics of Interest</a></li>
 						<li><a href="/involvement/legislative/">Legislative Activities</a></li>
-						
 						<li><a href="/press/">Press Room</a></li>
 					</ul>
 				</li>
@@ -251,7 +353,7 @@ function __doPostBack(eventTarget, eventArgument) {
                         <li><a href="/boa-rules-certification/">Rules &amp; Certification</a></li>
 						<li><a href="/resources/tax/">Tax</a></li>
 						<li><a href="/resources/human-resources/">Human Resources</a></li>
-						<li><a href="/resources/firm-management/">Firm Management</a></li>						
+						<li><a href="/resources/firm-management/">Firm Management</a></li>
 						<li><a href="/resources/report-review/">Report Review</a></li>
 						<li><a href="/resources/peer-review/">Peer Review</a></li>
 						<li><a href="/resources/ethics/">Professional Ethics</a></li>
@@ -564,7 +666,21 @@ function __doPostBack(eventTarget, eventArgument) {
     </div>
 	<!-- ========================================================= --> 
 
-		
+<!-- mmenu init and options -->		
+<script type="text/javascript">
+   $(document).ready(function() {
+      $("#mobile-menu").mmenu({
+         // options
+      }, {
+         // configuration
+         offCanvas: {
+            pageSelector: "#page-wrapper"
+         }
+      });
+
+      
+   });
+</script>
 
 	
     
@@ -591,6 +707,6 @@ var Page_ValidationSummaries =  new Array(document.getElementById("main_main_Con
 //]]>
 </script>
 </form>
-
+</div><!-- end page wrapper for mmenu -->
 </body>
 </html>
