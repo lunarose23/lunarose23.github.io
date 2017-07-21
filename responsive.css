@@ -1,19 +1,16 @@
 @charset "UTF-8";
 
-@media only screen and (min-device-width:1000px) and (max-width:480px), only screen and (max-device-width:1022px) and (max-width:720px)
-{ 
- 	/** BODY & OVERALL **/
-	html { width:100%; }
-	body { background-color:#fff; width:100%; -webkit-text-size-adjust: none; }
+/* up to tablet size */
+@media only screen and (max-width: 1024px) {
+	.showOnMobileOnly, .smo { display: block !important; }
+    .showOnMobileOnlyInline { display: inline !important; }
+    .showOnDesktopOnly, .sdo, .showOnDesktopOnlyInline, .showOnDesktopOnlyTable { display:none !important; }
 
-	/*****************************************************************************************/	
-	/** HEADER **/
+    /** HEADER **/
 	#header_container {  display:block; background:none; margin:0; padding:0; background-color:#fff; }
 	#header_container_interior {  display:block; background:none; margin:0; padding:0; background-color:#fff; }
 	#header {  background:none; height:100px; width:100%; padding:0; margin:0; } 
-
-	
-		/* <~> Adding www.mncpa.org */
+	/* <~> Adding www.mncpa.org */
 	#logo { float: left; position: relative; top: 15px; margin: 0 0 0 15px; width:136px; height:92px; background:url('http://www.mncpa.org/sup/img/mobi/template/mncpa-logo.png') top left no-repeat; }
 	#logo a { display:block; width:150px; height:60px; }
 	#logo img { display:none; }
@@ -25,15 +22,15 @@
 	.site_search fieldset input.search_go { margin: 0 0 0 5px; width:66px; height:28px; background-image:url('http://www.mncpa.org/sup/img/buttons/text/search.gif'); }
 	.site_search label { display:none; }
 
-	#minor_nav { display:none; }
-	
 	/* <~> Adding www.mncpa.org */
 	.mobile-icons{ display:block; height:72px; width:57px; margin:0; padding:0; float: right; }
 	a#mobileSearchButton { background:url('http://www.mncpa.org/sup/img/mobi/template/search-btn.png') center 15px no-repeat; }
 	a#mobileMenuButton { background:url('http://www.mncpa.org/sup/img/mobi/template/menu-btn.png') center 15px no-repeat; }
 	#mobileSearchButton span, #mobileMenuButton span { display:none; }
-	
-	/********************************************/
+
+	#minor_nav { display:none; }
+
+		/********************************************/
 	/** MAIN (TOP) NAVIGATION **/
 	
 	.major_nav
@@ -60,6 +57,21 @@
 		height: 55px;
 		background-image:auto;
 	}
+
+	#sub_navigation{ display: none; }
+	#interior_content_container_full #interior_content { float: none; }
+
+
+}
+
+@media only screen and (min-device-width:1000px) and (max-width:480px), only screen and (max-device-width:1022px) and (max-width:720px)
+{ 
+ 	/** BODY & OVERALL **/
+	html { width:100%; }
+	body { background-color:#fff; width:100%; -webkit-text-size-adjust: none; }
+
+	/*****************************************************************************************/	
+
 	
 	/*****************************************/
 	/**** HOME (not visible on mobile site) ****/
@@ -488,13 +500,7 @@
 	#secondary_content .section ul.action { margin-left:-2em; padding:0;  }
 	#secondary_content .section ul.action li { padding-left:0; }
 
-	/* --------------------------------------------------------------------- */
-	/* Footer
-	/* --------------------------------------------------------------------- */
-
-	.footer_container { width:90%; padding: 35px 15px 35px 15px; min-height:600px; }
-	.footer_block { display:block; width:100%; }
-
+	
 	
 	/*****************************************************************************************/
 	/* FORMS */
@@ -527,9 +533,9 @@
     h2 { font-size:1.3em; font-weight:normal; }
     h3 { font-size:1.1em; font-weight:normal; }
     
-    .showOnMobileOnly, .smo { display: block !important; }
+    /*.showOnMobileOnly, .smo { display: block !important; }
     .showOnMobileOnlyInline { display: inline !important; }
-    .showOnDesktopOnly, .sdo, .showOnDesktopOnlyInline, .showOnDesktopOnlyTable { display:none !important; }
+    .showOnDesktopOnly, .sdo, .showOnDesktopOnlyInline, .showOnDesktopOnlyTable { display:none !important; } */
 	
 	/* Two columns of text */
 	div.twocolumn div:first-child { width:100%; padding:0; float:none; }
