@@ -5130,3 +5130,5 @@ a.preheader { color:#1369ab; text-decoration:none; font-size:14px; font-weight:7
 .mm-listview li:hover { color: #a5a5a5;}
 .mm-listview img.members-only { float: right; }
 .mm-panels a:focus { outline: thin dotted; }
+.mm-panels #logo { margin: 0 0 0 0; }
+.mm-panels .hide { display: none; }
