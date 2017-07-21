@@ -5133,8 +5133,8 @@ a.preheader { color:#1369ab; text-decoration:none; font-size:14px; font-weight:7
 .mm-panels a.button { background-color: #63af5e;}
 .mm-listview li:hover a { color: #63af5e!important;}
 .mm-listview li:hover a.button { background-color: white!important;}
-.mm-title{ text-transform: uppercase; font-weight: bold; text-decoration: none!important; }
-.mm-listview a:link, .mm-listview a:active { text-decoration: none; font-weight: bold; text-transform: uppercase; }
+.mm-title{ font-weight: bold; text-decoration: none!important; }
+.mm-listview a:link, .mm-listview a:active { text-decoration: none; font-weight: bold; }
 .mm-listview img.members-only { float: right; }
 .mm-panels a:focus { outline: thin dotted; }
 .mm-panels #logo { 
@@ -5143,6 +5143,7 @@ a.preheader { color:#1369ab; text-decoration:none; font-size:14px; font-weight:7
     position: relative;
     top: 15px;
     width: 95%;
+    max-width: 328px;
     height: 92px;
     background: url(http://www.mncpa.org/sup/img/template/mncpa-logo-white.png) top left no-repeat;
     background-size: contain;
@@ -5158,9 +5159,9 @@ a.preheader { color:#1369ab; text-decoration:none; font-size:14px; font-weight:7
 .mm-spacer, .mm-border { border-color: transparent!important; }
 .mm-panels a.button { background-color: #63af5e;}
 .mm-listview li:hover a.button { background-color: white!important;}
-.mm-listview li:hover { color: #a5a5a5;}
-.mm-title{ text-transform: uppercase; font-weight: bold; text-decoration: none!important; }
-.mm-listview a:link, .mm-listview a:active { text-decoration: none; font-weight: bold; text-transform: uppercase; }
+.mm-listview li:hover { color: #63af5e;}
+.mm-title{ font-weight: bold; text-decoration: none!important; }
+.mm-listview a:link, .mm-listview a:active { text-decoration: none; font-weight: bold; }
 .mm-listview img.members-only { float: right; }
 .mm-panels a:focus { outline: thin dotted; }
 .mm-panels #logo { 
@@ -5169,6 +5170,7 @@ a.preheader { color:#1369ab; text-decoration:none; font-size:14px; font-weight:7
     position: relative;
     top: 15px;
     width: 136px;
+    max-width: 328px;
     height: 92px;
     background: url(http://www.mncpa.org/sup/img/mobi/template/mncpa-logo.png) top left no-repeat;
 }
