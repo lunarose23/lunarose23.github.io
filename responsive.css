@@ -541,7 +541,6 @@
 	
 	/* <~> Adding www.mncpa.org */
 	ul li { margin: 0 0 0.75em 0; padding: 0 0 0 22px; background: url('http://www.mncpa.org/sup/img/template/bullet1.gif') no-repeat 7px .35em transparent; }
-	
 	ul ul { margin-top: 0.3em; margin-bottom: 0.7em; }
 	ul ul li{ margin: 0 0 0.6em 0; padding: 0 0 0 20px; background: url('/sup/img/template/bullet2.gif') no-repeat 8px .4em transparent; }
 	ul ul ul li { margin: 0 0 0.5em 0; padding: 0 0 0 24px; background: url('/sup/img/template/bullet3.gif') no-repeat 13px .4em transparent; }
@@ -821,7 +820,14 @@
     .cpameasap img { display:block; width:100%; max-width:292px; height:auto; }
     .cpameasap p { margin-left:10px; margin-right:10px; }
 
+    /* ------------------------------------------------------------------------  */
+	/* MMENU
+	*  ------------------------------------------------------------------------  */
+    ul.mm-listview li { background: none; }
+
+
 }
+
 
 	
 	

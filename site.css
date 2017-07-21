@@ -5120,3 +5120,10 @@ a.preheader { color:#1369ab; text-decoration:none; font-size:14px; font-weight:7
 .blogpost .postarchive { width:100%; margin-bottom:20px; }
 
 .blogpost .postdetails .topicbar { font-size:14px; color:#4e4e4e; float:left; padding:3px 10px 3px 10px; margin-bottom:10px; background-color:#e7e7e7; }
+
+/* ------------------------------------------------------------------------  */
+/* MMENU
+*  ------------------------------------------------------------------------  */
+
+.mm-title{ text-transform: uppercase; font-weight: bold; }
+.mm-listview a:link, .mm-listview a:active { text-decoration: none; font-weight: bold; text-transform: uppercase; }
