@@ -1,0 +1,5122 @@
+
+/*******************************************************************************************************/
+/*** BEGIN EKTRON STYLES ***/
+/* If you modify these, please be sure to update ektron_styles.css as well */
+
+* { zoom: 1; }
+
+/* --------------------------------------------------------------------- */
+/* Main elements
+/* --------------------------------------------------------------------- */
+body, h1, h2, h3, h4, h5, h6, p, hr, pre, code, blockquote, form, fieldset, legend, ul, ol, li, table, caption, th, tr, td, thead, tbody, tfoot, div
+{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+}
+
+html{ font-size: 10px; }
+body { margin: 0; padding: 0; background-color: #fff; color: #333333; font-size: 1.6em; line-height:1.8em; }
+body, input, textarea, select { font-family: 'Open Sans', Arial, Helvetica, sans-serif; }
+
+/* --------------------------------------------------------------------- */
+/* Headings
+/* --------------------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 { margin: 0 0 0.3em -0.02em; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-weight: normal; line-height:1.2em; }
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong { font-weight:normal; }
+
+h1 { font-size: 2.2em; font-weight:900; color: #333333; margin-bottom: .7em; }
+h1 + h2 { margin-top:0.75em; }
+
+h2 { font-size: 1.7em; font-family: 'Raleway', Arial, Helvetica, sans-serif; margin-bottom:0.45em; margin-top: 0.75em; font-weight:normal; color: #424242; }
+h2.subtitle { font-size: 1.7em; font-weight:300; display:block; margin:-1em 0 0.75em 0; padding: 0.2em 0 0 0; color:#6e6e6e; }
+
+h3 { font-size: 1.3em; color: #5a5a5a; }
+h2 + h3 { margin-top: 0.5em; }
+
+h4 { font-size: 1.2em; color: #5a5a5a; }
+h5 { font-size: 1.2em; color: #5a5a5a; }
+h6 { font-size: 1.1em; }
+
+/* --------------------------------------------------------------------- */
+/* Misc. text
+/* --------------------------------------------------------------------- */
+
+/* <~> Added www.mncpa.org --> in action link appears */
+a.action { font-weight:600; text-transform:uppercase; text-decoration:none !important; padding-right:25px; background: url('http://www.mncpa.org/sup/img/template/action.png') no-repeat center right; }
+
+a.actionwhite { font-weight:600; text-transform:uppercase; text-decoration:none !important; padding-right:25px; background: url('/sup/img/template/action-white.png') no-repeat center right; }
+a.actionwhite:hover { color:#f2f2f2; }
+
+p.alert { color: #d1111f; }
+.nowrap { white-space: nowrap; }
+
+p.intro { color:#000000; font-size: 1.2em; padding: 0 0.75em 0 .25em; }
+.intro_callout { border: 3px solid rgb(224, 167, 101); padding: 10px; background-color: rgb(248, 244, 232); margin-bottom: 30px; }
+
+strong { font-weight:700; }
+b { font-weight:700; }
+
+
+/* --------------------------------------------------------------------- */
+/* Tables
+/* --------------------------------------------------------------------- */
+
+table { width: 100%; margin-bottom: 2em; padding: 0px; border-collapse: collapse; }
+
+
+td { padding: 15px 15px; border-bottom: solid 1px #999999; vertical-align:top; }
+
+th, tr.headerTable td { text-align: left;
+    background: #e1e1e1;
+    padding: 10px 15px;
+    color: #000000;
+	font-weight:700;
+    
+}
+
+th a, th a:visited, tr.headerTable td a, tr.headerTable td a:visited { color:#fffef6 !important; }
+th a.default, th a.default:visited { color: #127de2 !important;  }
+
+table.cpe_log_form tbody th a, table.cpe_log_form tbody th a:visited { color:#127de2 !important; }
+td.nowrap { white-space: nowrap; }
+
+table.noborder { border:hidden; }
+table.noborder td { border:none; }
+table.icons td { padding: 0 15px 15px 0; }
+
+/*  Table with little styling to the non-heading td cells */
+table.basic { font-size: 1em !important; color: #333333; }
+table.basic td { font-size: 1em !important; color: #333333; vertical-align:top; }
+
+/* --------------------------------------------------------------------- */
+/* Images
+/* --------------------------------------------------------------------- */
+
+img { border: none; display: block; }
+
+/** Photos **/
+.photoLeft { float: left;  margin: 0 2em 2em 0;  }
+.photoRight { float:right; margin: 0 0 2em 2em; }
+
+.fit { width:auto; }
+
+div.photoLeft, div.photoRight {  width:200px; padding:0; border:1px solid #a7c6b1; border-bottom:4px solid #a7c6b1; }
+.photoLeft img, .photoRight img { clear:both; margin:0;  }
+.photoLeft p, .photoRight p { font-size: 0.9em; border-top:1px solid #a7c6b1; color:#6e6e6e; margin:0; padding: 0.25em 0.6em; }
+
+/* Square picture image */
+.inset_img { background: url(/sup/img/bg/img_bg.gif) no-repeat; padding: 5px; width: 65px; height: 67px; float: left; margin: 0 15px 0 0; }
+
+/* --------------------------------------------------------------------- */
+/* Links
+/* --------------------------------------------------------------------- */
+
+a:link, a:active { color: #127de2; text-decoration: underline; }
+a:visited {	color: #3a6637; }
+a:hover { color: #4aa145;}
+
+a:visited span { border-bottom: 1px solid #8d5b57; }
+a:hover span { border-bottom: 1px solid #e09c44; }
+
+ul.action li {
+    list-style-image: url('/sup/img/template/action-sm.gif');  list-style-position: outside; 
+    background: none; padding-left: 0; margin-bottom: 0; 
+}
+ul.action li a { position: relative; top: -2px; }
+
+#interior_content ul.action li { margin-left: 20px; }
+
+a.white { color: #fff; text-decoration:underline; }
+a.white:hover { color: #f2f2f2; }
+
+a.hiddenwhite { color: #fff; text-decoration:none; }
+a.hiddenwhite:hover { text-decoration:underline; }
+
+a.hiddenlink { text-decoration:none; color:#333333; }
+a.hiddenlink:hover { text-decoration:underline; color:#4aa145; }
+
+/* --------------------------------------------------------------------- */
+/* Lists
+/* --------------------------------------------------------------------- */
+
+/** Ordered lists **/
+ol { padding: 0; margin: 0 0 1.4em 3em; }
+ol li { margin: 0; padding: 0 0 0.5em 0.25em; }
+ol ol { margin:0.25em 0 0 2em; list-style-type: lower-alpha; }
+
+
+/* Regular bulleted lists */
+ul { margin: 0 0 1.25em 0; padding: 0 0 0 1.5em; }
+ul ul { margin: 0.5em 0 0 0; padding: 0 0 0 1.7em;  }
+ul li { margin: 0 0 0.7em 0; }
+ul ul li, ol ul li { margin: 0 0 0.5em 0; }
+
+#secondary_content ul { margin: 0 0 0 0 !important; }
+
+/* Bullet adjustments */
+p+ul { margin-top:-0.5em; }
+ul+h2 { margin-top: 1.25em; }
+ul+h3 { margin-top: 1.1em; }
+
+
+
+/** Two-column anchored link lists **/
+ul.anchor1, ul.anchor2 { list-style-type:none; margin: 0 0 3em 0; padding:0; }
+ul.anchor1 { float:left; border-right: 1px dotted #ccc; padding-right:3em; margin:0; }
+ul.anchor2 { float:left; padding-left:1em;  }
+ul.anchor1 li, ul.anchor2 li { margin: 0 0 0 1em; padding: 0 0 0.5em 18px;  }
+
+/** Special adjustments **/
+/*
+ul+h2 { margin-top: 1.5em; }
+h2+ul { padding-top:0.8em; }
+p~ul { margin-top:-0.5em; }
+ul+p { margin-top:-1.75em; }
+*/
+
+.clear { display: block; clear: both; }
+
+
+/* --------------------------------------------------------------------- */
+/* Buttons - NEW
+/* --------------------------------------------------------------------- */
+
+.button {
+    background-color: #f18a26;  /* Change button color to 45973f after launch */
+	color: #fff;
+	font-weight:700;
+    height: 40px;
+	text-transform:uppercase;
+	text-decoration: none;
+    outline: none;
+	margin-right:20px;
+    padding:8px 15px 10px 15px;
+	border:none;
+	font-size:1em;
+}
+.button:hover {
+    background-color: #f29235;
+	text-decoration: underline;
+}
+
+a.button {
+    background-color: #f18a26;  /* Change button color to 45973f after launch */
+	color: #fff;
+	font-weight:700;
+    height: 40px;
+	text-transform:uppercase;
+	text-decoration: none;
+    outline: none;
+	margin-right:20px;
+    padding:8px 15px 10px 15px;
+}
+a.button:hover {
+    background-color: #f29235;
+	text-decoration: underline;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* Content holders */
+/* --------------------------------------------------------------------- */
+
+p, blockquote { margin: 0 0 1.4em 0; }
+p.intro { color:#90591b; font-size: 1.2em; padding: 0 0.75em 0 .25em; }
+#content p { margin-bottom: 1.2em; }
+blockquote { background-color: #F8F8F8; padding: 1em; font-size: 1.2em; border:1px solid #cad2c5; }
+hr { height:1px; border:none; margin: 1em 0; color:#CCCCCC;	background-color:#CCCCCC; }
+.hidden { display:none; }
+.clear { display: block; clear: both; }
+.nowrap { white-space: nowrap; }
+
+div.twocolumn div:first-child { width:46%; padding: 0 13px 0 0; float:left; }
+div.twocolumn div:last-child { width:46%; padding: 0 0 0 13px; float:left; }
+div.twocolumn+* { clear:both; }
+
+/* Facility rental pages specific */
+div.rentaltwocol div:first-child { width:55%; padding: 0 5px 0 0; float:left; }
+div.rentaltwocol div:last-child { width:40%; padding: 0 0 0 5px; float:left; }
+div.rentaltwocol+* { clear:both; }
+
+/** Left and Right Callouts **/
+.calloutLeft { width:200px; float: left;  margin: 0 2em 2em 0; background-color:aliceblue; padding:5px 20px;  }
+.calloutRight { width:200px; float:right; margin: 0 0 2em 2em; background-color:aliceblue; padding:5px 20px; }
+
+/** Mobile specific **/
+.showOnMobileOnly, .showOnMobileOnlyInline, .smo { display: none !important; }
+.showOnDesktopOnly, .sdo { display:block; }
+.showOnDesktopOnlyInline { display: inline; }
+.showOnDesktopOnlyTable { display: table-cell; }
+.sitewideMessage { background:#faeedc; border:3px solid #d71b08; padding: 15px 7px; color:#d71b08; font-weight:bold; }
+
+/*** END EKTRON STYLES ***/
+/*******************************************************************************************************/
+
+
+/*******************************************************************************************************/
+/** Misc. Non-Ektron **/
+
+/* Used for putting an underline on font-replaced links */
+a span { border-bottom: 1px solid #22769d; }
+
+/** Non-Ektron TABLES **/
+caption { background-color: #EDEDED; font-size: 1.2em; text-transform: uppercase; font-family: Georgia, "Times New Roman" , serif; margin-top: 1.0em; }
+
+th label { display: inline; text-transform: none; font-style: italic; }
+td label{ display: inline; text-transform: none; font-style: normal; }
+
+tr.even td { background-color: #f2f1eb; }
+
+td.nowrap { white-space: nowrap; }
+
+table.noborder { border:hidden; }
+table.noborder td { border:none; }
+table.icons td { padding: 0 15px 15px 0; }
+
+/**************************************/
+/* ROUNDED COLOR TABLE STYLES */
+
+.datatable_container { margin-bottom: 1em; }
+
+.datatable_container.berry { background: url(/sup/img/bg/table/datatable_berry_outer.gif) no-repeat top left; }
+.datatable_container.orange { background: url(/sup/img/bg/table/datatable_orange_outer.gif) no-repeat top left; }
+.datatable_container.purple { background: url(/sup/img/bg/table/datatable_purple_outer.jpg) no-repeat top left; }
+.datatable_container.green { background: url(/sup/img/bg/table/datatable_green_outer.gif) no-repeat top left; }
+.datatable_container.green { background: url(/sup/img/bg/table/datatable_green_outer.gif) no-repeat top left; }
+.datatable_container.blue { background: url(/sup/img/bg/table/datatable_blue_outer.gif) no-repeat top left; }
+.datatable_container.red { background: url(/sup/img/bg/table/datatable_red_outer.gif) no-repeat top left; }
+
+.datatable_inner {	padding: 0px 7px 7px 7px; }
+
+.datatable_container.berry .datatable_inner { background: url(/sup/img/bg/table/datatable_berry_inner.gif) no-repeat bottom left transparent; }
+.datatable_container.orange .datatable_inner { background: url(/sup/img/bg/table/datatable_orange_inner.gif) no-repeat bottom left transparent; }
+.datatable_container.purple .datatable_inner { background: url(/sup/img/bg/table/datatable_purple_inner.jpg) no-repeat bottom left transparent; }
+.datatable_container.green .datatable_inner { background: url(/sup/img/bg/table/datatable_green_inner.gif) no-repeat bottom left transparent; }
+.datatable_container.blue .datatable_inner { background: url(/sup/img/bg/table/datatable_blue_inner.gif) no-repeat bottom left transparent; }
+.datatable_container.red .datatable_inner { background: url(/sup/img/bg/table/datatable_red_inner.gif) no-repeat bottom left transparent; }
+
+.datatable_container table { border: none; margin: 0px 0px 0px 0px;	padding: 0px; border-collapse: collapse; width:446px; }
+
+.datatable_container table th {	border-top: none; background: none;	color: #fff; font-weight: bold;	font-size: 1em; line-height: 2.5em; }
+
+.datatable_container.berry table th { border-left: solid 1px #daa2b0; border-bottom: 1px solid #772f43; } 
+.datatable_container.orange table th { border-left: solid 1px #f5cf93; border-bottom:1px solid #8c3b3a; } 
+.datatable_container.purple table th { border-left: solid 1px #afacd4; border-bottom:1px solid #3f4585; }  
+.datatable_container.green table th { border-left: solid 1px #a9cec2; border-bottom:1px solid #2f6e71; } 
+.datatable_container.blue table th { border-left: solid 1px #abccdb; border-bottom:1px solid #38687e; } 
+.datatable_container.red table th { border-left: solid 1px #f3b5a9; border-bottom:1px solid #853644; } 
+ 
+.datatable_container table td {	background-color: #fff;	color: #6e6e6e; }
+
+.datatable_container table th.destyle {	border-left: none; }
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* SECTION PAGES
+/* --------------------------------------------------------------------- */
+
+.section_header_interior {
+	width: 1100px;
+	margin: 0 auto;
+	text-align:center;
+	padding: 50px 0 50px 0;
+}
+.section_header { color: #ffffff; font-size:2.6em; margin-bottom: 0.25em; margin-top:0; }
+
+/* Section Index Header Hero Images */
+.section_hero_news {
+  background: #fff url('/sup/img/section/section-header/news-resources.jpg') no-repeat;
+  height: 150px;
+  width: 100%;
+	z-index:200;
+}
+
+div.news { margin: 1em 0 2.5em 0; }
+div.news p { display: inline-block; float: left; width: 31%; margin-right:2%;  }
+div.news a.big { color:#333333; font-size:1.6em; font-weight:900; line-height:1.2em; text-decoration:none; }
+
+/******************************************************************/
+/*** SECTION CALLOUT BLOCKS ***/
+
+/* In This Section Blocks */
+#in_this_section { width:100%; margin-top:35px; }
+#in_this_section div.section_block { position:relative; display:inline-block; float:left; width:33%; height:300px; margin-bottom:30px; }
+#in_this_section div.section_block a { 
+	display:block;
+	width: 300px;
+    height: 300px; 
+	background: rgba(0, 0, 0, .4) url('/sup/img/template/arrow-gray-sm.png') no-repeat bottom right;
+	color:#fff;
+	text-decoration:none;
+}
+#in_this_section div.section_block h3 { color:#fff; font-weight:600; margin:0 10px 15px 25px; padding-top:25px; }
+#in_this_section div.section_block p { color:#fff; margin:0 10px 15px 25px; }
+#in_this_section div.section_block a:hover {
+    background: #00335b url('/sup/img/template/arrow-white-sm.png') no-repeat bottom right;
+}
+#in_this_section div.section_block a:hover h2 { text-decoration:underline; }
+
+/*About Us section images*/
+#in_this_section div.mncpa_block { background-image: url(/sup/img/bg/mncpa_block.jpg); }
+#in_this_section div.contact_block { background-image: url(/sup/img/bg/contact_block.jpg); }
+#in_this_section div.press_block { background-image: url(/sup/img/bg/press_block.jpg); }
+#in_this_section div.advertise_block { background-image: url(/sup/img/bg/advertise_block.jpg); }
+#in_this_section div.facility_block { background-image: url(/sup/img/bg/facility_block.jpg); }
+#in_this_section div.site_block { background-image: url(/sup/img/bg/site_block.jpg); }
+#in_this_section div.HR_block { background-image: url(/sup/img/bg/HR_block.jpg); }
+
+/*Becoming a CPA section images*/
+#in_this_section div.exam_block { background-image: url(/sup/img/bg/exam_block.jpg); }
+#in_this_section div.examtracker_block { background-image: url(/sup/img/bg/examtracker_block.jpg); }
+#in_this_section div.student_block { background-image: url(/sup/img/bg/student_block.jpg); }
+#in_this_section div.certificate_block { background-image: url(/sup/img/bg/certificate_block.jpg); }
+#in_this_section div.graduate_block { background-image: url(/sup/img/bg/graduate_block.jpg); }
+#in_this_section div.FAQ_block { background-image: url(/sup/img/bg/FAQ_block.jpg); }
+
+/*Careers section images*/
+#in_this_section div.classifieds_block { background-image: url(/sup/img/bg/classifieds_block.jpg); }
+#in_this_section div.findajob_block { background-image: url(/sup/img/bg/findajob_block.jpg); }
+#in_this_section div.research_block { background-image: url(/sup/img/bg/research_block.jpg); }
+#in_this_section div.advice_block { background-image: url(/sup/img/bg/advice_block.jpg); }
+#in_this_section div.workshops_block { background-image: url(/sup/img/bg/workshops_block.jpg); }
+#in_this_section div.employees_block { background-image: url(/sup/img/bg/employees_block.jpg); }
+#in_this_section div.graduate_block { background-image: url(/sup/img/bg/graduate_block.jpg); }
+#in_this_section div.market_block { background-image: url(/sup/img/bg/market_block.jpg); }
+#in_this_section div.become_block { background-image: url(/sup/img/bg/become_block.jpg); }
+#in_this_section div.student_block { background-image: url(/sup/img/bg/student_block.jpg); }
+
+#in_this_section div.videos_block { background-image: url(/sup/img/bg/career-video-block.jpg); }
+#in_this_section div.jobs_block { background-image: url(/sup/img/bg/job-seeker-block.jpg); }
+
+/*Involvement section images*/
+#in_this_section div.directory_block { background-image: url(http://www.mncpa.org/sup/img/bg/directory_block.jpg); }
+#in_this_section div.calendar_block { background-image: url(http://www.mncpa.org/sup/img/bg/calendar_block.jpg); }
+#in_this_section div.press_block { background-image: url(http://www.mncpa.org/sup/img/bg/press_block.jpg); }
+#in_this_section div.volunteer_block { background-image: url(http://www.mncpa.org/sup/img/bg/volunteer_block.jpg); }
+#in_this_section div.groups_block { background-image: url(http://www.mncpa.org/sup/img/bg/groups_block.jpg); }
+#in_this_section div.legislativePAC_block { background-image: url(http://www.mncpa.org/sup/img/bg/legislativePAC_block.jpg); }
+#in_this_section div.financial_block { background-image: url(http://www.mncpa.org/sup/img/bg/financial_block.jpg); }
+#in_this_section div.ACA_block { background-image: url(http://www.mncpa.org/sup/img/bg/ACA_block.jpg); }
+#in_this_section div.connect_block { background-image: url(http://www.mncpa.org/sup/img/bg/round_table_block.jpg); } 
+
+/*Pubs and News section images*/
+#pubs_block { background: url(/sup/img/section/section-icon/reading-block.jpg) no-repeat; }
+#enews_block { background: url(/sup/img/section/section-icon/email-block.jpg) no-repeat; }
+#podcast_block { background: url(/sup/img/section/section-icon/headphones-block.jpg) no-repeat; }
+#legislative_block { background: url(/sup/img/section/section-icon/capitol-block.jpg) no-repeat; }
+#topics_block { background: url(/sup/img/section/section-icon/idea-block.jpg) no-repeat; }
+#press_block { background: url(/sup/img/section/section-icon/press-block.jpg) no-repeat; }
+#perspectives_block { background: url(/sup/img/section/section-icon/perspective-block.jpg) no-repeat; }
+
+/*Public Resources section images*/
+#in_this_section div.find_block { background-image: url(/sup/img/bg/find_block.jpg); }
+#in_this_section div.working_block { background-image: url(/sup/img/bg/working_block.jpg); }
+#in_this_section div.manage_block { background-image: url(/sup/img/bg/manage_block.jpg); }
+#in_this_section div.glossary_block { background-image: url(/sup/img/bg/glossary_block.jpg); }
+#in_this_section div.assistance_block { background-image: url(/sup/img/bg/assistance_block.jpg); }
+
+/*Tech Resources section images*/
+#in_this_section div.BOA_block { background-image: url(/sup/img/bg/BOA_block.jpg); }
+#in_this_section div.tax_block { background-image: url(/sup/img/bg/tax_block.jpg); }
+#in_this_section div.report_block { background-image: url(/sup/img/bg/report_block.jpg); }
+#in_this_section div.firm_block { background-image: url(/sup/img/bg/firm_block.jpg); }
+#in_this_section div.peer_block { background-image: url(/sup/img/bg/peer_block.jpg); }
+#in_this_section div.ethics_block { background-image: url(/sup/img/bg/ethics_block.jpg); }
+#in_this_section div.HR_block { background-image: url(/sup/img/bg/HR_block.jpg); }
+
+/* JOIN */
+#in_this_section div.cpasjoin_block { background-image: url(/sup/img/bg/cpasjoin_block.jpg); }
+#in_this_section div.noncpajoin_block { background-image: url(/sup/img/bg/noncpajoin_block.jpg); }
+#in_this_section div.studentjoin_block { background-image: url(/sup/img/bg/studentjoin_block.jpg); }
+
+/* FIND A CPA */
+#in_this_section div.contact_block { background-image: url(/sup/img/bg/contact_block.jpg); }
+#in_this_section div.lightbulb_block { background-image: url(/sup/img/bg/lightbulb_block.jpg); }
+#in_this_section div.megaphone_block { background-image: url(/sup/img/bg/megaphone_block.jpg); }
+#in_this_section div.magnify_block { background-image: url(/sup/img/bg/magnify_block.jpg);  }
+#in_this_section div.microphone_block { background-image: url(/sup/img/bg/microphone_block.jpg); }
+#in_this_section div.newspaper_block { background-image: url(/sup/img/bg/newspaper_block.jpg); }
+
+/*************************************************************************************/
+/*** INDEX PAGE STYLES ***/
+/*************************************************************************************/
+
+/* --------------------------------------------------------------------- */
+/* SECTION
+/* --------------------------------------------------------------------- */
+
+.subsection { background: url(/sup/img/bg/description_container_top.jpg) no-repeat top left; }
+
+.subsection .subsection_inner {
+    background: url(/sup/img/bg/description_container_bottom.jpg) no-repeat bottom left transparent;
+    margin: 0; padding: 15px 15px 15px 68px;
+}
+
+.subsection .subsection_inner div {
+    background: none; background-color: #fff; border: 1px solid #c89b71; 
+    margin: 0 0 8px 0; padding: 13px 20px 13px 30px; position: relative;
+}
+
+.subsection .subsection_inner div:last-child { border-bottom: 1px solid #c89b71; margin-bottom:0; }
+
+.subsection .subsection_inner div img {
+    position: absolute;
+    top: 7px;
+    left: -53px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    line-height: 0px;
+}
+
+
+
+/* --------------------------------------------------------------------- */
+/* SUB-SUBSECTION
+/* --------------------------------------------------------------------- */
+
+.sub_subsection div {
+    margin: 0;
+    padding: 1.25em 0 1.25em 0;
+    border-top: 1px dotted #aaa;
+}
+
+.sub_subsection div.clear {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    clear: both;
+    font-size: 0px;
+    line-height: 0px;
+}
+
+.sub_subsection div p {
+    margin: 0;
+    padding: 0 1.25em 0 0;
+    width: 355px;
+    float: right;
+}
+
+.sub_subsection div img {
+    float: left;
+    display: block;
+    margin: 3px 0 0 8px;
+}
+
+.sub_subsection div p span.title { font-weight:bold; }
+.sub_subsection div p .title {
+    margin-bottom: 0.2em;
+    display:block;
+}
+
+/* --------------------------------------------------------------------- */
+/* Related CPE
+/* --------------------------------------------------------------------- */
+
+.relatedCPE { border-top: 2px solid #c1a994;  padding-top:0.75em; margin-bottom:15px; }
+#interior_content .relatedCPE:first-child { margin-top:0; border-left:3px solid red; }
+.relatedCPE .add { float:left; margin-right:15px; padding-top:3px; }
+.relatedCPE p.date, .relatedCPE p.cost { float:left; margin:0; padding:0 .5em 0 1em; border-left: 2px solid #ddcbaf; font-size:0.9em; color:#927247; font-weight:bold; }
+.relatedCPE p.date { width:125px; }
+.relatedCPE p.cost { width:230px;}
+.relatedCPE p.copy { clear:both; margin-top:1em; }
+
+.relatedCPE .add a.webcast 
+{
+    text-indent: -9999px;
+    background: url("/sup/img/icons/webcast.gif") no-repeat scroll;
+    width: 31px;
+    position: relative;
+    left: 12px;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* Form elements
+/* --------------------------------------------------------------------- */
+
+/* label { margin-top: 1em; display: block; text-transform: uppercase; font-style: italic; } */
+
+label.selected { font-weight: bold; }
+
+textarea { width: 100%; display: block; height: 150px; font-size: 1.0em; border: 1px solid #999999; overflow: auto; padding: 0.2em; }
+
+input, select, textarea { }
+
+.scrollingCheckboxList { position:relative; height: 100px; overflow:scroll;  padding: 5px; border: 1px solid #ccc; background-color:#fff; }
+
+/* --------------------------------------------------------------------- */
+/* Grouping elements
+/* --------------------------------------------------------------------- */
+
+fieldset { border: 1px solid #CCCCCC; padding: 0 1em 1em 1em; margin-top: 1em; }
+fieldset.haslegend { margin-top: -13px !important; padding-top: 27px !important; }
+legend { padding: 0 0.5em; font-size: 1.2em; text-transform: uppercase; }
+legend span { position: relative; top: 19px; left: -7px; }
+fieldset label { display:inline; }
+
+
+/***************************************************************************/
+/*** HOME ***/
+
+/* About Hero Image */
+.about {
+  background: #fff url('/sup/img/template/hero-tax-conference.jpg') no-repeat;
+  height: 445px;
+  width: 100%;
+	z-index:200;
+}
+
+.about_interior {
+	width: 1100px;
+	margin: 0 auto;
+	text-align:left;
+	padding: 50px 0 50px 0;
+}
+.about_header{ color: #ffffff; font-size:2.6em; margin-bottom: 0.25em; margin-top:0; }
+.home_about {  
+	color:#fff; 
+	font-size:1.1em; 
+	line-height:1.55em; 
+	margin: 0 10px 0 0; 
+	padding:10px 5px 10px 0; 
+	width:400px; 
+}
+.hero_label { float: right; font-size:0.8em; }
+.hero_label a { text-decoration:none; }
+
+/* Profile/Testimonial */
+.profile {
+  background: #00335b;
+  height: 200px;
+  width: 100%;
+	z-index:250;
+margin-top:-50px;
+}
+
+.profile_interior {
+	width: 1100px;
+	margin: 0 auto;
+	text-align:left;
+	padding: 50px 0 50px 0;
+	background: url('/sup/img/template/big-quotes.png') no-repeat center right;
+}
+.profile_interior img {
+	z-index:300;
+	margin-top:-90px;
+	float:left;
+	padding-right:45px;
+}
+/* .profile_interior img:hover { filter:brightness(1.1); } */
+.profile_interior h2 { color:#fff; font-size:2.2em; margin-top:-10px; }
+.profile_interior h2 span { font-weight:900; }
+.profile_interior p { color:#fff; float:right; font-style:italic; }
+
+/* Upcoming CPE */
+.upcoming_events { list-style-type: none; margin: 0; padding:0; margin-bottom:20px; width:100%; }
+.upcoming_events li { margin: 0; padding: 13px 20px 10px 0; float:left; display:inline-block; width:30%; background: none; }
+.upcoming_events li a.big { color:#333333; font-size:1.6em; font-weight:900; line-height:1.2em; text-decoration:none; }
+.upcoming_events li a.big:hover { text-decoration:underline; }
+
+
+/* Banners */
+.banners { width:100%; margin-top:35px; }
+.banners div.banner { position:relative; display:inline-block; float:left; width:33%; height:350px; }
+.banners div.banner a { 
+	display:block;
+	width: 350px;
+    height: 350px; 
+	background: rgba(0, 0, 0, .4) url('/sup/img/template/arrow-white.png') no-repeat bottom right;
+	color:#fff;
+	text-decoration:none;
+}
+#banner1 { 
+	background: url('http://www.mncpa.org/images/banner-2017-test.jpg') no-repeat;
+}
+#banner2 { 
+	background: url('http://www.mncpa.org/images/banner-2017-test.jpg') no-repeat;
+}
+#banner3 { 
+	background: url('http://www.mncpa.org/images/banner-2017-test.jpg') no-repeat;
+}
+.banners div.banner h2 { color:#fff; font-weight:600; margin:0 10px 15px 25px; padding-top:25px; }
+.banners div.banner p { color:#fff; margin:0 10px 15px 25px; }
+.banners div.banner a:hover {
+    background: rgba(0, 0, 0, .3) url('/sup/img/template/arrow-white.png') no-repeat bottom right;
+}
+.banners div.banner:hover h2 { text-decoration:underline; }
+
+
+/* Latest News */
+.latestnews p { background: #e7e7e7; border-left:5px solid #e8840f; padding:10px 10px 15px 25px; margin-bottom:20px !important; }
+
+/* Spotlights */
+.circle {
+	clip-path: url(#myClip);
+	float:left;
+	margin-right:15px;
+}
+.spotlights p { margin:0; padding: 15px 0; }
+.spotlights div.ind-spotlight { clear:both; padding:15px 0; border-top:1px solid #b5b5b5; }
+.spotlights img { margin-bottom:15px; }
+.spotlights img:hover { filter:brightness(1.1); }
+
+/* Two-column latest news and spotlights */
+.two-column { width:100%; }
+.two-column div.left { float:left; width:48%; text-align:left; }
+.two-column div.right { float:right; width:48%; text-align:left; }
+
+/* Full-width two-column callout - Green */
+.fullwidth-callout {
+	background: #45973f url('/sup/img/template/up-arrow-white.png') no-repeat bottom center;
+	height: 175px;
+	width: 100%;
+	margin-bottom:40px;
+}
+
+.callout-interior {
+	width: 1100px;
+	margin: 0 auto;
+	text-align:left;
+	padding: 50px 0 50px 0;
+}
+.callout-interior div {
+	width: 47%;
+	float: left;
+	display: inline-block;
+	margin-top:-25px;
+}
+.callout-interior div + div { margin-left:50px; }
+.callout-interior img {
+	float: left;
+	margin: 0 25px 15px 0;
+}
+.callout-interior h2 { color: #fff; margin:0 0; font-weight:600; }
+.callout-interior p { color: #fff; }
+
+
+/* Flickr photo stream */
+.bounded-content {
+	width:100%;
+	background: #fff;
+}
+.flickr-header {
+	width:1100px;
+	margin:0 auto;
+	background: #fff;
+}
+
+.home-flickr {
+margin:0; padding:0;
+  background: #fff;
+  width: 100%;
+	float:left;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.home-flickr a { display:inline-block; position:relative; margin-right:5px; }
+.home-flickr p { position:absolute; bottom:0; right:0; display:none; }
+.home-flickr a:hover p { display:block; background: rgba(0, 0, 0, .6); width:89%; text-align:right; padding:5px 25px 5px 10px;  }
+
+/* Headlines on the home page (Featured Speaker, etc.) */
+.home_callouts { margin-top: 2em; }
+.home_section { width:240px; float: left; margin: 0 1.5em 1em 0; padding:0; min-height:200px; height:auto !important; height:200px; }
+.main_column .right { margin: 0 0 2em 0; }
+.home_section h3 { font-size: 1.1em; color: #474747; }
+
+/* .home_section a { font-family: Georgia, "Times New Roman", serif; } */
+.cpameasap { width:292px !important; padding:0; margin:0; margin-top:10px; margin-bottom:15px; border-bottom:4px solid #71a36d; }
+p.cpame_text { font-size:1.0em; line-height:1.5em; color:#6e6e6e; padding:0; margin:0; padding-bottom:15px; width:290px; }
+img.cpame_img { margin-bottom:10px; }
+
+
+
+/***************************************************************************/
+/*** EVENT STYLES (CALENDAR) ***/
+
+/* Conferences index */
+.home_events { list-style-type: none; margin: 0; padding:0; }
+.home_events li { margin: 0; padding: 13px 10px 10px 62px; clear:both; font-size: 1em; background: none; border-top:1px dotted #ccc; }
+.home_events .event_date { margin: -3px 0 0 -62px;  } 
+
+/* Events page in involvement */
+h2.event_calendar { border-top:1px dotted #ccc; margin-top:1.25em; padding-top: 0.5em; padding-bottom:0; }
+
+/* Right column - I don't think we need this anymore 
+.section ul.secondary.events { margin:0; padding: 0 0 0 20px; }
+.section ul.events li { border-top:1px dotted #ccc; background-image:none; margin: 0.75em 0; padding:0.5em 0 0.5em 60px; line-height: 1.2em; clear:both; }
+.section ul.events li:last-child { border-bottom:1px dotted #ccc; }
+.section ul.events .event_date { margin: 0 10px 0 -60px; padding:5px 0 0 0; float:left; } */
+
+/* Overall event styles */
+.event_date { float: left;  margin: 10px 0;  padding: 5px 20px 0 0; width: 75px; text-transform: uppercase; }
+.event_item { clear:both; }
+
+/* Save this for new style - just tweak */
+.event_month
+{
+    background: #e2e2e2;
+    display: block;
+    text-align: center;
+    border-right: 4px solid #cbcbcb;
+    color: #000;
+	font-weight:900;
+    line-height: 1;
+    padding: 13px 10px 5px 10px;
+}
+
+.event_day
+{
+    display: block;
+    background: #e2e2e2;
+    text-align: center;
+    border-right: 4px solid #cbcbcb;
+    font-size: 1.4em;
+    line-height: 1;
+    padding: 5px 10px 15px 10px;
+}
+
+/* --------------------------------------------------------------------- */
+/* CPE INDEX PAGE */
+/* --------------------------------------------------------------------- */
+
+.cpe_index_buttons { margin-bottom: 1em; }
+.cpe_index_buttons img { float:left; }
+
+/*** Section (conferences, seminars, news) blocks ***/
+.outer_block { position: relative; width: 459px; background-repeat: no-repeat; background-position: top left; margin: 0; }
+
+/*** Individual blurb styles ***/
+.index_box { clear:both; position: relative; width: 100%; background-repeat: no-repeat; background-position: top left; background-color: #f2f2f2; 
+	margin:1em 0 1.5em 0;
+}
+
+.index_box .header { height:43px; }
+.index_box .header h2 {	padding: 0.3em 0 1em 0.9em; color: #fff; }
+
+.index_box .content { padding: 0.8em 1.5em 0.4em 1.5em; border-bottom:2px solid; }
+.index_box .content p { margin:0; padding: 1em  0 1em 0; border-top:1px dotted #999; }
+.index_box .content p:first-child, .index_box .content p.first { border-top:none; padding-top:0.25em; }
+.index_box a.headline {	display: block;	font-weight:bold; }
+
+.index_box  a.view_all { display: block; color: #fff; position: absolute; right: 0; top: 0; padding: 10px 22px 0 0; font-size: 1em; }
+
+/* Individual headers */
+.noteworthy_news { background-image: url(/sup/img/cpe/index-headers/green.jpg); }
+.noteworthy_news .content { border-color:#63ae5c; }
+        
+.seminar_spotlight { background-image: url(/sup/img/cpe/index-headers/orange.jpg); }
+.seminar_spotlight .content { border-color:#e37f1d; }
+     
+.conference_corner { background-image: url(/sup/img/cpe/index-headers/bluegreen.jpg); }
+.conference_corner .content { border-color: #007c88; }  
+        
+.chapter_checkin { background-image: url(/sup/img/cpe/index-headers/blue.jpg); }
+.chapter_checkin .content { border-color: #005291; } 
+        
+.instructor_insights { background-image: url(/sup/img/cpe/index-headers/green.jpg); }
+.instructor_insights .content { border-color: #63ae5c; } 
+        
+.alternative_options { background-image: url(/sup/img/cpe/index-headers/blue.jpg); }
+.alternative_options .content { border-color: #005291; }
+        
+.custom_solutions { background-image: url(/sup/img/cpe/index-headers/orange.jpg); }
+.custom_solutions .content { border-color: #e37f1d; }
+
+/*** CPE right column ***/
+.cpe_buttons { padding: 7px 0px 12px 6px; text-align:right; line-height: 2em; }
+.cpe_buttons img { display:inline-block; padding-left:8px; margin-bottom:-8px; }
+
+.search_cpe_catalog
+{
+  text-align:right; position: relative; padding: 15px 0px 10px 10px; font-size: .9em; color:#000; border-top:1px solid #969696;
+}
+
+.search_cpe_catalog .search_fields { margin-left:5px; }
+.search_cpe_catalog .search_fields .cpe_field_section { margin:5px 0 50px 0; display:block;  clear:both; }
+
+.search_cpe_catalog .cpe_search_field { 
+	width: 145px; 
+	height:20px; 
+	float:right; 
+	font-size:0.9em; 
+	background-color: #e2e2e2; 
+	border: 1px solid #969696; 
+	padding: 5px 15px 7px 10px;
+	margin:3px 0 0 0; 
+	color: #000; 
+}
+
+.search_cpe_catalog .search_button { margin-top:-32px; margin-right:5px; float:right; background: #fff url('/sup/img/icons/search-gray.gif') no-repeat top right; }
+
+p.cpe_catalog_actions { text-align:right; font-size:0.8em; padding-bottom:20px; margin:5px 0 5px 0; border-bottom:1px solid #969696; }
+
+/*** CPE & JOIN BUTTON ICONS ***/
+ul.buttonIcons { margin:0 0 15px 0; padding:0; ; }
+ul.buttonIcons li { list-style-image:none; display:block; width:47%; padding:0; margin:0 0 15px 0; float:left; }
+ul.buttonIcons li:nth-child(2n-1) { margin-right: 20px; }
+ul.buttonIcons+* { clear:both; }
+
+/*** WEBCAST INDEX PAGE STYLES ***/
+
+/* SPONSORS */
+#sponsorBlock { width:435px; border:1px solid red; }
+#sponsorBlock #sponsorLevelsTop { width:435px; }
+#sponsorBlock #sponsorLevels #levelOne { width:200px; display:inline-block; float:left; margin-right:25px;
+														font-family:OpenSansLight, Helvetica, Arial; font-size: 14px; line-height:18px; }
+#sponsorBlock #sponsorLevels #levelTwo { width:200px; display:inline-block; float:middle;
+														font-family:OpenSansLight, Helvetica, Arial; font-size: 14px; line-height:18px; }
+#sponsorBlock #sponsorLevels #levelThree { width:200px; display:inline-block; float:right;
+														font-family:OpenSansLight, Helvetica, Arial; font-size: 14px; line-height:18px; }
+
+#sponsorBlock #sponsorLogos { width:435px; height:55px; margin-bottom:15px; }
+#sponsorBlock #sponsorLogos #logoOne { width:200px; display:inline-block; float:left; margin-right:25px; }
+#sponsorBlock #sponsorLogos #logoTwo { width:200px; display:inline-block; float:middle; }
+
+/*****************************************************************************/
+/* SOME MORE CPE STUFF ??????? */
+
+.section.rss a
+{
+    display: block;
+    padding-left: 19px;
+    background: url(/sup/img/icons/rss_sidebar.gif) no-repeat 0px .3em transparent;
+    text-decoration: underline;
+    font-size: .9em;
+}
+
+.section.rss h2, .section.registration h2
+{
+    margin-bottom: .6em;
+}
+
+.section.rss a.rss_help
+{
+    display: block;
+    padding: 3px 0px 0px 0px;
+    background: none;
+    font-size: .8em;
+    float: right;
+}
+
+
+.list_view
+{
+    margin: 1em 0px 2em 0px;
+}
+
+.list_view .single_item
+{
+    padding-bottom: .7em;
+    margin-bottom: .8em;
+    border-bottom: solid 1px #ccc;
+}
+
+span.member_fee_login
+{
+    display: block;
+    float: right;
+    font-size: .8em;
+    color: #787878;
+    margin-top: 15px;
+}
+
+span.member_fee_login span
+{
+    color: #22769d;
+    text-decoration: underline;
+}
+
+.checkout_copy  {
+    background:url("/sup/img/bg/checkout_copy.jpg") no-repeat scroll left top transparent;
+    height:41px;
+    margin:0 0 1.6em;
+    position:relative;
+    width:460px;
+}
+.checkout_copy a {
+    display:block;
+    float:right;
+    margin:8px 10px 0 8px;
+    outline:medium none;
+    position:static;
+    text-indent:-9999px;
+}
+
+.checkout_copy a.checkout
+{
+    top: 8px;
+    right: 8px;
+}
+
+.checkout_copy a.checkout {
+    background:url("/sup/img/buttons/graphic/CPE/checkout.gif") no-repeat scroll left top transparent;
+    height:26px;
+    width:95px;
+}
+
+.checkout_copy a.continue_shopping {
+    background:url("/sup/img/buttons/graphic/CPE/continue_shopping.gif") no-repeat scroll left top transparent;
+    height:26px;
+    width:162px;
+}
+
+.checkout_copy a.copy {
+    display:block;
+    float:none;
+    height:37px;
+    left:3px;
+    margin:0;
+    outline:medium none;
+    position:absolute;
+    text-indent:-9999px;
+    top:2px;
+    width:135px;
+}
+
+/* CPE map div */
+
+
+.cpe_table_container
+{
+    background: url(/sup/img/bg/cart_outer.jpg) no-repeat top left;
+    margin-bottom: 1em;
+}
+
+.cpe_table_container.firm_admin_news
+{
+    background: url(/sup/img/bg/cart_outer_gradient.jpg) no-repeat top left;
+    margin-bottom: 1em;
+}
+
+.cpe_table_inner
+{
+    background: url(/sup/img/bg/cart_inner.jpg) no-repeat bottom left transparent;
+    padding: 0px 7px 7px 7px;
+}
+
+
+/*
+#content_container .cpe_table_container table
+{
+    border: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    width:445px;
+}
+
+.cpe_table_container table th,.form_container .cpe_table_container th
+{
+    border-left: solid 1px #afacd4;
+    border-top: none;
+    background: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: .9em;
+    line-height: 2.5em;
+    width:auto;
+    text-align:left;
+}
+.cpe_table_container table th a
+{
+    color:#FFF;
+}
+.cpe_table_container table td
+{
+    background-color: #fff;
+    color: #6e6e6e;
+}
+
+.cpe_table_container ul 
+{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+*/
+table.cpeResultsTable td.cart a.add_gray, .cpe_table_container table td.cart a.add_gray
+{
+    display: block;
+    color: #fff;
+	font-weight: 700;
+	text-transform:uppercase;
+	height: 40px;
+    outline: none;
+    margin: 5px auto;
+    background-position: -2px 0px;
+}
+/*
+
+.cpe_table_container table.cpe_admin td.name
+{
+    font-weight: bold;
+}
+
+.cpe_table_container table.cpe_admin td.fee
+{
+    font-weight: bold;
+    color: #1f9d45;
+    font-size: .9em;
+    background-color: #f3f3fe;
+    text-align: center;
+}
+
+
+
+.cpe_table_container table.cpe_admin td.balance
+{
+    color: #b9544b;
+    font-size: 1em;
+    background-color: #f9f2f0;
+    text-align: center;
+}
+
+.cpe_table_container table.cpe_admin td.cart a.pay
+{
+    display: block;
+    width: 46px;
+    height: 26px;
+    background: url(/sup/img/buttons/text/pay.gif) no-repeat top left;
+    margin: 5px auto;
+    text-indent: -9999px;
+    outline: none;
+}
+
+.cpe_table_container table th.destyle
+{
+    border-left: none;
+}
+
+.cpe_table_container table td.remove
+{
+    background-color: #feefd1;
+    width: 25px;
+    padding: 0px;
+    padding-top: 14px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.cpe_table_container table td.remove a
+{
+    background: url(/sup/img/bg/remove.jpg) no-repeat top center transparent;
+    display: block;
+    padding: 5px;
+    text-indent: -9999px;
+    outline: none;
+}
+
+.cpe_table_container table td.description
+{
+    background-color: #fff;
+    border: solid 1px #cecdcd;
+    padding: 10px 14px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.cpe_table_container table td.description a
+{
+    text-decoration: underline;
+}
+
+.cpe_table_container table td.description ul, .cpe_table_container table td.information ul
+{
+    margin: 5px 0px 7px 0px;
+}
+
+.cpe_table_container table td.description ul li, .cpe_table_container table td.information ul li
+{
+    float: left;
+    padding-left: 15px;
+    background-position: 0px .4em;
+    margin-right: 15px;
+}
+
+.cpe_table_container table th.fee
+{
+    text-align: center;
+}
+
+.cpe_table_container table td.fee
+{
+    width: 60px;
+    text-align: center;
+    border: solid 1px #cecdcd;
+    background-color: #f3f3fe;
+    font-size: .7em;
+    color: #96669a;
+    padding: 0 5px 5px 5px;
+    line-height: 1.1em;
+    vertical-align: middle;
+}
+
+.cpe_table_container table td.fee strong
+{
+    color: #1f9d45;
+    font-size: 1.2em;
+    display: block;
+    padding-top: 3px;
+}
+*/
+
+p.cpe_admin_note
+{
+    font-size: .9em;
+    line-height: 1.2em;
+    border-bottom: solid 1px #cecdcd;
+    padding-bottom: 1.7em;
+    margin-bottom: 1.8em;
+}
+
+tr.headings th
+{
+    border-bottom: solid 1px #626eaa;
+}
+
+.total_due
+{
+    font-size: 1.3em;
+    line-height:1.3em;
+    color: #66776d;
+    text-align: right;
+    margin-top:0;
+    margin-bottom: 1.2em;
+
+}
+
+.total_due span { font-size:0.8em; line-height:1.2em; }
+
+.total_due strong
+{
+    font-weight: bold;
+    color: #1f9d45;
+    font-size: 1.1em;
+}
+
+.description_overview_container
+{
+    width: 575px;
+    margin-bottom: 1.7em;
+}
+
+.description_overview_container .description_overview_inner
+{
+    margin: 0px;
+    padding: 12px;
+    padding-left: 140px;
+}
+
+#colorbox .description_overview_container .description_overview_inner
+{
+    padding-left: 12px;
+}
+
+.description_overview_container .description_overview_inner div
+{
+    padding: 7px 10px 7px 22px;
+    clear: left;
+    width: 375px;
+    color: #000;
+    background: none;
+    background-color: #fff;
+	border-left: 1px solid #969696;
+    border-bottom: none;
+    position: relative;
+    font-size: 1em;
+}
+
+#colorbox .description_overview_container .description_overview_inner div 
+{
+    width: auto;
+}
+
+
+.description_overview_container .description_overview_inner div a.unavailable 
+{
+    height: 40px;
+	background-color: #b7b7b7;
+	color: #fff;
+	font-weight:700;
+	text-decoration:none;
+    top: 2px;
+    left: 84px;
+    position: absolute;
+    outline: none;
+}
+
+.description_overview_container .description_overview_inner div.clear
+{
+    float: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+    line-height: 0px;
+    clear: both;
+    border: none;
+    background: none;
+}
+
+.description_overview_container .description_overview_inner div > span
+{
+    display: block;
+    color: #000;
+	text-align:right;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    font-size: 1em;
+	left: -240px;
+    top: 3px;
+    padding: 0px 13px;
+    line-height: 28px;
+}
+
+.description_overview_container .description_overview_inner div.location strong
+{
+    color: #000;
+}
+
+.description_overview_container .description_overview_inner div.location a.map_directions
+{
+    padding-left:18px;
+	padding-bottom:7px;
+    background: url(/sup/img/icons/map_dirs.gif) no-repeat 0px 1px;
+    line-height: 20px;
+}
+
+.description_overview_inner table, .description_overview_inner table th, .description_overview_inner table td
+{
+    margin: 0px;
+    background: none;
+    color: #000;
+    padding: 0px;
+    border: none;
+}
+
+.description_overview_inner table th, .description_overview_inner table td
+{
+    font-size: 1em;
+    padding: 2px 0px;
+}
+
+.description_overview_inner table td
+{
+    text-align: right;
+}
+
+.description_overview_inner fieldset.is_aicpa
+{
+    margin: 0px;
+    padding: 4px 0px;
+    border: none;
+    font-weight: bold;
+    color: #7b6daf;
+}
+
+a.street_view
+{
+    display: block;
+    width: 69px;
+    float: right;
+    padding: 3px;
+    margin-left: 7px;
+    border: solid 1px #ccc;
+    color: #22769d;
+    font-size: .8em;
+    text-align: center;
+}
+
+table.fees_table img
+{
+    display: inline;
+	margin-right:5px;
+}
+
+p.nonmember_check_alert
+{
+    padding-left: 18px;
+    background: url(/sup/img/icons/standard_check.gif) no-repeat 0px 0px;
+    font-size: .9em;
+    line-height: 1.3em;
+}
+
+/* Add button, save link, calendar link block on Seminar events */
+div.add a.add {
+    background-color: #45973f;
+	color: #fff;
+	font-weight:700;
+    height: 40px;
+	text-transform:uppercase;
+	text-decoration: none;
+    outline: none;
+	margin-right:20px;
+    padding:8px 15px 10px 15px;
+}
+div.add a.add:hover {
+    background-color: #50af49;
+	text-decoration: underline;
+}
+div.add a.save {
+	margin-right:20px;
+}
+
+div.add_save_calendar
+{
+    margin-bottom: 3em; margin-top: 2em;
+}
+/*
+div.add_save_calendar.webcast { background: url(/sup/img/bg/add_save_calendar_webcast.gif) no-repeat top left; }
+div.add_save_calendar.webcastclosed { background: url(/sup/img/bg/add_save_calendar_webcast_unavail.gif) no-repeat top left; }
+div.add_save_calendar.seminarclosed { background: url(/sup/img/bg/add_save_unavailable.gif) no-repeat top left; }
+
+div.add_save_calendar a
+{
+    display: block;
+    height: 26px;
+    top: 7px;
+    text-indent: -9999px;
+    overflow: hidden;
+    position: absolute;
+}
+
+div.add_save_calendar a.add
+{
+    width: 112px;
+    left: 8px;
+}
+
+div.add_save_calendar a.save
+{
+    width: 112px;
+    left: 134px;
+}
+
+div.add_save_calendar a.calendar
+{
+    width: 124px;
+    right: 4px;
+}
+*/
+
+.callout
+{
+    background: url(/sup/img/bg/intro_course_callout_top.gif) no-repeat top center;
+    margin-bottom: 1.5em;
+}
+
+.callout p
+{
+    background: url(/sup/img/bg/intro_course_callout_bottom.gif) no-repeat bottom center;
+    padding: 16px 0px 20px 0px;
+    margin: 0px;
+}
+
+form.sort_results
+{
+    margin-bottom: 1.4em;
+}
+
+form.sort_results strong
+{
+    font-size: .9em;
+    color: #558e6c;
+}
+
+.cpe_admin h3
+{
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+/*
+.cpe_admin .cpe_table_container
+{
+    margin-bottom: 2em;
+}
+*/
+.cpe_admin_options
+{
+    background: url(/sup/img/bg/cpe_options_bg.gif) no-repeat top right;
+    float: right;
+}
+
+.cpe_admin_options form
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.cpe_admin_options form div
+{
+    background: url(/sup/img/bg/cpe_options_title.gif) no-repeat top left transparent;
+    margin: 0px;
+    padding: 0px 10px 0px 75px;
+    height: 32px;
+}
+
+.cpe_admin_options form div select
+{
+    margin-top: 5px;
+}
+
+.cpe_admin_options form div label
+{
+    display: none;
+}
+
+
+/**************************************************************************/
+/* CPE SEARCH RESULTS PAGE */
+div.tabs { background-color: #d6c69f; padding:12px 0 0 5px; margin:20px 0 0 0;  }
+div.tabs ul { margin:0; padding: 0; height:24px; }
+div.tabs ul li   
+{
+    display:inline; 
+    font-size: 1.1em;  color:#603a1d;
+    padding:4px 7px; margin:0 5px 0 0; 
+    background-color:#fdf4e3; background-image:none; 
+    z-index:0;
+    border-top-right-radius: 5px; border-top-left-radius: 5px; 
+    -moz-border-top-right-radius: 5px; -moz-border-top-left-radius: 5px;
+}
+div.tabs ul li:first-child { display:none; } /* Turn off mobile heading text */
+
+div.tabs ul li a { color:#5077a9; }
+
+div.tabs li.on { background-color:#fdfcf8; border-bottom:1px solid #ffe3af; font-weight:bold; z-index:100; }
+div.tabs li.on a { color:#603a1d; text-decoration:none; }
+
+.cpeSearchResultsHeader { font-size:0.9em; background-color:#fbedcf; z-index:10; padding: 10px 5px 5px 10px; margin: 0; border-top:1px solid #fff; }
+
+table.cpeResultsTable { margin:0 0 15px 0;  border:none; border-bottom:3px solid #dbcdc1;  }
+table.cpeResultsTable td { width:20%; padding: 3px 8px 0 8px; border:none; border-left:1px dotted #dbcdc1; }
+
+table.cpeResultsTable td:first-child { border-left:none; }
+
+table.cpeResultsTable td.title { font-weight:normal; padding-top:15px; padding-bottom:5px; border:none; border-top:3px solid #dbcdc1; }
+table.cpeResultsTable td.date {  width:20%;  }
+table.cpeResultsTable td.location { width:30%;  }
+table.cpeResultsTable td.location span { display:inline;  }
+table.cpeResultsTable td.credits { width:20%;  }
+table.cpeResultsTable td.code { width:15%;  }
+table.cpeResultsTable td.cart { width:15%;  }
+
+#catalogFilter span.searchhead { color:#9e3d58; font-weight:700; font-size:13px; }
+
+
+.pagingoptions { float:right; width:165px; margin-right:7px; }
+.pagingoptions .leftarrow { float:right; margin-top:-3px; }
+.pagingoptions .rightarrow { float:right; margin-top:-3px; }
+.pagingoptions .pagenum { float:right; margin-left:5px; margin-right:5px; margin-top:2px; }
+
+ul.ui-autocomplete li.ui-menu-item { background-image:none; margin-left:0; padding-left:10px;  }
+
+
+/**************************************************************************/
+/* ADD TO CART BUTTONS */
+
+table.cpeResultsTable td.cart a.add, .cpe_table_container table td.cart a.add
+{
+    display: block;
+    background-color: #45973f;
+	color: #fff;
+	font-weight:700;
+    height: 40px;
+	text-transform:uppercase;
+    outline: none;
+    margin: 0 auto 6px auto;
+    padding:0;
+}
+
+table.cpeResultsTable td.cart a.add.webcast, .cpe_table_container table td.cart a.add.webcast 
+{
+    background: url(/sup/img/icons/webcast.gif) no-repeat top center;
+}
+
+.cpe_table_container table td.credits
+{
+    background-color: #f9f2f0;
+    color: #45973f;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+.register_now
+{
+    display: block;
+    background-color: #45973f;
+    color: #fff;
+	font-weight:700;
+	text-transform:uppercase;
+    height: 40px;
+    outline: none;
+    margin: 5px auto;
+}
+
+.register_now_gray
+{
+    display: block;
+    background-color: #b7b7b7;
+    color: #fff;
+	font-weight:700;
+	text-transform:uppercase;
+    height: 40px;
+    outline: none;
+    margin: 5px auto;
+}
+
+.confReg { text-indent:0; }
+.confReg span { display:none; }
+
+/* --------------------------------------------------------------------- */
+/* CPE SEARCH RESULTS - REVISED 2015
+/* --------------------------------------------------------------------- */
+
+    #catalogFilter { margin-left:45px; font-size:13px; color:#436f76; }
+    #catalogFilter div div, #catalogFilter input[type="checkbox"] { margin-left: 25px; }
+    #catalogFilter .currentSearch { margin-bottom:20px;  margin-left:0;}
+    #catalogFilter .currentSearch div { margin-left: 0; }
+    #catalogFilter .primaryNav { font-size:13px; color:#436f76; }
+    .keywordSearch p { margin-bottom: 0; }
+
+    .noMatches { color:#9e3d58; border: 2px solid #9e3d58; clear:both; padding:10px; margin:10px 0 20px 0; display:none; }
+    .search-loading { margin: 20px 0; }
+
+    .currentSearch p { margin:5px 0px 10px 0px; }
+    .currentSearch a { background: url('/sup/img/bg/remove_filter.gif') no-repeat top left; padding: 0px 0px 0px 25px; }
+    .currentSearch a.clearbtn { text-decoration:none; }
+    .currentSearch a.noclearbtn { background:none; padding-left:0px; padding-bottom:10px; }
+    .searchFields p { margin:10px 0 5px 0; }
+    .catalog_search { background: url('/sup/img/bg/catalog_search_bg.gif') repeat-x;
+        color: #666;  font-style: italic; font-size: 1.1em;
+        border: 1px solid #adaeaf; padding: 3px 5px 4px 4px;  margin:0;
+	    height:24px; width: 165px; }
+	input[type=checkbox].catalog_search { height: auto; width: auto; padding: 0;}
+    #catalogFilter .location span { display: inline; }
+    .search_ico { background: url('/sup/img/bg/search_icon.gif') no-repeat top right; padding:3px 0 3px 0; margin-left:-26px; border:none; height:19px; width:15px; }
+    .date_field { background: url('/sup/img/bg/catalog_search_bg.gif') repeat-x;
+        color: #666;  font-style: italic; font-size: 1.1em;
+        border: 1px solid #adaeaf; padding: 3px 5px 4px 24px;  margin:0;
+	    height:24px; width: 120px; }
+    .date_ico { background: url('/sup/img/bg/cal_icon.gif') no-repeat top right; padding:2px 0 4px 0; margin-left:-28px; border:none; height:19px; width:19px; }
+    div.dateWrapper { position: relative; }
+    span.clearDate {
+        display: none;
+        position: absolute;
+        color: #aaa;
+        font-weight:bold;
+        left: 8px;
+        top: 6px;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+    .filterCategory { margin:10px 0 5px 0; padding-top:5px; border-top:1px dotted #bbb; }
+    .filterCategory a { background: url('/sup/img/buttons/catalog_filter_expanded.gif') no-repeat top left; padding:3px 0px 0px 25px; }
+    .filterCategory a.drop_down { text-decoration:none; color:#436f76; }
+    .filterCategorySpecialty {padding-top: 15px; clear:both; }
+    .pagingoptions { float:right; margin-right:5px; }
+    .pageleft { margin-top:-3px; }
+    .pageright { margin-top:-3px; }
+    .cpeSearchResultsHeader { color:#603a1d; }
+    .displayHidden, .hd { display: none; }
+    a.drop_down.collapsed { background-image: url('/sup/img/buttons/catalog_filter_collapsed.gif'); }
+    #catalogFilter label.disabled { color: grey; }
+
+    #displayoptionsBottom { width:auto; float:left; margin-right:15px; }
+
+    #pagingoptionsBottom {  width:auto; float:right; margin:0; }
+    #pagingoptionsBottom a.pageoff { background:#f7ede0; width:26px; height:25px; padding:5px 6px 5px 6px; }
+    #pagingoptionsBottom a.pageon { background:#eedfcc; border:1px solid #603a1d; width:26px; height:25px; padding:5px 6px 5px 6px; font-weight:bold; }
+    #pagingoptionsBottom a { color:#603a1d; text-decoration:none; }
+
+    .ui-autocomplete a { cursor: pointer; }
+	
+	/* New Stuff */
+	table.cpeResultsTable td { font-size:14px; color:#333333; border:none; border-color:#FFF; border-style:none; }
+	table.cpeResultsTable td.title span { font-weight:normal; } 
+	table.cpeResultsTable td.time { white-space:nowrap; }
+
+
+	
+	table.cpeResultsTable td.cart a.add_gray, a.add { margin-top:-7px; padding-bottom:5px; }
+	
+	#pagingoptionsTop {  width:auto; float:right; margin:0; padding:0; margin-bottom:5px; }
+    #pagingoptionsTop a.pageoff { background:#f7ede0; width:26px; height:25px; padding:5px 6px 5px 6px; }
+    #pagingoptionsTop a.pageon { background:#eedfcc; border:1px solid #603a1d; width:26px; height:25px; padding:5px 6px 5px 6px; font-weight:bold; }
+    #pagingoptionsTop a { color:#603a1d; text-decoration:none; }
+	#pagingoptionsTop p.paging { margin-top:0; margin-bottom:10px; text-align:right; }
+	
+/* --------------------------------------------------------------------- */
+/* CPE SEARCH RESULTS
+/* --------------------------------------------------------------------- */
+
+.search_results .sort_results { margin-top: 1.2em; }
+.results_spacer { height: 2em; }
+.newcpe { background-color:#f1963d; padding:3px; color:#fff; font-weight:bold; font-size:0.7em; letter-spacing: 1px; text-transform:uppercase; }
+.newcpe.lg { font-size: 0.9em; letter-spacing:2px; padding:2px 5px; margin-bottom:3px; width:40px; }
+	
+
+/* --------------------------------------------------------------- */
+/* Self-study block on search results page */
+table.featured_cpe { margin: 3em 0px 1.4em 0px; padding: 0px; border: solid 1px #c0a185; border-collapse: collapse; }
+table.featured_cpe td { border: solid 1px #c0a185; padding: 15px 18px 5px 18px; background-color: #fff2e5; color: #6e6e6e; vertical-align: top; }
+table.featured_cpe td.credits_add { padding-top: 8px; }
+
+table.featured_cpe td.credits_add strong.credits
+{
+width: 122px; line-height: 28px; color: #fff;
+display: block; position: relative;
+left: -18px;
+margin-bottom: .5em;
+height: 28px;
+background: url(/sup/img/bg/featured_arrow_bg.gif) no-repeat top left transparent;
+padding-left: 15px;
+}
+
+table.featured_cpe td.information strong { color: #9c7a5e; }
+
+table.featured_cpe td.credits_add a.add
+{
+    display: block;
+    margin: 8px 0px;
+	color: #fff;
+	font-weight: 700;
+	text-transform:uppercase;
+    height: 40px;
+    outline: none;
+}
+
+a.add_to_cart 
+{
+    display: block;
+    margin: 8px 0px;
+    background: url(/sup/img/buttons/text/add_to_cart.gif) no-repeat top left;
+    width: 95px;
+    height: 27px;
+    text-indent: -9999px;
+    outline: none;
+}
+
+/* Self-study table */
+table.selfStudyProduct th:nth-child(1) { width:75%; }
+table.selfStudyProduct th:nth-child(2) { width:15%; }
+table.selfStudyProduct th:nth-child(3) { width:10%; }
+table.selfStudyProduct td:nth-child(3) { text-align:center; }
+
+/* --------------------------------------------------------------- */
+/* TAX HELP PAGE */
+#taxHelp { width:100%; }
+
+#taxHelp .taxHelpHeader h1 span { display:none; }
+#taxHelp .taxHelpHeader h1 { background-image: url('http://www.mncpa.org/images/public-resources/cpameasap-logo.jpg'); background-repeat: no-repeat; width:254px; height:106px; margin-bottom:15px; padding:0; }
+#taxHelp .taxHelpHeader h2 { color:#333333; font-size:40px; }
+
+#taxHelp .taxHelpHeader div.tagline { padding-bottom:25px; }
+
+#taxHelp .taxHelpHeader { width:100%; height:122px; }
+#taxHelp .taxHelpHeader div.logo { display:inline-block; float:left; width:30%; }
+#taxHelp .taxHelpHeader div.tagline { display:inline-block; float:left; width:45%; }
+#taxHelp .taxHelpHeader div + div { padding-left:20px; }
+
+/* Callout box */
+#taxHelp .taxHelpBox { width:100%; background-color:#333333; }
+
+#taxHelp .taxHelpBox .calltoaction { width:auto; height:225px; padding:30px 30px; }
+#taxHelp .taxHelpBox .calltoaction div.body { display:inline-block; float:left; width:55%; }
+#taxHelp .taxHelpBox .calltoaction div.buttons { display:inline-block; float:left; width:39%; }
+#taxHelp .taxHelpBox .calltoaction div + div { padding-left:30px; }
+
+#taxHelp .taxHelpBox h2 { color:#ffffff; font-size:26px; margin:0; padding:0; margin-bottom:10px; }
+#taxHelp .taxHelpBox p { color:#ffffff; padding-bottom:15px; }
+#taxHelp .taxHelpBox a.services { display:block; height:71px; width:300px; background-image:url('http://www.mncpa.org/images/public-resources/find-cpa-by-service.gif'); background-repeat:no-repeat; transition: all 0.3s ease 0s; }
+#taxHelp .taxHelpBox a.location { display:block; height:71px; width:300px; background-image:url('http://www.mncpa.org/images/public-resources/find-cpa-by-location.gif'); background-repeat:no-repeat;  transition: all 0.3s ease 0s; }
+#taxHelp .taxHelpBox a.location:hover{ background-image:url('http://www.mncpa.org/images/public-resources/find-cpa-by-location-hover.gif'); background-repeat:no-repeat; }
+#taxHelp .taxHelpBox a.services:hover { background-image:url('http://www.mncpa.org/images/public-resources/find-cpa-by-service-hover.gif'); background-repeat:no-repeat; }
+#taxHelp .taxHelpBox a.location:active { background-image:url('http://www.mncpa.org/images/public-resources/find-cpa-by-location-hover.gif'); background-repeat:no-repeat; }
+#taxHelp .taxHelpBox a.services:active { background-image:url('http://www.mncpa.org/images/public-resources/find-cpa-by-service-hover.gif'); background-repeat:no-repeat; }
+#taxHelp .services span, #taxHelp .location span { display:none; }
+
+/* Related stuff */
+#taxHelpRelated { margin:0 0 30px 0; padding-top:30px; }
+#taxHelpRelated .two-col { width:100%; height:150px; }
+#taxHelpRelated .two-col div { display:inline-block; float:left; width:47%; }
+#taxHelpRelated .two-col div + div { padding-left:30px; border-left:2px solid #B7B7B7; }
+#taxHelpRelated p { font-size:16px; padding-bottom:15px; }
+#taxHelpRelated h2 { color:#333333; font-size:26px; margin-top:0; padding-top:0; }
+
+/* Action links */
+a.taxaction { background-image:url('http://www.mncpa.org/images/public-resources/taxaction.gif'); background-repeat:no-repeat;color:#005290; text-decoration:none; font-family: Bitter, Georgia, "Times New Roman" , Times, serif; font-weight:700; padding-left:1.4em; }
+a.taxaction:hover { text-decoration:underline; }
+a.taxaction:active { text-decoration:underline; color:#0075cd; }
+
+
+
+/* --------------------------------------------------------------- */
+/* Firm Admin */
+
+/*** NEWS TABLE ***/
+
+/*
+.cpe_table_container.firm_admin_news { margin-bottom: 2em; }
+
+.cpe_table_container.firm_admin_news td { vertical-align: top; }
+
+.cpe_table_container.firm_admin_news td.date
+{
+    color: #838383;
+    padding: 12px 8px;
+    background-color: #f6f6f6;
+}
+
+.cpe_table_container.firm_admin_news td.detail
+{
+    color: #6e6e6e;
+    background-color: #fff;
+    padding: 10px 20px 0px 20px;
+    font-size: .9em;
+}
+
+.cpe_table_container.firm_admin_news td.detail a.title
+{
+    display: block;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+.cpe_table_container.firm_admin_news th.news_detail a
+{
+    display: block;
+    float: right;
+    color: #fff;
+    padding-right: 3px;
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: .9em;
+}
+*/
+
+/*** FIRM LOCATIONS ***/
+table.firm_locations
+{
+    border: solid 1px #c4a78d;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+}
+
+table.firm_locations td
+{
+    width: 50%;
+    padding: 10px 24px 0px 24px;
+    border: solid 1px #c4a78d;
+    background-color: #fff2e5;
+    color: #6c6c6c;
+}
+
+table.firm_locations td span.location
+{
+    display: block;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    background: url(/sup/img/bg/location_title.gif) no-repeat top right transparent;
+    position: relative;
+    left: -24px;
+    margin-bottom: 5px;
+    padding: 0px 16px 0px 24px;
+}
+
+table.firm_locations td span.main_office strong
+{
+    padding-left: 26px;
+    background: url(/sup/img/bg/main_office_red.gif) no-repeat 0px 50%;
+}
+
+table.firm_locations td span.clear
+{
+    display: block;
+    float: none;
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    line-height: 0px;
+    border: none;
+}
+
+table.firm_locations td span strong
+{
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Legend to show which office is main */
+strong.main_office_key
+{
+    float: right;
+    padding-left: 26px;
+    background: url(/sup/img/bg/main_office_white.gif) no-repeat 0px 50%;
+    line-height: 17px;
+    color: #558e6c;
+    font-size: .9em;
+    position: relative;
+    top: .6em;
+}
+
+/* THIS CAN BE BETTER DESIGNED */
+.section.logged_in strong { color: #9d6459; }
+
+/* ----------------------------------------------------------------------- */
+/* MY CPE SCHEDULE */
+
+
+/*** Schedule table ***/
+/**/
+.cpe_schedule .cpe_table_container { margin-bottom: 1.6em; }
+
+.cpe_schedule .cpe_table_container table td { vertical-align: top; padding: 12px 10px; }
+.cpe_schedule .cpe_table_container table td.date { background-color: #f6f6f6; }
+.cpe_schedule .cpe_table_container table td.balance { background-color: #efeffe; text-align: center; font-weight: bold; color: #1f9d45; }
+*/
+
+td.course_description { padding: 12px 10px; }
+td.course_description p { margin: 0px 0px .5em 0px; }
+
+
+/*** My CPE schedule options ***/
+/*
+ul.cpe_options li { float: left; line-height: 18px; padding-right: 0px; }
+ul.cpe_options li a { font-size: .8em; text-decoration: underline; }
+ul.cpe_options li.add_edit_session { padding-left: 16px; width: 89px; background: url(/sup/img/icons/add_edit_session.gif) no-repeat 0px 50%; }
+ul.cpe_options li.directions { padding-left: 19px; width: 55px; background: url(/sup/img/icons/directions.gif) no-repeat 0px 50%; }
+ul.cpe_options li.attendees { padding-left: 16px; width: 75px; background: url(/sup/img/icons/attendees.gif) no-repeat 0px 50%; }
+ul.cpe_options li.confirm { padding-left: 16px; width: 87px; background: url(/sup/img/icons/confirm.gif) no-repeat 2px 50%; }
+ul.cpe_options li.cancel { padding-left: 20px; width: 56px; background: url(/sup/img/icons/cancel.gif) no-repeat 4px 50%; }
+ul.cpe_options li.add_to_calendar { padding-left: 16px; background: url(/sup/img/icons/add_to_calendar.gif) no-repeat 0px 50%; }
+*/
+
+
+.total_due_pay_now
+{
+    height: 41px;
+    width: 460px;
+    background: url(/sup/img/bg/total_due.gif) no-repeat top left;
+    position: relative;
+    line-height: 41px;
+    font-size: 1.3em;
+    color: #754633;
+    margin: 0px 0px 2.5em 0px;
+    padding: 0px 0px 0px 12px;
+}
+
+.total_due_pay_now strong
+{
+    color: #22a048;
+    font-size: 1.1em;
+}
+
+.total_due_pay_now a.pay_now
+{
+    height: 26px;
+    width: 123px;
+    display: block;
+    position: absolute;
+    right: 7px;
+    top: 8px;
+    text-indent: -9999px;
+    outline: none;
+}
+
+
+
+/***********************************************************************/
+/* JOIN */
+.joing_intro
+{
+    width: 475px;
+}
+
+a.apply_benefit
+{
+    display: block;
+    background: url(/sup/img/callouts/apply_benefit.jpg) no-repeat top left;
+    width: 145px;
+    height: 106px;
+    text-indent: -9999px;
+    outline: none;
+    margin: 0px 10px 1.4em 0px;
+    float: right;
+}
+
+#join_in_this_section
+{
+    width: 635px;
+    height: 292px;
+    position: relative;
+    margin: 0px 0px 2.5em 0px;
+    background: url(/sup/img/callouts/join_in_this_section.jpg) no-repeat top left;
+}
+
+
+#join_in_this_section h2
+{
+    color: #ffd996;
+    margin-top: .4em;
+    line-height: 1em;
+    margin-bottom: .25em;
+}
+
+#join_in_this_section #cpas h2, #join_in_this_section #students h2
+{
+    color: #ffd996;
+    margin-top: .6em;
+    line-height: 1em;
+    margin-bottom: .2em;
+}
+
+#join_in_this_section h2 a
+{
+    color: #ffd996;
+    margin-top: .5em;
+    line-height: 1em;
+    margin-bottom: .2em;
+    text-decoration: none;
+}
+
+#join_in_this_section a.go
+{
+    display: block;
+    width: 34px;
+    height: 26px;
+    position: absolute;
+    top: 0px;
+    right: 9px;
+    text-indent: -9999px;
+    outline: none;
+    margin-top: .5em;
+}
+
+#join_in_this_section p
+{
+    color: #f6ecf4;
+    line-height: 1.2em;
+    margin: 0px;
+    font-size: .85em;
+    padding-right: 15px;
+}
+
+#join_in_this_section div
+{
+    padding-left: 118px;
+}
+
+#join_in_this_section #cpas
+{
+    width: 185px;
+    height: 127px;
+    top: 15px;
+    left: 0px;
+    position: absolute;
+}
+
+#join_in_this_section #cpas ul, #join_in_this_section #cpas ul li
+{
+    margin: 0px;
+    padding: 0px;
+    background: none;
+}
+
+#join_in_this_section #cpas ul li
+{
+    padding-left: 8px;
+    color: #fff2c4;
+    font-size: .8em;
+    background: url(/sup/img/bg/join_ul_arrow.gif) no-repeat 0px .3em;
+}
+
+#join_in_this_section #young_professionals
+{
+    width: 185px;
+    height: 127px;
+    top: 15px;
+    right: 0px;
+    position: absolute;
+}
+
+#join_in_this_section #students
+{
+    width: 185px;
+    height: 127px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+#join_in_this_section #other_professionals
+{
+    width: 185px;
+    height: 127px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+}
+
+p.join_ctas
+{
+    position: relative;
+    top: -.7em;
+}
+
+p.join_ctas a
+{
+    font-size: 1.2em;
+    padding-right: 15px;
+    line-height: 1.4em;
+}
+
+p.join_ctas a.apply_now
+{
+    padding-left: 15px;
+    border-left: solid 1px #919292;
+}
+
+/***********************************************************************/
+/* GR (GOV RELATIONS, LEGISLATIVE) */
+#grPhotos img, #flickrPhotos img { display:block; float:left; width:148px; height:148px; margin-right:4px; margin-bottom:4px; }
+#grPhotos+div, #flickrPhotos+div{ margin-bottom:10px; }
+
+.gr_digest {  width:225px; display:inline-block; float:left; margin: 0 10px 0 0; }  
+.gr_digest .header { height:39px; margin-bottom:5px; background-image: url(http://www.mncpa.org/sup/img/callouts/gr-leg-digest-header.jpg); }
+.gr_digest h2 { display:none; }
+.gr_digest .image { border:0; padding:0px; width:225px; height:60px; }
+.gr_digest .content {  border:0; padding:10px; background-image: url(http://www.mncpa.org/sup/img/callouts/gr-leg-digest-bkg.jpg); background-repeat: repeat-x; } 
+
+.gr_captrans { width:225px; display:inline-block; float:left; margin:0px; }
+.gr_captrans .header { height:39px; margin-bottom:5px; background-image: url(http://www.mncpa.org/sup/img/callouts/gr-cap-trans-header.jpg); }
+.gr_captrans h2 { display:none; }
+.gr_captrans .image { border:0; padding:0px; width:225px; height:60px; }
+.gr_captrans .content { border:0; padding:10px; background-image: url(http://www.mncpa.org/sup/img/callouts/gr-cap-trans-bkg.jpg); background-repeat: repeat-x; }
+
+/***********************************************************************/
+/* YOUNG PROFESSIONALS GROUP */
+
+.ypg_cpe { background-image: url(http://www.mncpa.org/sup/img/ypg/ypg-cpe-bar.jpg); }
+.ypg_cpe .content { border-color: #6d9a23; }
+
+.ypg_news { background-image: url(http://www.mncpa.org/sup/img/ypg/ypg-news-bar.jpg); }
+.ypg_news .content { border-color: #e68449; }     
+
+.ypg_events { background-image: url(http://www.mncpa.org/sup/img/ypg/ypg-events-bar.jpg); }
+.ypg_events .content { border-color: #4e9ae1; }     
+
+
+.ypg_container {  }
+
+.ypg_profile {  width:225px; display:inline; float:left; margin: 0 10px 0 0; }  
+.ypg_profile .header { height:37px; margin-bottom:5px; background-image: url(http://www.mncpa.org/images/ypg/ypg-profile-header.jpg); }
+.ypg_profile h2 { display:none; }
+.ypg_profile .image { border:0; padding:0px; width:225px; height:96px; }
+.ypg_profile .content {  border:0; padding:10px; background-image: url(http://www.mncpa.org/images/ypg/ypg-profile-bkg.jpg); background-repeat: repeat-x; }
+.ypg_profile a.name { font-weight:700; text-decoration:none; } 
+.ypg_captain { width:225px; display:inline; float:left; margin:0px; }
+.ypg_captain .header { height:37px; margin-bottom:5px; background-image: url(http://www.mncpa.org/images/ypg/ypg-captains-corner-header.jpg); }
+.ypg_captain h2 { display:none; }
+.ypg_captain .image { border:0; padding:0px; width:225px; height:96px; }
+.ypg_captain .content { border:0; padding:10px; background-image: url(http://www.mncpa.org/images/ypg/ypg-captain-bkg.jpg); background-repeat: repeat-x; }
+
+
+
+/*******************************************************************************************/
+/*******************************************************************************************/
+/* SIERRA BRAVO ADDED STYLES */
+/*******************************************************************************************/
+
+/* --------------------------------------------------------------------- */
+/* Errors
+/* --------------------------------------------------------------------- */
+
+
+.error
+{
+    color: #d1111f;
+    border: solid 1px Red;
+    display: block;
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+ul.error li
+{
+    
+}
+
+
+#interior_content p.success,
+#interior_content .messages div.success,
+#interior_content > div.success
+{
+    display: block;
+    padding: 10px;
+    background: #95EFA5;
+    border: 1px solid green;
+    margin-bottom: 10px;
+    font-weight:bold;
+}
+#interior_content p.information,
+#interior_content > div.information,
+#interior_content .messages div.information
+{
+    display: block;
+    padding: 10px;
+    border: 1px solid #dadada;
+    margin-bottom: 10px;
+    font-weight:bold;
+    background-repeat: no-repeat;
+}
+
+#interior_content p.information span,
+#interior_content > div.information span,
+#interior_content .messages div.information span
+{
+    background-image: url(/sup/css/smoothness/images/ui-icons_2e83ff_256x240.png);
+    background-position: -16px -144px;
+    display: block;
+    float: left;
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+
+}
+
+#interior_content p.information ul,
+#interior_content > div.information ul,
+#interior_content .messages div.information ul
+{
+    margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------- */
+/* FAQs
+/* --------------------------------------------------------------------- */
+
+.faq .question 
+{
+    font-size:1.35em;
+    line-height:1.3em;
+    padding: 7px auto 7px auto;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.faq .answer 
+{
+    margin-bottom: 20px;
+    padding: 7px 7px 20px 7px;
+    border-bottom:1px dotted #d9b373; 
+}
+
+/* ----------------------------------------------------------------------------
+    CPE Calendar
+*/
+.cpe_calendar
+{
+    text-align:left;
+    vertical-align:top;   
+}
+
+.cpe_calendar_header
+{
+    margin:0px;
+    border:0px;
+    background-color:#FFF;
+    font-size:1em;
+}
+
+/* --------------------------------------------------------------------- */
+/* My CPE Log Widget
+/* --------------------------------------------------------------------- */
+
+.form_data table 
+{
+    border: 0;
+}
+
+.form_data table td
+{
+    border: 0;
+    padding: 4px 10px;
+    vertical-align: top;
+}
+
+.form_data table table 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.form_data input.text,
+.form_data input.pass
+{
+    display: block;
+    clear: right;
+    margin-bottom: 3px;
+}
+
+
+/*************************************************************************/
+/* PRINT */
+
+#print_header, .print_header, .printonly { display: none; }
+
+/*************************************************************************/
+/* MAJOR NAV */
+#nav { 
+	width: 100%; 
+	margin: 0 auto;
+	margin-top:15px;
+}
+.nav_interior {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.major_nav
+{
+	width: 100%;
+	top: 0;
+    height: 50px;
+    list-style-type: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 50;
+}
+
+.major_nav li
+{
+    float: left;
+    margin: 0;
+	padding:0;
+	list-style: none;
+	background: none;
+	margin-left: 40px;
+}
+
+.major_nav li a.main_nav_link:link, .major_nav li a.main_nav_link:visited
+{
+	position: relative;
+	top: 0;
+    height: 50px;
+	background-image:none;
+	background: none;
+	color: #333333;
+	text-decoration:none;
+}
+.major_nav li a.main_nav_link:hover {
+	/*background: url(/sup/img/template/down-arrow-white-sm.png) no-repeat bottom center;*/
+	height:100px;
+	min-width:43px;
+	padding-bottom:42px;
+	z-index:300;
+}
+.major_nav li:hover {
+	border-bottom:2px solid #666666;
+	display:inline;
+}
+
+.major_nav .findacpa, .major_nav .more { display: none; }
+
+/*****************************************************************************************/
+/* SUB-NAVIGATION */
+.sub_nav
+{
+    background: #e2e2e2;
+	width: 100%;
+    position: absolute;
+    top: 50px;
+	left: 0;
+    padding: 15px;
+    margin: 0;
+	display:none;   
+}
+.sub_nav li
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: none;
+    clear: left;
+    text-indent: 0px;
+	display:inline-block;
+	vertical-align: top;
+    line-height: 1;
+    z-index: 30;
+	font-weight: 600;
+}
+.sub_nav li a img
+{
+    display: inline;
+    vertical-align: -1px;
+}
+
+.sub_nav li a:link, .sub_nav li a:visited
+{
+    position: static;
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 10px;
+    display: inline-block;
+}
+.sub_nav li a:hover, .sub_nav li a:focus
+{
+    background: #f2f2f2;
+}
+.sub_nav li span.more {
+	position: static;
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 10px;
+    display: block;
+}
+.subsub_nav li { display:block; font-weight: 400; }
+
+
+.cufon shapef
+{
+    position: relative;
+    z-index: 0;
+}
+
+/* --------------------------------------------------------------------- */
+/* Left hand menu
+/* --------------------------------------------------------------------- */
+#sub_navigation { display:inline-block; vertical-align:top; margin-right: 45px; margin-top: 12px; max-width: 30%;}
+
+/** First level **/
+#sub_navigation ul { margin:0; padding: 0; background: none; list-style-type: none; }
+#sub_navigation ul li { width: 200px; margin:0; padding: 8px 0 8px 20px; border-bottom: solid 1px #cad2c5; background: none; }
+
+/* <~> Added www.mncpa.org so left nav > appears */
+#sub_navigation ul li.expanded, #sub_navigation ul li.current  { background: url(http://www.mncpa.org/sup/img/template/left-nav.gif) no-repeat 0 10px transparent; }
+#sub_navigation ul li.expanded a, #sub_navigation ul li.current a { font-weight:900; color: #005291; }
+
+#sub_navigation ul li a { color: #000000; display: block; text-decoration: none; }
+#sub_navigation ul li a:hover { text-decoration: underline; }
+
+/** Second level **/
+#sub_navigation ul li ul { margin: 7px 0px 4px 0px; padding: 0px; display: none; }
+#sub_navigation ul li.expanded ul { display: block; }
+
+/* Off */
+#sub_navigation ul li ul li
+{
+    width: 185px; margin: 0px; padding: 2px 0px 4px 15px; border-bottom: solid 1px #cad2c5; background: none;
+}
+#sub_navigation ul li ul li:last-child { border-bottom:none; }
+#sub_navigation ul li ul li a { font-size: .9em; color: #000000 !important; font-weight:400 !important; }
+
+/* On */
+#sub_navigation ul li ul li.current{ background: url(/sup/img/template/left-nav-sm.gif) no-repeat 0 9px transparent; }
+#sub_navigation ul li ul li.current a { font-weight:900 !important; color: #005291 !important; }
+
+/** Third level **/
+#sub_navigation ul li ul li.current li a { font-size: .9em; color: #000000 !important; font-weight:400 !important; }
+
+
+/* --------------------------------------------------------------------- */
+/* Right Hand Column
+/* --------------------------------------------------------------------- */
+
+#secondary_content { width: 15%; float:right; display:inline-block; vertical-align:top; margin-left:25px; padding-bottom:20px; }
+
+#secondary_content .section
+{
+    background: #fff;
+    padding: 15px 10px 10px 10px; margin:0;
+}
+/** RHC header **/
+#secondary_content h2 { color: #484848; font-size: 1.35em; letter-spacing: -0.05em; line-height:1.2em; margin-top: 0.1em; margin-left:-0.1em; } /* #5b4873 */
+#secondary_content h2.members_only
+{ 
+    letter-spacing: 0px; line-height: 1.15em; text-indent: 30px; 
+    background: url(/sup/img/template/memebrs_only_icon_secondary.gif) no-repeat 1px .2em transparent;
+}
+#secondary_content h3 { font-size: 0.85em; font-weight: bold; color: #5b5b5b; }
+
+/** Text, p, ul, image styles **/
+#secondary_content .section p, #secondary_content .section ul { font-size: .95em; color: #5b5b5b; margin-bottom: .6em; }
+#secondary_content .section a { text-decoration: underline; }
+
+#secondary_content a strong, #secondary_content strong a { font-weight:normal; }
+
+#secondary_content .section ul { margin-left: -25px; margin-bottom: 0.9em; }
+#secondary_content .section ul li { background-position: 1.9em 0.35em; }
+#secondary_content ul.action li { margin-left: 45px; }
+
+/** Table styles **/
+#secondary_content table { margin-bottom: 0.8em; border: 0; margin-left: -1px; }
+#secondary_content table tr { line-height: 1.2em; }
+
+#secondary_content table th, 
+#secondary_content table td { font-size: 0.85em; padding: 3px; border: 0; padding-right: 0; padding-bottom: 0; }
+#secondary_content table th { background: none; color: #333333; }
+
+/** Right hand nav **/
+#secondary_content .menu ul
+#secondary_content .menu li { padding-left: 2px; line-height: 15px; margin-bottom: 6px; background: none; }
+#secondary_content .menu img { float: left; margin-right: 5px; }
+#secondary_content .menu a { color: #22769D; }
+#secondary_content .menu li.current { font-weight: bold; }
+#secondary_content .menu li.current a { color: #8D5B57; }
+
+/** My MNCPA stuff **/
+#secondary_content .section.my_profile p > a { font-size: inherit; }
+#secondary_content .section.my_cpe_log .disclaimer { font-style: italic; font-size: 0.6em; line-height: 1.1em; }
+
+
+
+/* --------------------------------------------------------------------- */
+/* Main Content
+/* --------------------------------------------------------------------- */
+
+#interior_content { width: 50%; float:middle; display:inline-block; z-index: 10; padding-top: 15px;  }
+#interior_content_container_full #interior_content { width: 75%; float:right; display:inline-block; z-index: 10; padding-top: 15px; }
+
+
+
+/* --------------------------------------------------------------------- */
+/* Content
+/* --------------------------------------------------------------------- */
+
+#content_container { background: #fff; }
+
+#content_shadow { background: #fff; width: 1100px; margin: 0 auto; padding: 0 50px 20px 50px; }
+
+/* 
+#main_column { float: right; width: 66%; } 
+#secondary_column { float: left; width: 28%; padding-right:20px; border-right:1px solid #b6b6b6; } 
+*/
+
+Line #2502
+/* 3 column layout - main content container */
+#interior_content_container
+{
+    width: 100%;
+                padding-bottom:40px;
+    margin: 0 auto;
+}
+/* 2 column layout - main content container */
+#interior_content_container_full
+{
+    width: 100%;
+                padding-bottom:40px;
+    margin: 0 auto;
+}
+rgin: 0 auto;
+}
+
+
+/* Main content gray callout blocks - where old RHC should go */
+.callout_module {
+	background: #e7e7e7;
+	border-top:2px solid #005291;
+	padding:0 25px 25px 25px;
+	margin:25px 0;
+}
+.callout_module h2 { margin-bottom:5px; }
+.callout_module h3 { margin-top:0; font-size:1.2em; }
+
+.no_email_link #interior_content_container 
+{
+    background: #fff;
+}
+
+.no_email_link #interior_content_container_full 
+{
+    background: #fff;
+}
+
+/* --------------------------------------------------------------------- */
+/* Header
+/* --------------------------------------------------------------------- */
+
+#header_container
+{
+    background: #ffffff;
+}
+
+#header
+{
+    background: none;
+    width: 1100px;
+    height: 115px;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+}
+
+#header_container_interior
+{
+	/* <~> Added www.mncpa.org so header bg appears */
+    background: #005291 url(http://www.mncpa.org/sup/img/template/header-bkg-interior.jpg) no-repeat top left;
+}
+
+#header_interior
+{
+    width: 1100px;
+    height: 115px;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+}
+
+#logo
+{
+    float: left;
+    position: absolute;
+    top: 22px;
+    margin: 0px;
+}
+
+#minor_nav
+{
+   display:none;
+}
+
+/* DON'T NEED MINOR NAV STYLES
+#minor_nav li
+{
+    background: url(/sup/img/template/nav/minor_nav_bullet.gif) no-repeat right;
+    float: left;
+    padding-left: 0px;
+    padding-right: 12px;
+    margin-right: 8px;
+    position: relative;
+    top: 22px;
+    font-size: 0.9em;
+}
+
+#minor_nav li a {
+    color: #e4d3c7;
+    text-decoration: none;
+}
+
+#minor_nav li a:hover {
+    text-decoration: underline;
+}
+
+#minor_nav li.last_item, #minor_nav li.site_search
+{
+    background: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+*/
+
+.site_search
+{
+    position: absolute;
+    top: 61px;
+    right: 52px;
+    width: 242px;
+}
+
+.site_search.inline_labels label { margin-top: 4px;  text-transform: none; }
+
+.site_search fieldset { border: 0; margin: 0; padding: 0; }
+
+#minor_nav li a { color: #e4d3c7; text-decoration: none; }
+
+/* Hiding old go button */
+.site_search fieldset input.search_go
+{
+	display:none;
+	vertical-align: middle; position: relative; 
+	width:33px; height: 26px; margin: -2px 0 0 0;
+	
+	/* <~> Added www.mncpa.org so this works */
+	background: transparent url('http://www.mncpa.org/sup/img/buttons/text/go_button.gif') top left;
+	border:none; 
+}
+
+.site_search fieldset .search_field
+{
+	/* <~> Added www.mncpa.org so search icon appears */
+    background: #fff url('http://www.mncpa.org/sup/img/icons/search-icon.jpg') no-repeat top right; padding:5px 0 5px 0; margin-left:-24px; border:none; height:29px; width:29px;
+    color: #666;  font-style: italic; font-size: 1.1em;
+    border:1px solid #cbcbcb; padding: 3px 5px 0 20px;  margin:0;
+	height:30px; width: 220px;
+}
+
+#mobileSearch { display:none; }
+
+/* --------------------------------------------------------------------- */
+/* Ads
+/* --------------------------------------------------------------------- */
+
+#ad_space a
+{
+    display: block;
+    margin-top: 1.2em;
+    padding-left: 27px;
+}
+
+/** NO AD STYLES **/
+/* Pages without ads = <body class="no_advertisement"> */
+
+body.no_advertisement #interior_content_container, body.no_advertisement #interior_content_container_full
+{
+    background-position: 0 -50px;
+}
+body.no_advertisement #page_controls
+{
+    top: 158px;
+}
+body.no_advertisement #advertisement
+{
+    display: none;
+}
+
+/** AD INCLUDED STYLES **/
+#advertisement
+{
+	width:100%;
+    background: #e1e1e1;
+    padding: 0;
+    margin: 0 auto;
+}
+.ad_interior
+{
+	width:1200px;
+	margin:0 auto;
+	height:93px;
+}
+.ad_interior div.ad_intro { display:inline-block; width:25%; text-transform:uppercase; font-size:0.8em; text-align:right; padding:0 20px; vertical-align:top; margin-top:25px; }
+.ad_interior div.ad_message { display:inline-block; width:35%; border-left:1px solid #4c4c4c; padding-left:20px; vertical-align:top; margin-top:25px; }
+.ad_interior div.ad_message h3 { font-weight:700; margin:0; }
+.ad_interior div.ad_message p { margin:0; }
+.ad_interior div.ad_image { display:inline-block; width:30%; float:right; }
+
+#advertisement img { border: none; }
+
+/* --------------------------------------------------------------------- */
+/* Footer
+/* --------------------------------------------------------------------- */
+
+#footer { background:#333333; width:100%; }
+.footer_container { background:#333333; width:1100px; margin: 0 auto; padding: 50px 0 50px 0; min-height:225px; }
+
+.footer_block { display:inline-block; width:33%; vertical-align:top; }
+
+.footer_block p { color:#fff; }
+#footer p.header a { color:#ffffff; text-decoration:none; }
+
+#footer a { color:#ffffff; }
+#footer a:hover { color:#f2f2f2; }
+
+#footer ul.links { margin:0; padding:0; float:left; margin-right:40px; }
+#footer ul.links li { background-image: none; list-style: none; padding:0; }
+#footer ul.links li.showOnMobileOnly { display:none; }
+
+@media screen and (max-device-width:1022px) and (max-width:720px)
+{
+   #footer ul.links .useMobileLink { display:inline; } 
+}
+
+#footer p.contact { }
+
+#footer ul.socnet { margin:0; float:left; }
+#footer ul.socnet li { display:inline-block; background-image:none; list-style:none; padding:0; margin:0; }
+#footer ul.socnet li img { padding: 5px 5px 5px 0; }
+#footer ul.socnet li img:hover { filter:brightness(1.1); }
+
+/*****************************************************************************/
+/* FORM STYLES */
+
+/********************************************************/
+/* STEP WALKER */
+.step_walker
+{
+    background: #333333;
+}
+
+.step_walker ul
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.step_walker ul li
+{
+    float: left;
+	height: 35px;
+    margin: 0px;
+    padding: 30px 13px 0 13px;
+    line-height: 1em;
+    font-size: 1.2em;
+    background: none;
+	list-style-type:none;
+}
+
+.step_walker ul li a:link, .step_walker ul li a:visited, .step_walker ul li a:active
+{
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+    color: #e2e2e2;
+    font-size: .9em;
+    text-decoration: none;
+}
+
+.step_walker ul li a:hover
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+.step_walker ul li a span
+{
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    margin-right: -10px;
+    width: 21px;
+    height: 19px;
+    font-size: .9em;
+    padding-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+}
+
+.step_walker ul li.current
+{
+	background-color: #cbcbcb;
+	padding-top:33px;
+}
+
+.step_walker ul li.current a:link, .step_walker ul li.current a:visited, .step_walker ul li.current a:active, .step_walker ul li.current a:hover
+{
+	/*background: url(/sup/img/template/form-down-arrow.png) no-repeat center bottom transparent;*/
+    font-weight: bold;
+    color: #000;
+	padding-bottom:25px;
+	z-index:10;
+}
+
+.step_walker ul li.current a span
+{
+    font-size: .9em;
+    padding-top: 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+.step_walker input 
+{
+    margin-top: 11px;
+    float: right;
+    margin-right: 12px;
+}
+
+.step_walker.no_numbers ul li a:link,
+.step_walker.no_numbers ul li a:visited,
+.step_walker.no_numbers ul li a:active
+{
+    padding-top: 18px;
+}
+
+.step_walker.no_numbers ul li.current a 
+{
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+/********************************************************/
+/* GENERAL FORMS */
+.form_container
+{
+    background-color: #f2f2f2;
+    padding: 20px 25px;
+    margin-bottom:25px;
+}
+
+.form_container .required
+{
+    color: #9f4c5b;
+}
+
+.form_container h2 { color: #000000; margin-top:10px; }
+.form_container h2 span { color: #457a42; }
+
+span.required.coaching { float: right;  padding-right: 17px; }
+
+.form_container field { margin: 0px; padding: 0px; border: none; }
+
+.form_container .formRadioCheckbox br { display:none; }
+.form_container .formRadioCheckbox span.radio { padding-right: 2em; }
+
+.form_container fieldset
+{
+    margin: 0px;
+	padding: 10px 0 0 0;
+    border: none;
+}
+
+.form_container fieldset table th { white-space:nowrap; }
+
+.form_container fieldset table { width:100%; }
+.form_container fieldset table, .form_container fieldset table th, .form_container fieldset table td
+{
+    vertical-align:top;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background: none;
+    color: #6e6e6e;
+}
+
+.form_container fieldset table th.multi, .form_container fieldset table td.multi { vertical-align:top; }
+
+.form_container fieldset label
+{
+    font-size: 1em;
+    color: #586175;
+    font-style: normal;
+    text-transform: none;
+    display: inline;
+}
+
+.form_container fieldset table th { padding-right: 20px; }
+
+.form_container fieldset table thead th 
+{
+    text-align: left;
+    padding: 0;
+    font-weight: bold;
+    border-bottom: 2px solid #a0a0a0;
+}
+
+.form_container fieldset table p
+{
+    margin-bottom: .6em;
+    font-size: .9em;
+}
+
+.form_container table.dues
+{
+    width:450px;
+}
+.form_container table.dues th
+{
+    text-align:left;
+}
+span.attn
+{
+    color: #9f4c5b;
+}
+
+.form_container fieldset table textarea
+{
+    width: 98%;
+    height: 100px;
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    border: solid 1px #afa88e;
+    margin-bottom: .7em;
+}
+
+.form_container fieldset table input
+{
+    padding: .3em .2em;
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin-bottom: .7em;
+    border: solid 1px #afa88e;
+}
+.form_container fieldset table select {  margin-bottom: .7em; }
+.form_container fieldset table input.full { width: 98%; }
+
+.word_count { float: left; vertical-align: middle; line-height: 1em; }
+.word_count span { text-transform: uppercase; color: #71564e;  }
+.word_count strong {  color: #9f7a6f; }
+
+.form_container fieldset table input.submit { border: none;  padding: 0px; background: none; }
+.form_container fieldset table input.preview_ad {  float: right; }
+
+span.speaker_name { font-size: 1.1em; }
+
+.input-error, table.input-error tr, table.input-error label { background-color: #FF6666; color:#fff; }
+
+/* --------------------------------------------------------------------- */
+/* Page Elements
+/* --------------------------------------------------------------------- */
+
+#page_controls { position: absolute; top: 208px; z-index: 40; right: 27px; width: 186px; margin:0; padding:0; }
+#page_controls a { display: block; width: 18px; height: 27px; text-indent: -9999px; outline: none; float: left; }
+
+#homepage #page_controls, #page_controls a.increase, #page_controls a.decrease, .no_email_link #page_controls a.email, #page_controls #initialFontSize  { display:none; }
+#page_controls a.print { width: 90px; margin-right: 0; }
+#page_controls a.email { width: 95px; }
+
+a.printer {  background: url('/sup/img/icons/print-clear.gif') no-repeat 0 -0.25em transparent; padding-left:2.0em;}
+a.cart {  background: url('/sup/img/icons/cart-clear.gif') no-repeat 0 -0.25em transparent; padding-left:1.5em;}
+
+
+/*****************************************************************************/
+/* LOGIN */
+
+/** MEMBER LOGIN BOX **/
+
+#login_column { width: 273px; float: left; margin: 0px 4em 0.25em 0; }
+#login_column .member_login { width: 233px; padding: 10px 20px; height: 134px; margin: 0px 0px 0.5em 0px; background: url(/sup/img/bg/member_login_block.jpg) no-repeat top left; }
+
+#login_column .member_login h2 { color: #ffd996; }
+
+#login_column .member_login table { margin: 0px; padding: 0px; border: none; }
+#login_column .member_login table th, #login_column .member_login table td { background: none; border: none; padding: 0px; }
+#login_column .member_login table th { text-align: right; color: #e9ecee; font-size: .9em; padding: 0px; vertical-align: middle; padding-right: 10px; }
+
+#login_column .member_login table td.input { vertical-align: middle; padding: .25em 0px; text-align: right; }
+
+#login_column .member_login table td.remember { vertical-align: middle; padding: .25em 0px; text-align: left; font-size: .9em; color: #fff; }
+#login_column .member_login table td.remember { vertical-align: middle; padding: .25em 0px; text-align: left; font-size: .9em; color: #fff; text-align: left; }
+#login_column .member_login table td.remember input { position: relative; top: .15em; padding: 0px; margin: 0px; }
+
+#login_column .member_login table td.go { vertical-align: middle; padding: .7em 0px 0px 0px; text-align: right; }
+#login_column .member_login table td.input input { width: 11em; border: solid 1px #1c5970; padding: 3px 5px; background: url(/sup/img/bg/login_input.jpg) repeat-x top left #f1f4f6; }
+
+#login_column .error { font-size: 0.85em; border: none; }
+
+#login_column p.loginOptions { margin:0 0 1em 0.5em; line-height:2em; }
+
+hr.loginDivider { clear:both; margin-bottom:1.5em; }
+
+
+/*****************************************************************************/
+/* Secondary Content Login
+/*****************************************************************************/
+
+#secondary_content .member_login td.input input { width: 94px; }
+#secondary_content .member_login .error { padding: 5px; }
+
+/*****************************************************************************/
+/* Lightboxes - modal windows
+/*****************************************************************************/
+
+.lightbox { display: none; }
+.definition { display: none; }
+.ui-dialog-titlebar a span { border-bottom: none; }
+.definition-container { }
+.definition-container.personal_development { width: 500px !important; }
+
+/*****************************************************************************/
+/* Date Range Selection Control
+/*****************************************************************************/
+
+.range_selector { width: 100%; }
+
+.range_selector:after 
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility:hidden;
+    zoom: 1;
+}
+
+.range_selector div { float:left; }
+
+.range_selector label
+{
+    display: block;
+    float: left;
+    clear: left;
+    margin: 0;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 0.15em;
+    margin-right: 0.9em;
+    margin-bottom: 0.6em;
+    text-transform: none;
+    width:3em;
+}
+
+.range_selector select { margin-bottom: 0.6em; }
+
+.range_selector ul { float:left; width:300px; margin: 0 0 15px 30px; padding:0; }
+.range_selector ul li { margin-bottom: 0.25em;  margin-top:0; }
+
+.range_selector .date_range { display:block; float:left; clear:right; }
+.date_range span { display: none; }
+
+/*****************************************************************************/
+/* Side Content Legends
+/*****************************************************************************/
+
+#secondary_content .legend li { background: none; position: relative; padding-left: 52px; padding-bottom:10px; }
+
+#secondary_content .legend li img { float: left; margin-right: 5px;  position: absolute; left: 25px; width:23px; }
+
+/*****************************************************************************/
+/* Inline Labels */
+/*****************************************************************************/
+
+ .inline_labels
+{
+    position: relative;
+    display: block;
+}
+
+.inline_labels label 
+{
+    position: absolute;
+    padding-left: 20px;
+    margin-top: 4px;
+    text-transform: none;
+	font-style:italic;
+    left: 0;
+    top: 0;
+}
+
+/*****************************************************************************/
+/* Committee Members */
+/*****************************************************************************/
+
+.committee_members #interior_content li img 
+{
+    display: inline;
+    vertical-align: middle;
+}
+
+/*****************************************************************************/
+/* Firm Admin CPE Payments (/firm-admin/_payment.aspx) */
+/*****************************************************************************/
+
+.firm_admin_payment #interior_content table { background-color:#fff; }
+
+.firm_admin_payment #interior_content .cpe_payment_form,
+.firm_admin_payment #interior_content .cpe_payment_form td 
+{ border: 0; font-size:1em;  background-color:#fff; }
+
+.firm_admin_payment #interior_content .cpe_payment_form td.overdue,
+.firm_admin_payment #interior_content .cpe_payment_form .note 
+{ color: #d1111f; }
+
+.firm_admin_payment #interior_content .cpe_payment_form table td a
+{ display: block;
+    float: left;
+    clear: both;
+    padding-left: 15px;
+    margin-left: 7px;
+    margin-top: 3px;
+    
+}
+
+.firm_admin_payment #interior_content tr.name input
+{
+    width: 150px;
+}
+
+.firm_admin_payment #interior_content tr.addressline1 input,
+.firm_admin_payment #interior_content tr.addressline2 input 
+{
+    width: 308px;
+}
+
+.firm_admin_payment #interior_content input.city 
+{
+    width: 230px;
+}
+
+.firm_admin_payment #interior_content input.state 
+{
+    width: 20px;
+}
+.firm_admin_payment #interior_content input.zip
+{
+    width: 41px;
+}
+
+/*****************************************************************************/
+/* View CPE Log Page
+/*****************************************************************************/
+
+.view_cpe_log #interior_content input 
+{
+    margin-bottom: 15px;
+}
+
+.view_cpe_log #interior_content .range_selector 
+{
+    width: 800px;
+}
+
+.view_cpe_log #interior_content label 
+{
+    font-weight: bold;
+    font-style: normal;
+    text-transform: none;
+}
+
+/** .REPORT STYLE **/
+.view_cpe_log #interior_content .report { margin-top: 1em; }
+.view_cpe_log #interior_content .report tr.not_approved { background-color: rgb(222, 226, 255); }
+.view_cpe_log #interior_content .report tr.approved { background: none; }
+.view_cpe_log #interior_content .report td img { float: left; margin-right: 5px; }
+
+.view_cpe_log #interior_content .report td span.details { display: block; clear: left; }
+     
+.view_cpe_log #interior_content .report td span.pend { font-size:12px; font-style:italic; color:#d1111f; }
+ 
+.view_cpe_log #interior_content table.report tr td { padding-bottom:15px; }
+.view_cpe_log #interior_content table.report tr td:first-child { padding-left:3px; padding-right:3px; text-align:center; }
+.view_cpe_log #interior_content table.report tr td:nth-child(2) { width:300px; }
+.view_cpe_log #interior_content table.report tr td:nth-child(3),
+.view_cpe_log #interior_content table.report tr td:nth-child(4),
+.view_cpe_log #interior_content table.report tr td:nth-child(5),
+.view_cpe_log #interior_content table.report tr td:nth-child(6) { text-align:center; }
+.view_cpe_log #interior_content .report ul { margin-bottom: 0; }
+.view_cpe_log #interior_content .report ul li { float: left; padding-left: 0; padding-right: 5px; margin-right: 10px; background-position: 0px 0.4em; }
+
+.view_cpe_log #interior_content .report .description img { width:20px; height:21px; }
+
+/** LEGEND **/
+.view_cpe_log #interior_content ul.legend li { background: none; padding: 0; }
+.view_cpe_log #interior_content ul.legend li img 
+{
+    float: left;
+    margin-right: 7px;
+}
+
+.view_cpe_log #interior_content ul.legend li span 
+{
+    display: block;
+    width: 25px;
+    height: 19px;
+    border: 1px solid black;
+    background-color: rgb(222, 226, 255);
+    float: left;
+    margin-right: 7px;
+}
+
+.view_cpe_log #interior_content table.totals 
+{
+    margin-top: 1em;
+}
+
+.view_cpe_log #interior_content .add_course 
+{
+    display: block;
+    clear: both;
+}
+
+.view_cpe_log #interior_content .board_approved 
+{
+    display: none;
+}
+
+.view_cpe_log #interior_content table.totals .insufficient_credits td,
+.view_cpe_log #interior_content table.totals .warning td
+{
+    color: #d1111f !important;
+}
+
+.view_cpe_log #interior_content table.totals .insufficient_credits td p.in_compliance 
+{
+    color: #5e7f70;
+    font-weight: normal;
+}
+
+.view_cpe_log #interior_content .sufficient_credits,
+.view_cpe_log #interior_content .in_compliance 
+{
+    color: #5e7f70 !important;
+}
+
+.view_cpe_log #interior_content .insufficient_credits 
+{
+    color: #d1111f !important;
+}
+
+.view_cpe_log #interior_content .confirm_delete 
+{
+    display: none;
+}
+
+.ui-dialog.delete 
+{
+    width: 450px !important;
+}
+
+.ui-dialog.delete .ui-widget-header 
+{
+    background: url("/sup/css/smoothness/images/ui-bg_highlight-soft_75_ec6969_1x100.png");
+}
+
+.ui-dialog.delete table,
+.ui-dialog.delete td
+{
+    border: none;
+    color: Black;
+}
+
+.ui-dialog.delete th
+{
+    background: none;
+    color: Black;
+    font-weight: bold;
+    font-size: inherit;
+    padding: inherit;
+    border: none;
+}
+
+/*****************************************************************************/
+/* CPE Log Success /member/controls/CPELogSuccess.ascx
+/*****************************************************************************/
+
+#interior_content .success.content 
+{
+    background-color: #DFDFDF !important;
+    border: 2px solid green !important;
+}
+
+#interior_content .success.content strong 
+{
+    color: Green;
+    display: block;
+    margin-bottom: 15px;
+}
+
+#interior_content .success.content table
+{
+    margin-bottom: 10px;
+}
+
+#interior_content .success.content table th
+{
+    background: none;
+    font-size: inherit;
+    font-weight: bold;
+    border: 1px solid black;
+    color: Black;
+    
+}
+
+#interior_content .success.content table td 
+{
+    border: 1px solid black;
+    color: Black;
+    font-weight: normal;
+}
+
+#interior_content .success.content ul.action 
+{
+    margin-bottom: 5px;
+    height: 15px;
+}
+
+#interior_content .success.content ul.action li 
+{
+    float: left;
+    margin-right: 10px;
+}
+
+/*****************************************************************************/
+/* Firm Admin Home
+/*****************************************************************************/
+
+.firm_admin_home #interior_content_container img
+{
+    float: left;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.firm_admin_home .firms_container 
+{
+    margin-bottom: 1em;
+}
+
+.firm_admin_home .firm 
+{
+    border: 1px solid gray;
+    padding: 5px;
+    width: 209px;
+    float: left;
+    min-height: 80px;
+}
+
+.firm_admin_home .firm p 
+{
+    margin: 0;
+}
+
+/*****************************************************************************/
+/* Firm Admin Employee List
+/*****************************************************************************/
+
+.employee_list #interior_content table ul 
+{
+    
+}
+
+.employee_list #interior_content table ul li 
+{
+    float: left;
+    background-position: 0 0.35em;
+    padding-right: 5px;
+    padding-left: 17px;
+}
+
+.employee_list #interior_content table ul li.update 
+{
+    background-image: url(/sup/img/icons/update.gif);
+}
+
+.employee_list #interior_content table ul li.register 
+{
+    background-image: url(/sup/img/icons/register.gif);
+}
+
+.employee_list #interior_content table ul li.remove 
+{
+    background-image: url(/sup/img/icons/x.gif);
+    
+}
+
+.employee_list #interior_content table ul li.join 
+{
+    background-image: url(/sup/img/icons/join.gif);
+}
+
+.employee_list #interior_content thead th 
+{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #127DE2;
+}
+
+
+/*****************************************************************************/
+/* Firm Admin Employee
+/*****************************************************************************/
+
+.firm_admin_employee #interior_content img
+{
+    float: left;
+}
+
+.firm_admin_employee #interior_content .employee_select 
+{
+    margin-bottom: 15px;
+}
+
+/*****************************************************************************/
+/* CPE Admin
+/*****************************************************************************/
+
+.cpe_admin #interior_content table ul li 
+{
+    float: left;
+    background-position: 0 0.3em;
+    padding-right: 5px;
+    padding-left: 19px;
+    background-repeat: no-repeat;
+}
+
+.cpe_admin #interior_content table ul li.pay 
+{
+    background-image: url(/sup/img/icons/dollar.gif);
+}
+
+.cpe_admin #interior_content ul.action li.cancel 
+{
+    background-image: url(/sup/img/icons/x.gif);
+}
+
+.cpe_admin #interior_content ul.action li.confirm 
+{
+    background-image: url(/sup/img/icons/confirm.gif);
+}
+
+.cpe_admin #interior_content ul.action li.sessions
+{
+    background-image: url(/sup/img/icons/edit.gif);
+}
+
+.cpe_admin #interior_content ul.action li 
+{
+    margin-left: 0;
+}
+
+.cpe_admin #interior_content ul.action li 
+{
+    list-style-image: none;
+}
+
+.cpe_admin .head
+{
+    display: none;
+}
+
+.cpe_admin
+
+/*****************************************************************************/
+/* CPE History
+/*****************************************************************************/
+
+.cpe_history #interior_content input 
+{
+    margin-top: 10px;
+}
+
+.cpe_history #interior_content table 
+{
+    margin-top: 10px;
+}
+
+.cpe_history #interior_content h2 
+{
+    margin-top: 10px;
+}
+
+.cpe_history #interior_content table td > a 
+{
+    font-weight: bold;
+}
+
+.cpe_history #interior_content table li 
+{
+    float: left;
+}
+
+.cpe_history #interior_content table li.transcript 
+{
+    background-image: url(/sup/img/icons/transcript.gif);
+}
+
+.cpe_history #interior_content table li.cpe_log 
+{
+    background-image: url(/sup/img/icons/cpe-log.gif);
+}
+
+/*****************************************************************************/
+/* CPE History
+/*****************************************************************************/
+
+.add_edit_cpe_log #interior_content .nav 
+{
+    display: block;
+    clear: right;
+}
+
+.add_edit_cpe_log #interior_content .nav:after 
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility:hidden;
+    zoom: 1;
+}
+
+.add_edit_cpe_log #interior_content .nav li 
+{
+    float: left;
+    background: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+}
+
+.add_edit_cpe_log #interior_content label 
+{
+    font-style: normal;
+    margin-top: 0;
+}
+
+.add_edit_cpe_log #interior_content td table,
+.add_edit_cpe_log #interior_content td table td
+{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.add_edit_cpe_log #interior_content .form_container fieldset table th 
+{
+    width: 200px;
+    vertical-align: text-top;
+    text-align: left;
+}
+
+.add_edit_cpe_log #interior_content th label 
+{
+    display: block;
+    float: left;
+    clear: right;
+}
+
+.add_edit_cpe_log #interior_content th a
+{
+    display: block;
+    float: left;
+    clear: both;
+    font-size: smaller;
+}
+
+.add_edit_cpe_log #interior_content td label 
+{
+    font-weight: bold;
+}
+
+
+
+.add_edit_cpe_log #interior_content .option 
+{
+    clear: right;
+    height: 43px;
+    margin-top: 5px;
+}
+
+.add_edit_cpe_log #interior_content .option p
+{
+    display: block;
+    float: left;
+    clear: both;
+    margin-left: 40px;
+}
+
+.add_edit_cpe_log #interior_content .option a.action span 
+{
+    border: none;
+    color: Black;
+    text-decoration: none;
+}
+
+.add_edit_cpe_log #interior_content .option:last-child 
+{
+    height: 22px;
+}
+
+.add_edit_cpe_log #interior_content label.primary 
+{
+    margin-bottom: 5px;
+    float: left;
+}
+
+.add_edit_cpe_log #interior_content label.secondary 
+{
+    margin-left: 20px;
+    margin-right: 8px;
+}
+
+.add_edit_cpe_log #interior_content fieldset table th a 
+{
+    font-size: smaller;
+}
+
+.add_edit_cpe_log #interior_content .nasba 
+{
+    width: 132px;
+}
+
+.form_container fieldset table .radio input,
+.form_container fieldset table .checkbox input
+{
+    border: 0;
+}
+
+.add_edit_cpe_log #interior_content .course_title input ,
+.add_edit_cpe_log #interior_content .vendor input,
+.add_edit_cpe_log #interior_content .location input 
+{
+    width: 400px;
+}
+
+.add_edit_cpe_log #interior_content .board_approval_status select 
+{   
+    margin-top:3px;
+}
+
+.add_edit_cpe_log #interior_content .qas .warning 
+{
+    display: none;
+    color: #d1111f;
+    font-weight: bold;
+    
+}
+
+.add_edit_cpe_log #interior_content div.secondary 
+{
+    padding-left: 43px;
+}
+
+.add_edit_cpe_log #interior_content .qas input
+{
+    clear: left;
+    float: left;
+}
+
+.add_edit_cpe_log #interior_content .qas input.secondary 
+{
+    margin-left: 40px;
+    margin-top: 3px;
+    clear: both;
+}
+
+.add_edit_cpe_log #interior_content .autocomplete 
+{
+    border: 1px solid black;
+    background-color: white;
+    z-index: 100;
+}
+
+.add_edit_cpe_log #interior_content .autocomplete li 
+{
+    background: none;
+    background-color: white;
+    margin-bottom: 0;
+}
+
+/*****************************************************************************/
+/* Transcript Control (/member/controls/TranscriptBlock)
+/*****************************************************************************/
+
+.transcript .user.address { float: left; width:55%; margin:0; }
+.transcript .report_parameters {  float: right; width:30%; margin:0; }
+.transcript .sponsor_note { clear:both; padding-top:15px; }
+
+.transcript .head:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility:hidden;
+    zoom: 1;
+}
+
+.transcript td.number { text-align: center; }
+
+.transcript td.code { text-align: center; }
+
+/*****************************************************************************/
+/* View Transcript Page (/member/my-cpe/view-transcript.aspx?l=14622&s=7%2f1%2f2007&e=6%2f30%2f2010)
+/*****************************************************************************/
+
+.transcript_container { border-top:3px solid #fa9a2a; padding-top:15px; }
+.view_transcript h2 { margin-bottom:15px; }
+
+.view_transcript #interior_content h3 { font-size: 1.2em; }
+
+.view_transcript #interior_content table th { font-size:0.9em; font-weight:bold; vertical-align:bottom; text-align:center; }
+.view_transcript #interior_content table th:nth-child(2) { text-align:left; }
+
+.view_transcript #interior_content table td:nth-child(2) { width:30%; }
+.view_transcript #interior_content table td:nth-child(3) { text-align:center; }
+
+.view_transcript #interior_content tr.session span.date { display:none; }
+.view_transcript #interior_content tr.session td:nth-child(2) { padding-left:25px; }
+
+.view_transcript #interior_content a.action { margin-bottom: 15px; display: block; }
+
+.view_transcript #interior_content table.summary td.cc { padding-left:25px; }
+
+/*****************************************************************************/
+/* Pay Firm Dues (/firm-admin/pay-firm-dues.aspx)
+/*****************************************************************************/
+
+.firm_admin_dues .employees 
+{
+}
+
+.firm_admin_dues  .employees input[id$=check_all]
+{
+    float: left;
+}
+
+.firm_admin_dues  .employees label[for$=check_all] 
+{
+    font-style: normal;
+    text-transform: none;
+    font-weight: bold;
+}
+
+.firm_admin_dues .employees table 
+{
+    border: none;
+}
+
+.firm_admin_dues .employees table td
+{
+    border: none;
+}
+
+.firm_admin_dues .total 
+{
+    margin-bottom: 1em;
+}
+
+.firm_admin_dues .total:after 
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility:hidden;
+    zoom: 1;
+}
+
+.firm_admin_dues .total label
+{
+    float: left;
+    margin-right: 5px;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 0;
+}
+
+/*****************************************************************************/
+/* Billing Address
+/*****************************************************************************/
+
+
+table.billing_address .name input, table.address .name input { width: 200px; }
+table.billing_address .address input, table.address .address input { width: 300px; } 
+table.billing_address input.city, table.address input.city{  width: 200px; }
+table.billing_address input.state, table.address input.state { width: 50px; }
+table.billing_address input.zip, table.address input.zip  { width: 100px; }
+
+/*****************************************************************************/
+/* Firm Admin ExamTracker (/Firm-Admin/Exam-Tracker.aspx)
+/*****************************************************************************/
+
+.firm_admin_examtracker #interior_content table td.passed 
+{
+    background-color: #c1e7bf;
+}
+
+.firm_admin_examtracker #interior_content table td.not_passed 
+{
+    background-color: #fff;
+}
+
+.firm_admin_examtracker #interior_content table td.passed.expiring 
+{
+    background-color: #faf8c3;
+}
+
+.firm_admin_examtracker #interior_content table td.passed.expired 
+{
+    background-color: #ccc;
+}
+
+.firm_admin_examtracker .legend dt 
+{
+    float: left;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #CEC9BF;
+    margin-bottom: 3px;
+}
+
+.firm_admin_examtracker .legend dd
+{
+    margin-left: 25px;
+    margin-bottom: 3px;
+}
+
+.firm_admin_examtracker .legend dt.passed
+{
+    background-color: #c1e7bf;
+}
+
+.firm_admin_examtracker .legend dt.scheduled
+{
+    background-color: #fff
+}
+
+.firm_admin_examtracker .legend dt.expiring
+{
+    background-color: #faf8c3;
+}
+
+.firm_admin_examtracker .legend dt.expired
+{
+    background-color: #ccc;
+}
+
+.firm_admin_examtracker .exam_sections dt 
+{
+    float: left;
+    width: 44px;
+}
+
+.firm_admin_examtracker .exam_sections dt:after
+{
+    content: " -";
+}
+
+.firm_admin_examtracker .exam_sections dd
+{
+    margin-left: 50px;
+}
+
+/*****************************************************************************/
+/* Homepage
+/*****************************************************************************/
+/*
+.home 
+{
+    
+}
+ Hiding old carousel 
+.home .rotator  
+{
+	display:none;
+    margin-bottom: 2.5em; 
+    position: relative;
+    left: 1px;
+    
+}
+
+.home .rotator #images_container a 
+{
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    
+    -moz-border-radius-topleft:5px;    
+    -moz-border-radius-topright:5px;
+    
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    
+    display: none;
+    width: 529px;
+    height: 125px;
+    
+    text-indent: -999999px;
+    outline: none;
+    
+}
+
+.home .rotator #images_container a:first-child
+{
+    display: block;
+
+}
+
+.home .rotator #image_pager 
+{
+    height: 41px;
+    width: 541px;
+}
+
+.mobile_banner { display:none; }
+
+.home .rotator #image_pager a 
+{
+    background-image: url(/sup/img/backgrounds/bottom_row_bg.png);
+    background-repeat: repeat-x;
+    
+    display: block;
+    width: 175px;
+    height: 41px;
+    line-height: 41px;
+    
+    float: left;
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #8d7070;
+    
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid #ccc6bc;
+    outline: none;
+    margin-right: 1px;
+    -webkit-border-bottom-right-radius:1px;
+    -moz-border-radius-bottomright:1px;        
+    border-bottom-right-radius:1px;
+}
+
+.home .rotator #image_pager a:first-child 
+{
+    border-left: 1px solid white;
+    
+    -webkit-border-bottom-left-radius:5px;
+    -moz-border-radius-bottomleft:5px;        
+    border-bottom-left-radius:5px;
+}
+
+.home .rotator #image_pager a:last-child 
+{
+    border-right: 1px solid white !important;
+    
+    -webkit-border-bottom-right-radius:5px;
+    -moz-border-radius-bottomright:5px;        
+    border-bottom-right-radius:5px;
+}
+
+.home .rotator #image_pager a:hover 
+{
+    text-decoration: underline;
+}
+
+.home .rotator #image_pager a.active 
+{
+    background-image: url(/sup/img/backgrounds/bottom_row_bg_active.png);
+    color: White;
+    border-right: 1px solid #8f6f4c
+}
+
+.home .rotator #arrow 
+{
+    display:block;
+    position: absolute;
+    top: 118px;
+    left: 24px;
+    background-image: url(/sup/img/icons/active_arrow.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 10px;
+    z-index: 5 !important;
+}
+
+.home .rotator #arrow.at_index_1
+{
+    left: 260px;
+}
+
+.home .rotator #arrow.at_index_2
+{
+    left: 492px;
+}
+
+*/
+
+/*****************************************************************************/
+/* News for CPAs(publications/news-for-cpas/)
+/*****************************************************************************/
+
+.news_for_cpas #interior_content ul li
+{
+    background: none;
+    margin-left: 0;
+    padding: 0;
+}
+
+.news_for_cpas #interior_content ul li span
+{
+    display: block;
+    clear: both;
+}
+
+/*****************************************************************************/
+/* ExamTracker Signup (/becoming-a-cpa/examtracker/Sign-Up.aspx)
+/*****************************************************************************/
+
+.exam_tracker_signup #interior_content th 
+{
+    width: 179px;
+}
+
+/*****************************************************************************/
+/* Exam Questions
+/*****************************************************************************/
+
+.exam_questions #interior_content p.incorrect 
+{
+    border: 1px solid red;
+    background-color: #ffebeb;
+    padding: 7px;
+}
+
+.exam_questions #interior_content p.correct 
+{
+    border: 1px solid green;
+    background-color: #d7f6d9;
+    padding: 7px;
+}
+
+.exam_questions #interior_content ul 
+{
+    margin-bottom:1.5em;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 1em;
+}
+
+.exam_questions #interior_content p 
+{
+    margin-bottom: 1em;
+}
+
+.exam_questions #interior_content ol li
+{
+    margin-top: 2px;
+    list-style-type: upper-alpha;
+    font-weight: bold;
+}
+
+.exam_questions #interior_content ol li .option 
+{
+    display: block;
+}
+
+.exam_questions #interior_content ol li .option input
+{
+    float: left;
+    position: relative;
+    left: -52px;
+}
+
+.exam_questions #interior_content ol li .option label
+{
+    position: relative;
+    left: -23px;
+    text-transform: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 17px;
+    padding-left: 21px;
+}
+
+.exam_questions #interior_content input[type="submit"]
+{
+    margin-bottom: 15px;
+}
+
+/*****************************************************************************/
+/* Student Mentors (/cpa-careers/accounting-students/student-mentors.aspx)
+/*****************************************************************************/
+.student_mentors #interior_content .mentors p { margin-bottom: 0; }
+.student_mentors #interior_content .mentors ul { margin-bottom: 10px; }
+
+/*****************************************************************************/
+/* CPE Schedule (/cpa-careers/accounting-students/student-mentors.aspx)
+/*****************************************************************************/
+
+.cpe_schedule .schedule .title,
+.firm_admin_employee .schedule .title
+{
+    font-size: 14px;
+    display:block;
+}
+
+.cpe_schedule .schedule ul,
+.firm_admin_employee .schedule ul
+{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.cpe_schedule .schedule ul li,
+.firm_admin_employee .schedule ul li
+{
+    float: left;
+    margin-right: 7px;
+}
+
+.cpe_schedule .schedule ul li.sessions,
+.firm_admin_employee .schedule ul li.sessions
+{
+    list-style-image: url(/sup/img/icons/edit.gif);
+}
+
+.cpe_schedule .schedule ul li.directions,
+.firm_admin_employee .schedule ul li.directions
+{
+    list-style-image: url(/sup/img/icons/car.gif);
+}
+
+.cpe_schedule .schedule ul li.attendees,
+.firm_admin_employee .schedule ul li.attendees
+{
+    list-style-image: url(/sup/img/icons/participants.gif);
+}
+
+.cpe_schedule .schedule ul li.confirm,
+.firm_admin_employee .schedule ul li.confirm
+{
+    list-style-image: url(/sup/img/icons/checkbox.gif);
+}
+
+.cpe_schedule .schedule ul li.add_to_outlook,
+.firm_admin_employee .schedule ul li.add_to_outlook
+{
+    list-style-image: url(/sup/img/icons/calendar-sm.gif);
+}
+
+.cpe_schedule .schedule ul li.make_payment,
+.firm_admin_employee .schedule ul li.make_payment
+{
+    list-style-image: url(/sup/img/icons/dollar.gif);
+}
+
+.cpe_schedule .schedule ul li.cancel,
+.firm_admin_employee .schedule ul li.cancel
+{
+    list-style-image: url(/sup/img/icons/x.gif);
+}
+
+.cpe_schedule .schedule ul li.materials,
+.firm_admin_employee .schedule ul li.materials
+{
+    list-style-image: url(/sup/img/icons/materials.gif);
+}
+
+.cpe_schedule .schedule ul li.view_webinar,
+.firm_admin_employee .schedule ul li.view_webinar
+{
+    list-style-image: url(/sup/img/icons/view-webinar.gif);
+}
+
+/*****************************************************************************/
+/* Materials Search (/my-mncpa/my-cpe/Materials-Search-Results.aspx?q=&f=&s=4)
+/*****************************************************************************/
+
+.materials_search label.headline 
+{
+   text-transform: none;
+   float: left;
+   margin-top: 0;
+}
+
+.materials_search input.keyword
+{
+   margin-top: 6px;
+   margin-bottom: 6px;
+   margin-left: 10px;
+   float: none;
+}
+
+.materials_search h2 
+{
+    margin-top: 20px;
+}
+
+.materials_search input 
+{
+    float: left;
+    margin-right: 10px;
+}
+
+.materials_search label 
+{
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: none;
+    font-style: normal;
+}
+
+/*****************************************************************************/
+/* Search Results (/my-mncpa/my-cpe/Materials-Search-Results.aspx?q=&f=&s=4)
+/*****************************************************************************/
+
+.search_results #interior_content ul li 
+{
+    list-style:  none;
+    background-image: none;
+    padding-left: 0;
+}
+
+.search_results #interior_content ul li a
+{
+    font-size: 16px;
+}
+
+/*****************************************************************************/
+/* Yellow Pages (/find-a-cpa/cpa-yellow-pages/List.aspx)
+/*****************************************************************************/
+
+.yellow_pages.list #interior_content 
+{
+    position: relative;
+}
+
+.yellow_pages.list #interior_content .alpha.nav
+{
+    clear: right;   
+    width: 312px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yellow_pages.list #interior_content .alpha.nav li
+{
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+    text-align: center;
+    text-transform: uppercase;
+    padding-left: 0px;
+}
+
+.yellow_pages.list #interior_content .alpha.nav li a 
+{
+    padding-right: 5px;
+}
+
+.yellow_pages.list #interior_content .alpha.nav li:after
+{
+    content: "|";
+    display: inline;
+}
+
+.yellow_pages.list #interior_content .alpha.nav li:last-child:after,
+.yellow_pages.list #interior_content .alpha.nav li:nth-child(14):after
+{
+    content: "";
+}
+
+.yellow_pages.list #interior_content ul.action 
+{
+    clear: left;
+}
+
+.yellow_pages.list #interior_content .yellowpages_container
+{
+    overflow: hidden;
+    clear:both;
+}
+
+.yellow_pages.list #interior_content .yellowpages_container .entry 
+{
+    border-top: 1px inset #dadada;
+    width: 210px;
+    float: left;
+    margin-right: 10px;
+    padding-top: 10px;
+    height: 100px;
+    font-size: 12px;
+}
+
+.yellow_pages.list #interior_content .yellowpages_container .entry:nth-child(even)
+{
+    position: relative;
+    left: 10px;
+}
+
+.yellow_pages.list #interior_content .yellowpages_container .entry img 
+{
+    float: left;
+    margin-right: 3px;
+}
+
+.yellow_pages.list #interior_content .search_again 
+{
+    margin-bottom: 15px;
+}
+
+
+
+/*****************************************************************************/
+/* Yellow Pages City List (/find-a-cpa/cpa-yellow-pages/cpas-by-mn-city.aspx)
+/*****************************************************************************/
+
+.yellow_pages.city_list #interior_content li
+{
+    width: 150px;
+    background-image: none;
+    float: left;
+    padding-left: 0;
+}
+
+/*****************************************************************************/
+/* PAC Contribution Form (/involvement/
+/pac/contribute.aspx)
+/*****************************************************************************/
+
+.progress_meter_container 
+{
+    position: relative;
+    float: right;
+    margin-top: 60px;
+    margin-left: 25px;
+    width: 159px;
+    height: 193px;
+}
+
+#ProgressMeter
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 193px;
+    background-color: #dadada;
+    margin-right: 10px;
+}
+
+#ProgressMeter .fill 
+{
+    text-align: center;
+    width: 75px;
+    background-color: #9CF;
+    position: absolute;
+    bottom: 0;
+}
+
+.pac_contrib #interior_content ul.money_list
+{
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 120px;
+    margin-left: 0;
+}
+
+.pac_contrib #interior_content ul.money_list li
+{
+    background: none;
+    width: 120px;
+    margin-bottom: 1px;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 12px;
+    
+}
+
+.pac_contrib #interior_content h2 
+{
+    clear: both;
+    padding-top: 10px;
+}
+
+/*****************************************************************************/
+/* Member Chapters (/chapters/)
+/*****************************************************************************/
+
+.chapters.list #interior_content .chapter 
+{
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.chapters.list #interior_content .chapter:last-child 
+{
+    border-bottom: 0;
+}
+
+.chapters.list #interior_content .chapter img 
+{
+    float: left;
+    margin-right: 10px;
+}
+
+.chapters.list #interior_content .chapter p 
+{
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+/*****************************************************************************/
+/* CPA Referral Service Sign Up (/find-a-cpa/mn-cpa-referral/sign-up.aspx)
+/*****************************************************************************/
+
+.referral_sign_up #interior_content table 
+{
+    margin-bottom: 0;
+}
+
+.referral_sign_up #interior_content h3 
+{
+    margin-top: 2em;
+}
+
+.referral_sign_up #interior_content > label
+{
+    margin-top: 0.6em;
+    text-transform: none;
+    font-style: normal;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+}
+
+.referral_sign_up #interior_content > input[type=text] 
+{
+    margin-top: 0.6em
+}
+
+.referral_sign_up #interior_content > input[type=submit] 
+{
+    margin-top: 1.6em
+}
+
+.referral_sign_up #interior_content table,
+.referral_sign_up #interior_content table td,
+.referral_sign_up #interior_content table tr
+{
+}
+
+/* Social media links on Referral Service firm listing */
+.firmSocial ul { text-align:left; margin:0; }
+.firmSocial ul li { text-align:left; width:auto; background:none; list-style-type:none; margin:0; padding:0; display:inline-block; padding-right:15px; }
+
+
+/*****************************************************************************/
+/* Join Wizard (/join/Application.aspx)
+/*****************************************************************************/
+
+.join_wizard #interior_content td input[type='radio'],
+.join_wizard #interior_content td input[type='checkbox']
+{
+   border: 0;
+}
+
+/*****************************************************************************/
+/* /* Join Wizard Step 9 (/join/ApplicationStep9.aspx)
+/*****************************************************************************/
+
+.step10 .step_walker
+{
+    display: none;
+}
+
+.step9 #interior_content span.note 
+{
+    position: relative;
+    top: -9px;
+}
+
+.step9 #interior_content .applies 
+{
+    font-weight: bold;
+}
+
+/*****************************************************************************/
+/* Dues Renewal (/my-mncpa/Dues-Checkout.aspx)
+/*****************************************************************************/
+
+.member_dues #interior_content input[type='checkbox'] 
+{
+    float: left;
+}
+
+.member_dues #interior_content label 
+{
+    text-transform: none;
+    font-style: normal;
+}
+
+.form_container fieldset table.dues_summary_grid { width: auto; }
+.form_container fieldset table.dues_summary_grid th { font-weight:bold; }
+.form_container fieldset table.dues_summary_grid td { padding-left: 25px; }
+
+/*****************************************************************************/
+/* My Profile (/my-mncpa/my-profile.aspx)
+/*****************************************************************************/
+
+.ui-dialog.change_employer_dialog 
+{
+    width: 600px !important;
+}
+
+.ui-dialog.description 
+{
+    width: 600px !important;
+}
+
+
+.ui-dialog.example_bio 
+{
+    width: 661px !important;
+}
+
+.ui-dialog.example_bio 
+{
+    width: 661px !important;
+}
+
+.reset 
+{
+    display: none;
+}
+
+/*****************************************************************************/
+/* Register Many (firm-admin/register-many.aspx)
+/*****************************************************************************/
+
+.firm_admin_register .loading 
+{
+    background-image: url(/sup/img/waiting.gif);
+    height:21px;
+    width: 243px;
+}
+
+.firm_admin_register input.process_registrations 
+{
+    display: none;
+}
+
+td .note 
+{
+    font-size: smaller;
+}
+
+/*****************************************************************************/
+/* Rapid Registration (/cpe/RapidRegistration.aspx)
+/*****************************************************************************/
+
+.rapid_registration #interior_content input { width: 120px; }
+
+.event_item 
+{
+    width: 100%;
+    height: 60px;
+}
+
+.event_item a 
+{
+    height: 54px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*****************************************************************************/
+/* AJAX Loaders
+/*****************************************************************************/
+
+.ui-dialog-content 
+{
+    position: relative;
+}
+
+.overlay
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1000;
+    background-color: #000;
+    color: White;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+}
+
+.overlay p 
+{
+    margin-top: 30%;
+}
+
+/*****************************************************************************/
+/* Firm Admin Login (firm-admin/login.aspx)
+/*****************************************************************************/
+
+.firm_admin_login #login_column .member_login table td,
+.firm_admin_login #login_column .member_login table th
+{
+    padding-bottom: 4px;
+}
+
+/*****************************************************************************/
+/* Add Many CPE (/firm-admin/cpe-log-add-courses.aspx)
+/*****************************************************************************/
+
+.add_many_cpe #interior_content td.False label 
+{
+    color: #C2C6CF;
+}
+
+/*****************************************************************************/
+/* member directory search results (/member-directory/Search-Results.aspx)
+/*****************************************************************************/
+
+.member_search_results #interior_content .contact,
+.member_search_results #interior_content .result img
+{
+    float: left;
+    margin-right: 10px;
+}
+
+.firm_search_results .data_pager,
+.member_search_results .data_pager 
+{
+    display: block;
+    margin-bottom: 15px;
+}
+
+/*****************************************************************************/
+/* Step 2 Demographics (/cpa-careers/accounting-employers/signup/step2-firm-demographics.aspx)
+/*****************************************************************************/
+.accounting_employer_step2 #interior_content h2 
+{
+    margin-top: 10px;
+}
+
+.accounting_employer_step2 #interior_content #LeftColumnDiv 
+{
+    float: left;
+    width: 250px;
+}
+
+.accounting_employer_step2 #interior_content #LeftColumnDiv input,
+.accounting_employer_step2 #interior_content #RightColumnDiv input[type=text]
+{
+    width: 20px;
+}
+
+.accounting_employer_step2 #interior_content #RightColumnDiv 
+{
+    float: right;
+}
+
+
+
+.accounting_employer_step2 #interior_content #RightColumnDiv table
+{
+    width: 250px;
+}
+
+/*****************************************************************************/
+/* Employer Directory Login (/cpa-careers/accounting-employers/signup/Login.aspx)
+/*****************************************************************************/
+
+.employer_directory_login #interior_content input 
+{
+    margin-top: 7px;
+    margin-bottom: 8px;
+}
+
+.employer_directory_login #login_column .member_login 
+{
+    padding-top: 20px;
+}
+
+/*****************************************************************************/
+/* REFERRAL SERVICE */
+
+/* Survey (/find-a-cpa/mn-cpa-referral/user-survey.aspx) */
+.referral_survey #interior_content select,
+.referral_survey #interior_content textarea,
+.referral_survey #interior_content input
+{  margin-bottom: 15px; }
+
+/* Search results list */
+.referral_firm_list #interior_content { min-height: 674px; }
+.referral_firm_list #interior_content #mapCanvas { width: 280px; height: 500px; float: right;  top: 55px;  }
+.referral_firm_list #interior_content .results { min-height: 514px; }
+.referral_firm_list #interior_content ol { width: 300px; }
+
+/* Firm details */
+.referral_firm_detail #interior_content a.search_again,
+.referral_firm_list #interior_content a.search_again 
+{ margin-top: 10px; margin-bottom: 10px; }
+
+/* .referral_firm_detail #interior_content #mapCanvas  { width: 250px; height: 250px;  float: right; margin-left: 15px; } */
+
+.referral_firm_detail #interior_content #details {  width: 350px; float:left; margin-right:20px;}
+
+.referral_firm_detail #interior_content div.directionsMap { width:250px; height:225px; border:1px solid #666; padding-top:15px; float:left;  }
+
+
+/*****************************************************************************/
+/* CPE DIRECTIONS STYLES */
+.cpeDirections .directionsMap { width:450px; height:200px; border:1px solid #666; padding-top:15px; }
+
+.confLocation .directionsMap { width:450px; height:200px; border:1px solid #666; padding-top:15px; margin-left:15px; margin-bottom: 15px; }
+
+/*****************************************************************************/
+/* DISCOUNT TICKETS - LIST */
+#ticketsList .discount { clear:both; width:100%; border-bottom:2px solid #ede3d7; }
+#ticketsList .logo { display:inline-block; float:left; padding-left:7px; padding-right:5px; }
+#ticketsList h2 { font-size:1.3em; margin-top:20px; }
+#ticketsList h3 { color:#cc8d42; font-size:1.1em; margin-top:-0.5em;  margin-bottom:0.5em; }
+#ticketsList ul { padding-left: 130px; margin-bottom:5px; }
+#ticketsList ul li { background-image:none; list-style-type:none; padding-left:0; }
+
+/*****************************************************************************/
+/* DISCOUNT TICKETS - FORM */
+#ticketsForm { background-image:url('http://www.mncpa.org/images/logos/discounts/discount-bkg.gif'); background-repeat:repeat-y; background-color:#eddfd4; padding:25px; }
+#ticketsForm .discount { clear:both; width:100%; margin-bottom:15px; border-bottom:2px solid #d6cecf; }
+#ticketsForm .discount:first-child { border:none; }
+#ticketsForm div.logo { display:inline-block; float:left; width:25%; padding:10px 5px 0px 7px; }
+#ticketsForm div.description { float:left; width:65%; padding:7px; }
+#ticketsForm .description h2 { font-size:1.3em; }
+#ticketsForm .description p { color:#000000; margin-top:7px; }
+
+#ticketsForm h3 { font-size:1.2em; margin-top:-0.5em;  margin-bottom:0.5em; }
+#ticketsForm ul { padding-left: 112px; }
+#ticketsForm .description .quantity { margin-right: 5px; width:25px; }
+
+#btnReviewOrder { margin-left:15px; }
+
+/*****************************************************************************/
+/* FOOTNOTE */
+#footnote_container { background-color:#f7f5e9; width:95%; height:100%; padding:15px; margin-bottom:25px;  }
+.current_issue { background-color:#f7f5e9; width:100%; }
+.current_issue .cover { width:30%; display:inline-block; float:left; padding-right:10px; }
+.current_issue .cover a.cover { width:160px; height:210px; }
+.current_issue .cover img { margin-top:140px; }
+.current_issue .description { background-color:#f7f5e9; width:65%; display:inline-block; float:left; vertical-align:top; }
+.current_issue .description h2 { margin-top:0; }
+		
+.past_footnote { width:100%; }
+.past_footnote ul { margin-left:0; background:none; list-style-type:none; }
+.past_footnote ul li { padding:0; padding-right:15px; background:none; display:inline-block;  vertical-align:top; }
+		
+.digital_footnote h2 { margin-top:0; }
+.digital_footnote p { margin-bottom:0; }
+		
+.footnote_contribution { width:100%; }
+.footnote_contribution .write { width:45%; float:left; padding-right:15px; }
+.footnote_contribution .member_note { width:45%; float:left; }
+
+.readweb {  }
+.readmag { margin-left:30px; } 
+
+
+/*****************************************************************************/
+/* Advertiser Account Management (/cpa-careers/cpa-classifieds/account/) */
+
+.manage_advertising #interior_content .status span 
+{
+    text-indent: -999999px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    margin-right: 5px;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.manage_advertising #secondary_content .legend li 
+{
+    background-repeat: no-repeat;
+    background-position: 30px 2px;
+}
+.manage_advertising #interior_content .status.Waiting span,
+.manage_advertising #secondary_content .legend li.processed
+{
+    background-image: url(/sup/img/icons/classifieds-waiting.gif);
+}
+
+.manage_advertising #interior_content .status.Expired span,
+.manage_advertising #secondary_content .legend li.expired
+{
+    background-image: url(/sup/img/icons/classifieds-expired.gif);
+}
+
+.manage_advertising #interior_content .status.Posted span,
+.manage_advertising #secondary_content .legend li.posted
+{
+    background-image: url(/sup/img/icons/classifieds-posted.gif);
+}
+
+.manage_advertising #interior_content ul.action a 
+{
+    white-space: nowrap;
+}
+
+/*****************************************************************************/
+/* Classifieds design */
+/*****************************************************************************/
+#interior_content #classifieds ul { margin-top:0; margin-bottom:0; }
+#interior_content #classifieds span>ul { margin-top:10px; }
+#interior_content #classifieds h3 { font-size:16px; border-top: 3px solid #a07d61; padding-top:15px; }
+#interior_content #classifieds h3 img { float:right; }
+#interior_content #classifieds h2 { margin-top:35px; }
+#interior_content #classifieds p.post { margin-top:-5px; }
+
+/*****************************************************************************/
+/* Reset Password Form (/cpa-careers/cpa-classifieds/account/) */
+/*****************************************************************************/
+#emailPassword a.reset { display: none; }
+
+/*****************************************************************************/
+/* Temporary Work Account (/CPA-Careers/Temporary-Work/Account.aspx)
+/*****************************************************************************/
+
+.temp_work_account #interior_content a.action { clear: both; }
+
+/*****************************************************************************/
+/* Temporary Work Search results (/cpa-careers/temporary-work/Search-Results.aspx?lf=Work&WorkTypeId=1&WorkFromHome=False&Zip=12345&Radius=10)
+/*****************************************************************************/
+
+.temp_work_search_results .search_again
+{
+    background-image: url(/sup/img/buttons/text/search_again.gif);
+    text-indent: -999999px;
+    width: 111px;
+    height: 28px;
+    display: block;
+    border: 0;
+    
+}
+
+/*****************************************************************************/
+/* Login popups
+/*****************************************************************************/
+
+.ui-dialog.login_help 
+{
+    width: 750px !important;
+}
+
+.login_help h2 
+{
+    color: Black !important;
+}
+
+/*****************************************************************************/
+/* Dues Confirmation
+/*****************************************************************************/
+
+.dues_confirmation #interior_content p.address 
+{
+    width: 275px;
+    float: left;
+}
+
+.dues_confirmation #interior_content ul.action 
+{
+    margin-bottom: 20px;
+}
+
+/*****************************************************************************/
+/* Volunteer Home
+/*****************************************************************************/
+
+.volunteer_home #interior_content #categories
+{
+    float: left;
+    margin-right: 40px;
+}
+
+/*****************************************************************************/
+/* Research Accounting Employers Firm Details (/cpa-careers/research-accounting-employers/company-details.aspx?EmployerId=89)
+/*****************************************************************************/
+
+.employer_details #interior_content #company_details 
+{
+    float: left;
+}
+
+
+/*****************************************************************************/
+/* Email Form
+/*****************************************************************************/
+
+#email_form { display: none; }
+
+
+
+/*****************************************************************************/
+/* Calendar (/cpe/mn-cpe-calendar.aspx)
+/*****************************************************************************/
+
+.calendar #interior_content #change_display { margin-bottom: 10px; }
+
+/*****************************************************************************/
+/* Update Record (/my-mncpa/my-profile.aspx)
+/*****************************************************************************/
+
+.update_record .employer_visibility th { font-size: 11px; text-align: left; font-weight: bold; }
+.update_record .employer_visibility table { width: 100px; }
+
+
+/*****************************************************************************/
+/* Payment styles */
+/*****************************************************************************/
+
+/* Payment iFrame */
+iframe.payment { width: 100%;  border: none; height:575px; }
+
+/* Inside the iframe */
+div.payment { padding:0; }
+
+div.payment.form_container { border: none; background: none; }
+
+div.payment.form_container fieldset {  background: none; }
+
+.payment #validationErrors { margin: 5px 0 15px 15px; padding:0; list-style-type:square;  display:none; }
+.payment #validationErrors li {  background: none; padding: 0 0 3px 0; margin: 0 0 0 10px; font-weight:normal; }
+
+#PayPalSubmitBtn { display:block; margin-left:22px; }
+
+body.payment { background: none; }
+body.payment .form_container input.error, body.payment input.error { display: inline; }
+body.payment label.error { border: none; padding-top: 0; }
+body.payment ul.payment-options li { background: none; padding: 0; font-weight:bold; margin-bottom:20px; }
+
+ul.payment-options { margin: 0; }
+
+#ccForm { margin-left:30px; margin-top:5px; border:2px solid #ffb764; padding:5px; font-size:0.9em; font-weight:normal; width:250px; }
+#ccForm p { margin: 5px 5px 12px 5px; }
+
+.form_container td.policies { font-size:1em; line-height:100%; }
+.form_container td.policies  a.action { display:block; margin:0; }
+
+/* --------------------------------------------------------------------- */
+/* Peer Review Annual Program Fee Payment
+/* --------------------------------------------------------------------- */
+body.peer-review-payment .form_container fieldset
+{
+    width: 588px;
+    margin: 0 auto;
+}
+body.peer-review-payment .form_container label
+{
+    font-weight: bold;
+}
+
+body.peer-review-payment .login 
+{
+    display: block;
+    margin-top: 20px;
+}
+/* ----------------------------------------------------------------------- */
+/* CPE Credits Catalog Panel
+/*------------------------------------------------------------------------ */
+.creditsCkLeft {
+    float: left;
+    width: 50%;
+}
+.creditsCkRight {
+    width: 50%;
+}
+.creditsContainer {
+    width:100%
+}
+/* ----------------------------------------------------------------------- */
+/* AutoComplete
+/*------------------------------------------------------------------------ */
+.ui-autocomplete {
+    max-width:40%;
+}
+/* ------------------------------------------------------------------------  */
+/* Tooltip container 
+*  ------------------------------------------------------------------------  */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    color: #006080;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 235px;
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding:15px 15px 15px 20px;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 5px #888888;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+
+}
+
+.toolTip h1 {
+   font-size:18px; font-weight:700; margin:0; padding:0; 
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-right {
+  top: 10px;
+  left: 120%;  
+}
+
+.tooltip-right::after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+
+
+
+
+.tooltip-left {
+  top: 10px;
+  bottom:auto;
+  right: 120%;  
+}
+.tooltip-left::after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+
+
+}
+
+/* ------------------------------------------------------------------------  */
+/* Video and 360 View Handling - Facility Rental
+*  ------------------------------------------------------------------------  */
+
+.rentaltwocol div:first-child { width:60%; padding: 0 5px 0 0; float:left; }
+.rentaltwocol div:last-child { width:35%; padding:0; float:left; }
+.rentaltwocol+* { clear:both; }
+
+.video, .googleview { position:relative; padding-bottom:57%; margin-bottom:15px; height:0; overflow:hidden; }
+.video iframe, .googleview iframe { position:absolute; top:0; left:0; width:100%; height:100%; }
+
+
+/* ------------------------------------------------------------------------  */
+/* Organization blog
+*  ------------------------------------------------------------------------  */
+
+/* Header */
+.bloghead { position:relative; background:url('http://www.mncpa.org/images/blog/header-image.jpg'); background-repeat:no-repeat; height:179px; margin-bottom:30px; }
+.bloghead .blogname { position:relative; top:25%; padding:20px 0 20px 0; text-align:center; background-color: rgb(255, 255, 255); background-color: rgba(255, 255, 255, 0.8); }
+.bloghead .blogname h1 { /* font-family:Arial, Helvetica, sans-serif; */ font-size:36px; font-weight:700; color:#000000; padding:0; margin:0; }
+.blogpost .postdetails .topicbar { font-size:14px; color:#4e4e4e; float:left; padding:3px 10px 3px 10px; margin-bottom:10px; background-color:#e7e7e7; }
+a.preheader { color:#1369ab; text-decoration:none; font-size:14px; font-weight:700; font-family: 'Bitter', Georgia, "Times New Roman" , serif; }
+
+/* Blog Content */
+.postcontainer { border-bottom:2px solid #e7e7e7; }
+.blogpost { width:100%; margin-top:20px; }
+.blogpost a.blogtitle { color:#63af5e; font-size:24px; line-height:30px; }
+.blogpost a.blogtitle { text-decoration:none; color:#63af5e; }
+.blogpost a.blogtitle:hover { text-decoration:underline; }
+.blogpost .postimg { display:inline-block; float:left; width:42%; margin-bottom:20px; }
+.blogpost .postdetails { display:inline-block; float:left; width:53%; }
+.blogpost .postarchive { width:100%; margin-bottom:20px; }
+
+.blogpost .postdetails .topicbar { font-size:14px; color:#4e4e4e; float:left; padding:3px 10px 3px 10px; margin-bottom:10px; background-color:#e7e7e7; }

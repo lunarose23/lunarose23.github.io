@@ -1,0 +1,825 @@
+@charset "UTF-8";
+
+@media only screen and (min-device-width:1000px) and (max-width:480px), only screen and (max-device-width:1022px) and (max-width:720px)
+{ 
+ 	/** BODY & OVERALL **/
+	html { width:100%; }
+	body { background-color:#fff; width:100%; -webkit-text-size-adjust: none; }
+
+	/*****************************************************************************************/	
+	/** HEADER **/
+	#header_container {  display:block; background:none; margin:0; padding:0; background-color:#fff; }
+	#header_container_interior {  display:block; background:none; margin:0; padding:0; background-color:#fff; }
+	#header {  background:none; height:100px; width:100%; padding:0; margin:0; } 
+
+	
+		/* <~> Adding www.mncpa.org */
+	#logo { float: left; position: relative; top: 15px; margin: 0 0 0 15px; width:136px; height:92px; background:url('http://www.mncpa.org/sup/img/mobi/template/mncpa-logo.png') top left no-repeat; }
+	#logo a { display:block; width:150px; height:60px; }
+	#logo img { display:none; }
+
+	.site_search { position:absolute; left:0; top:-45px; padding: 5px 8px; width:95%; }
+	.site_search fieldset input.search_field { width:60%;   }
+	
+	/* <~> Adding www.mncpa.org */
+	.site_search fieldset input.search_go { margin: 0 0 0 5px; width:66px; height:28px; background-image:url('http://www.mncpa.org/sup/img/buttons/text/search.gif'); }
+	.site_search label { display:none; }
+
+	#minor_nav { display:none; }
+	
+	/* <~> Adding www.mncpa.org */
+	a#mobileSearch { display:block; height:72px; width:57px; margin:0; padding:0;  position:absolute; top: 0; right:15px; background:url('http://www.mncpa.org/sup/img/mobi/template/search-btn.png') center 15px no-repeat; }
+	#mobileSearch span { display:none; }
+	
+	/********************************************/
+	/** MAIN (TOP) NAVIGATION **/
+	
+	.major_nav
+	{
+		position:relative;
+		top:15px;
+		left:0;
+		height:72px;
+		/** Hiding nav for now**/
+		display:none;
+	}
+	
+	.major_nav>li /* Individual cells (e.g., My MNCPA, CPE) */
+	{
+		list-style-type: none;
+		background-image:none;
+		padding: 10px 0 0 0;
+		background-color:#fcecc5;
+		height: 34px;
+	}
+
+	.major_nav li a.main_nav_link:link, .major_nav li a.main_nav_link:visited
+	{
+		height: 55px;
+		background-image:auto;
+	}
+	
+	/*****************************************/
+	/**** HOME (not visible on mobile site) ****/
+	.major_nav .home a.main_nav_link:link, .major_nav .home a.main_nav_link:visited
+	{ /*	left: 0px; width: 76px;*/ }
+	
+	.major_nav .home a.main_nav_link:hover, .major_nav .home a.main_nav_link:focus
+	{
+/*			background: url(/sup/img/template/nav/nav.gif) no-repeat 0px -43px;*/
+	}
+	
+	.major_nav .nav_home_active { display:none; }
+	
+	
+	/*****************************************/
+	/**** HOMEPAGE ****/
+	
+	/* About Hero Image */
+	.about {
+	  height: auto;
+		width:100%;
+	}
+
+	.about_interior {
+		width: 90%;
+		padding: 25px 0 50px 0;
+		text-align:center;
+	}
+	.about_header { font-size:2em; margin-bottom: 0.2em; }
+	.home_about {  
+		font-size:1em; 
+		margin: 0; 
+		padding:10px 0 10px 0; 
+		width:100%; 
+	}
+	.hero_label { display:none; }
+	
+	
+	/* Profile/Testimonial */
+	.profile {
+	  height: auto;
+	  width: 100%;
+		margin-top:0;
+	}
+
+	.profile_interior {
+		width: 90%;
+		text-align:center;
+		padding: 50px 0 50px 0;
+		background: url('/sup/img/mobi/template/big-quotes.png') no-repeat bottom left;
+	}
+	.profile_interior img {
+		width:200px;
+		float:none;
+		margin: 0 auto;
+		margin-top:-75px;
+		padding-right:0;
+	}
+	/* .profile_interior img:hover { filter:brightness(1.1); } */
+	.profile_interior h2 { font-size:1.6em; margin-top:10px; }
+	.profile_interior p { float:none; margin-bottom:10px; }
+	
+	
+	/* Upcoming CPE */
+	.upcoming_cpe { padding:0 15px 0 15px; }
+	.upcoming_cpe h2 { font-size:1.6em; margin-top:30px; }
+	#content .upcoming_events p { margin:0; padding:0; }
+	.upcoming_events li { float:none; display:block; width:100%; }
+	.upcoming_events li a.big { font-size:1.4em; }
+	
+	/* Banners */
+	.banners { padding-left: 15px; }
+	.banners div.banner { display:block; float:none; width:100%; height:auto; margin-bottom:25px; }
+	.banners div.banner a { 
+		width: 250px;
+		height: auto; 
+		background: rgba(0, 0, 0, .4) url('/sup/img/mobi/template/arrow-white-tiny.png') no-repeat bottom right;
+		padding-bottom:25px;
+	}
+	#banner1 { 
+		width:250px; height:auto;
+	}
+	#banner2 { 
+		width:250px; height:auto;
+	}
+	#banner3 { 
+		width:250px; height:auto;
+	}
+	.banners div.banner a:hover {
+		background: rgba(0, 0, 0, .3) url('/sup/img/mobi/template/arrow-white-tiny.png') no-repeat bottom right;
+	}
+	.banners div.banner a:action {
+		background: rgba(0, 0, 0, .3) url('/sup/img/mobi/template/arrow-white-tiny.png') no-repeat bottom right;
+	}
+
+	/* Latest News */
+	.latestnews p { padding:10px 10px 15px 15px; }
+	
+	.spotlights p { padding: 5px 15px; }
+	.spotlights div.ind-spotlight { border-top:none; padding-top:5px; }
+	.spotlights img { margin-bottom:15px; margin-left:15px; }
+
+	/* Two-column latest news and spotlights */
+	.two-column h2 { margin-left: 15px; font-size:1.6em; margin-top:30px; }
+	.two-column { width:100%; }
+	.two-column div.left { float:none; width:100%; }
+	.two-column div.right { float:none; width:100%; }
+	
+	
+
+	/*****************************************/
+	/**** MY MNCPA ****/
+	.major_nav .my_mncpa a.main_nav_link:link, 
+	.major_nav .my_mncpa a.main_nav_link:visited
+	{
+		left:0;
+		width:24%; 
+		border-right:1px solid #fff;
+		background: url('/sup/img/mobi/template/btn-my-mncpa.gif') no-repeat center center;
+		/*		
+		left: 79px;
+		width: 101px;
+		*/
+	}
+	.major_nav .my_mncpa a.main_nav_link:hover, .major_nav .my_mncpa a.main_nav_link:focus
+	{
+		/*background: url(/sup/img/template/nav/nav.gif) no-repeat -79px -43px;*/
+
+	}
+	
+	.nav_my_mncpa, .nav_my_mncpa_active
+	{
+		position:relative; 
+		left:0; 
+		background:none;	
+		width:70px;
+	}
+
+	.nav_my_mncpa_active
+	{
+	/* background: url(/sup/img/template/nav/nav.gif) no-repeat -79px -86px;*/	
+	}
+	
+
+	/*****************************************/
+	/** CPE NAVIGATION **/
+	
+	/* Header */
+	.major_nav .cpe a.main_nav_link:link, .major_nav .cpe a.main_nav_link:visited
+	{
+		left:24%;
+		width:24%; 
+		border-right:1px solid #fff;
+		background: url('/sup/img/mobi/template/btn-cpe.gif') no-repeat center center;
+	}
+	
+	.nav_cpe, .nav_cpe_active
+	{
+		position:relative; 
+		left:75px; 
+		width:24%; 
+		background:none;
+	}
+	
+	.major_nav .nav_my_mncpa_active,
+	.major_nav .nav_cpe_active,
+	.major_nav .nav_pub_news_active,
+	.major_nav .nav_tech_resources_active,
+	.major_nav .nav_involvement_active,
+	.major_nav .nav_careers_active,
+	.major_nav .nav_about_us_active
+	{ display:none; }
+
+	/*****************************************/
+	/** FIND A CPA **/
+	.major_nav .findacpa { display:block; }
+	
+	.major_nav .findacpa a.main_nav_link:link, 
+	.major_nav .findacpa a.main_nav_link:visited 
+	{ 
+		left:48%; 
+		width: 24%; 
+		border-right:1px solid #fff;
+		background: url('/sup/img/mobi/template/btn-find-cpa.gif') no-repeat center center;
+	}
+	.major_nav .findacpa a.main_nav_link:hover, .major_nav .findacpa a.main_nav_link:focus { }
+	
+	/*****************************************/
+	/** MORE **/
+	.major_nav .more { display:block; }
+	.major_nav .more a.main_nav_link:link, .major_nav .more a.main_nav_link:visited
+	{
+		left:72%; 
+		width: 24%; 
+		background: url('/sup/img/mobi/template/btn-more.gif') no-repeat center center;
+	}
+	.major_nav .more a.main_nav_link:hover, .major_nav .more a.main_nav_link:focus { } 
+	
+	
+	
+	/** Hide other, desktop site nav categories **/
+	.pub_news, .tech_resources, .involvement, .careers, .about_us { display:none; }
+	
+	/*****************************************************************************************/
+	/* SUB-NAVIGATION */
+	/* UL contained in the li of a UL.major_nav */
+	/* Submenu: Actual dropdown menu block. */
+	.sub_nav
+	{
+		top:57px;
+		left:0;
+		width:97.5%;
+		padding: 0;
+		margin:0;
+		background-color:none;
+		border:3px solid #435678;
+		border-top:none;
+	}
+	
+	/** NAMED SUBMENUS **/
+	#sub_nav_my_mncpa { left:0; visibility:hidden; }
+	#sub_nav_cpe { left: 0; visibility:hidden; }	
+	#sub_nav_findacpa { left:0; visibility:hidden; }
+	#sub_nav_more { left:0; visibility:hidden; }
+	
+	/** Down arrow on menu dropdown **/
+	#sub_nav_my_mncpa li:first-child { background: #f4f4f4 url('/sup/img/mobi/template/menu-arrow.gif') no-repeat 11.5% 0; } 
+	#sub_nav_cpe li:first-child { background: #f4f4f4 url('/sup/img/mobi/template/menu-arrow.gif') no-repeat 36% 0; } 
+	#sub_nav_findacpa li:first-child { background: #f4f4f4 url('/sup/img/mobi/template/menu-arrow.gif') no-repeat 62% 0; } 
+	#sub_nav_more li:first-child { background: #f4f4f4 url('/sup/img/mobi/template/menu-arrow.gif') no-repeat 87.5% 0; } 
+	
+	/* Submenu: individual item - GENERIC */
+	.sub_nav li
+	{
+		height:36px;
+		font-family:Arial, Helvetica, sans-serif; 
+		font-weight:700;
+		font-size:16px;
+		position:relative;
+		background: #f4f4f4 url('/sup/img/mobi/template/menu-bkg.gif') repeat-x left top;
+	}
+	
+	.sub_nav li a img
+	{
+		display:none;
+		/*
+		display: inline;
+		vertical-align: -1px;
+		*/
+	}
+	
+	.sub_nav li a:link, .sub_nav li a:visited
+	{
+		width: auto;
+		background:none;
+		padding:10px 10px 0 10px;
+	}
+	.sub_nav li a:hover, .sub_nav li a:focus
+	{
+		
+		padding-left:10px;
+		background:none;
+		width: auto;
+	}
+	
+
+	/************************/
+	/* Hide items not in the mobile menu */
+	.major_nav .nav_my_mncpa_active,
+	.major_nav .nav_cpe_active,
+	.major_nav .nav_pub_news_active,
+	.major_nav .nav_tech_resources_active,
+	.major_nav .nav_involvement_active,
+	.major_nav .nav_careers_active,
+	.major_nav .nav_about_us_active
+	{ display:none; }
+
+	/*****************************************************************************************/	
+	/** PAGE ELEMENTS **/
+    .login_memberinfo { width:100%; float:none; clear:both; }
+    #page_controls { display:none; }
+	#advertisement { display:none; }	
+
+	
+	/*****************************************************************************************/	
+	/** MAIN CONTENT **/
+	#content_container, #content, #content_shadow, #interior_content_container, #secondary_column, #secondary_content,
+	#interior_content_container_full, #interior_content_container_full #interior_content, #main_column
+	{ 
+	width:100% !important;
+	background-image:none; 
+	background-color:#fff; 
+	float:none;
+	margin:0; 
+	padding:0; 
+	}
+	
+	/* Main body content */
+	#advertisement { display:none; }
+	#sub_navigation { display:none; }
+	#interior_content_container #interior_content { background-color:#fff;  padding: 0 3% 0 10px; margin: 12px 0 0 0; width:87%; float:none; }
+	
+	body.no_advertisement #interior_content_container_full,
+	body.no_advertisement #interior_content_container { padding-top:0; }
+	#interior_content_container_full #interior_content { background-color:#fff; padding: 0 3% 0 10px; margin: 12px 0 0 0; width:87% !important; float:none; }
+	
+	/* Section page header */
+	.graphic_header { margin:0; width:auto; }
+	.graphic_header img { display:none; float:none; }
+	.graphic_header h1 { background:none; padding-left:0; font-size:30px; margin-bottom:0; width:auto; }
+
+	
+	/* Section page individual colored blocks */
+	#callout_blocks div { margin:0px auto 15px auto; float:none;  }
+	#callout_blocks .right { float:none; }
+	#callout_blocks .left { float:none; }
+	#callout_blocks div h3 { padding-right:15px; }
+		
+	/* Sub-section pages */
+	.subsection { width:100%; background:none; background:#f8e1bf; }
+	.subsection .subsection_inner {
+		background:none;
+		padding: 10px 0 10px 0;
+	}
+	.subsection .subsection_inner div {
+		background: none; 
+		background: #fff; 
+		border-left:none; 
+		border-right:none; 
+		border-top: 1px solid #c89b71;
+		border-bottom: 1px solid #c89b71; 
+		padding: 13px 20px 10px 7px;
+	}
+	.subsection .subsection_inner div img {
+		width:55px;
+		height:45px;
+		left:75%;
+	}
+	.subsection .subsection_inner a.title { font-size:15px; color:#785c46; text-decoration:none; font-family: 'Bitter', Georgia, "Times New Roman" , serif; font-weight: normal; line-height:1.2em; }
+	.subsection .subsection_inner p { padding-right:63px; }
+	.subsection .subsection_inner span { display:none; }
+	.subsection .subsection_inner div:last-child { padding-bottom:0; }
+	
+	/*****************************************************************************************/
+	/* CPE CONTENT */
+	p.nonmember_check_alert { border:1px solid #ccc; margin-top:-20px; margin-bottom:25px; padding: 5px 5px 5px 18px; background-position: 0 5px; }
+	
+	
+	.description_overview_container { background:none; width:auto; margin-bottom:10px; }
+	.description_overview_container .description_overview_inner { background:none; padding-left:80px; }
+	.description_overview_container .description_overview_inner div
+	{
+		padding: 7px 10px 7px 10px;
+		width: auto;
+		border-left:none;
+		border-right:none;
+		position: relative;
+		font-size: .9em;
+	}
+	.description_overview_container .description_overview_inner div > span	{ display:inline; background:none; color: #4e4e4e; width: auto; left: -93px; font-weight:700; line-height:16px; }
+	.description_overview_container .description_overview_inner div > span.mobi_break { line-height:16px; }
+	.description_overview_inner table td { text-align:left; border-bottom:none; }
+	.description_overview_inner table th { padding-right:5px; border-bottom:none; }	
+	.description_overview_container .description_overview_inner div.location { height:auto; }		
+	div.add_save_calendar
+	{
+		background: url(/sup/img/mobi/template/add_save_calendar.gif) no-repeat top left;
+		width: 301px;
+		height: 95px;
+	}
+	
+	div.add_save_calendar.webcast { background: url(/sup/img/mobi/template/add_save_calendar_webcast.gif) no-repeat top left; }
+	div.add_save_calendar.webcastclosed { background: url(/sup/img/bg/add_save_calendar_webcast_unavail.gif) no-repeat top left; }
+	div.add_save_calendar.seminarclosed { background: url(/sup/img/bg/add_save_unavailable.gif) no-repeat top left; }
+	
+	div.add_save_calendar a.add { width: 130px; left: 8px; }
+	div.add_save_calendar a.save { width: 124px; top: 56px; left: 8px; }	
+	div.add_save_calendar a.calendar { width: 124px; top: 56px; left: 160px; }
+	
+	/*****************************************************************************************/
+	/* CPE SHOPPING CART */
+	.checkout_copy  { background: url('/sup/img/mobi/template/shopping-cart-checkout.gif') no-repeat top left; margin-top:25px; height:95px;  width:301px; }
+	.checkout_copy a { position:absolute; }
+	.checkout_copy a.checkout
+	{
+		background:none;
+		top: -1px;
+		left: -5px;
+		height:34px;
+		width:140px;
+	}	
+	.checkout_copy a.continue_shopping {
+		background:none;
+		left: -5px;
+		height:26px;
+		top:56px;
+		width:160px;
+	}
+	.checkout_copy a.copy {
+		left:180px;
+		height:26px;
+		top:56px;
+		width:100px;
+	}
+	
+    /*****************************************************************************/
+    /* CPE Log */
+    .view_cpe_log #interior_content .range_selector { width:100%; margin-bottom:0.5em; }
+    .range_selector div { float: left; width: auto; }
+
+    .range_selector label { margin-right: 0.9em; margin-bottom: 0.6em; }
+    .range_selector select { margin-bottom: 0.6em; }
+
+    .range_selector ul.action { clear: both; float: none; display:block;  width: auto; margin: 0 0 0 4em; padding: 0.2em 0 0.35em 0; }
+    .range_selector ul li {  margin: 1em 0 1em 0; }
+		
+	/*****************************************************************************************/
+	/* Right column */
+	#secondary_content { width:100%; display:block; clear:both; margin-top:35px; border-top:5px solid #ff9f2f; background-color: #f7f5e9;  }
+	#content_container #secondary_content .section { background-color:#f7f5e9; padding-bottom:0; }
+	#content_container #secondary_content .section .technical_log_callout { background-position:top center; background-color:transparent; }
+	#secondary_content h2 { font-size:1.1em; }
+	
+    #secondary_content .section ul { margin-left:-1em; margin-top:1.5em; } 
+    #secondary_content .section ul li { background-position: 1em 0.35em; padding-left:2em; margin-bottom:1.5em; } 
+	#secondary_content .section ul.action { margin-left:-2em; padding:0;  }
+	#secondary_content .section ul.action li { padding-left:0; }
+
+	/* --------------------------------------------------------------------- */
+	/* Footer
+	/* --------------------------------------------------------------------- */
+
+	.footer_container { width:90%; padding: 35px 15px 35px 15px; min-height:600px; }
+	.footer_block { display:block; width:100%; }
+
+	
+	/*****************************************************************************************/
+	/* FORMS */
+    .form_container { padding:5px; }
+	
+	.form_container fieldset { padding: 7px 5px 15px 7px; }
+	.form_container fieldset label { font-size:0.8em; display:block; padding-bottom:8px; }
+	.form_container fieldset h2 { margin-top:0; }
+	
+	.form_container fieldset table th { width:25%; padding: 0 5px 0 0; }
+	.form_container td span.checkbox label, .form_container th span.checkbox label { display:inline; }
+	
+	/* Field widths */
+	.mobile_input,	.form_container .mobile_input, .cpe_search_keyword { width:165px; }
+	
+    #ccForm { padding:3px; width:185px; }
+    table.billing_address .name input,   table.address .name input  { width: 155px; }
+    table.billing_address .address input, table.address .address input { width: 155px; } 
+    table.billing_address input.city, table.address input.city  {  width: 155px; }
+    table.billing_address input.state, table.address input.state  { width: 50px; }
+    table.billing_address input.zip, table.address input.zip  { width: 100px; }
+    
+    /* Dues */
+    .form_container fieldset table.dues_summary_grid { width: auto; }
+    table.dues_summary_grid td {padding-right: 5px; }
+	
+    /*****************************************************************************************/	
+    /** TEXT STYLES **/
+    h1 { font-size:1.7em; font-weight:normal;  }
+    h2 { font-size:1.3em; font-weight:normal; }
+    h3 { font-size:1.1em; font-weight:normal; }
+    
+    .showOnMobileOnly, .smo { display: block !important; }
+    .showOnMobileOnlyInline { display: inline !important; }
+    .showOnDesktopOnly, .sdo, .showOnDesktopOnlyInline, .showOnDesktopOnlyTable { display:none !important; }
+	
+	/* Two columns of text */
+	div.twocolumn div:first-child { width:100%; padding:0; float:none; }
+	div.twocolumn div:last-child { width:100%; padding:0; float:none; }
+	div.twocolumn+* { clear:none; }
+
+	/** Regular, green-bulleted lists */
+	ul { margin:  0 0 3em 0; padding: 0; list-style-type: none; }
+	
+	/* <~> Adding www.mncpa.org */
+	ul li { margin: 0 0 0.75em 0; padding: 0 0 0 22px; background: url('http://www.mncpa.org/sup/img/template/bullet1.gif') no-repeat 7px .35em transparent; }
+	
+	ul ul { margin-top: 0.3em; margin-bottom: 0.7em; }
+	ul ul li{ margin: 0 0 0.6em 0; padding: 0 0 0 20px; background: url('/sup/img/template/bullet2.gif') no-repeat 8px .4em transparent; }
+	ul ul ul li { margin: 0 0 0.5em 0; padding: 0 0 0 24px; background: url('/sup/img/template/bullet3.gif') no-repeat 13px .4em transparent; }
+	
+	/** Two-column anchored link lists **/
+	ul.anchor1, ul.anchor2 { margin: 0; }
+	ul.anchor1 { float:none; display:block; width:auto; border-right:none;  }
+	ul.anchor2 { float:none; display:block; width:auto; padding-left:0;  }
+	ul.anchor2+* { clear:both; }
+	ul.anchor1 li, ul.anchor2 li { margin-left:0; padding-bottom:1em; }
+	
+	/*****************************************************************************************/	
+    /* Images */
+
+    /** Photos **/
+    .photoLeft { float: none;  margin: 0;  width:98%; height:auto; }
+    .photoRight { float:none; margin: 0; width:98%; height:auto; }
+
+    div.photoLeft, div.photoRight {  width:99%; padding:0; border:1px solid #a7c6b1; border-bottom:4px solid #a7c6b1; }
+    .photoLeft img, .photoRight img { width:100%; float:none;  }
+    .photoLeft p, .photoRight p { font-size: 1em; }
+	
+    .fit { width:98%; height:auto; float:none; }
+    
+    .dontfit { width:auto; height:auto; }
+    .photoLeft.dontfit, .photoLeft.dontfit img { float:left; margin: 0 2em 2em 0; clear:none; }
+    .photoRight.dontfit, .photoRight.dontfit img {  float:right; margin: 0 0 2em 2em; }
+	
+	 /** Left and Right Callouts **/
+    .calloutLeft { float: none;  margin: 0;  width:90%; height:auto; }
+    .calloutRight { float: none; margin: 0; width:90%; height:auto; }
+	
+	/*****************************************************************************************/	
+	/* Index pages */
+	.sub_subsection div img { display:none; }
+	.sub_subsection div p { float:none; width:auto; font-size:1em; }
+	.sub_subsection div {  border-top:3px solid #f8e1bf; background: #ffffff url('/sup/img/mobi/template/subsub-bkg.gif') repeat-x top left; }
+    .sub_subsection div a { display:block; margin-right:0; background: url('/sup/img/mobi/template/subsub-arrow.gif') no-repeat top right; }
+	
+    /*****************************************************************************************/	
+    /** CPE index page **/
+    .outer_block { position: relative; width:100%; background-repeat: no-repeat; background-position: top left; margin: 0; padding:0; }
+    .index_box { width:100%; margin: 0 0 10px 0; padding:0; }
+    .index_box  a.view_all { display:none; }
+    
+    /** CPE right column **/  
+    .cpe_buttons { padding: 7px 7px; text-align:center; background:none; }
+	.cpe_buttons img { width:196px; height:36px; }
+    .cpe_buttons a { float:left; height:40px; margin:0; padding:0; }
+    
+    /*  background: #f7f5e9 url(/sup/img/mobi/template/search-cpe-catalog-bg.gif) no-repeat top left; */
+    .search_cpe_catalog  { clear:both; background:none; padding: 10px 7px 10px 10px; font-size:1em; }
+	.search_cpe_catalog h2 { margin-top:15px !important; font-size:1.4em !important; }
+    .search_cpe_catalog .search_fields .cpe_field_section { color:#6e6e6e; display:block; clear:both; font-size:0.9em; }
+
+	.search_cpe_catalog .cpe_search_field { width: 220px; line-height: 1.5em; margin-bottom:15px; }
+    
+
+    p.cpe_catalog_actions { margin:5px 0 20px 17px; line-height:1.25em }
+
+    /** CPE search results: Tabs at top **/
+    div.tabs { background-color: #d6c69f; padding:5px; margin:20px 0 15px 0; width:auto;  }
+    div.tabs ul { margin:0; padding: 0; height:auto; }
+    div.tabs ul li   
+    {
+        display:block; 
+        float:none;
+        padding:5px 7px; margin:0; 
+        border-top-right-radius: 0; border-top-left-radius: 0; 
+        -moz-border-top-right-radius: 0; -moz-border-top-left-radius: 0;  
+        border-bottom: 1px solid #fff; 
+    }
+    div.tabs ul li:first-child { display:block; } /* Turn on mobile heading text */
+    
+    /* Hide display of sort option */
+    .cpeSearchResultsHeader { display:none; }
+    
+    /** CPE search results: table of results **/
+    table.cpeResultsTable td {padding: 8px 5px 0 5px; }
+    table.cpeResultsTable td:first-child { padding-left:0; }
+    table.cpeResultsTable td:last-child { padding-left: 3px; padding-right:0; }
+    
+    table.cpeResultsTable td.title { padding-bottom:0; padding-left:0; }
+    table.cpeResultsTable td.date {  width:15%;  }
+    table.cpeResultsTable td.location { width:40%;  }
+    table.cpeResultsTable td.credits { width:25%;  }
+    table.cpeResultsTable td.code { width:0%;  }
+    table.cpeResultsTable td.cart { width:20%;  }
+	
+	/** CPE search results: New styles added by Lauren Nov. 2015 **/
+	table.cpeResultsTable td { width:100%; display:inline-block; padding:0; }
+	table.cpeResultsTable td.credits { display:block; white-space:nowrap; padding-bottom:10px; }
+	#pagingoptionsTop { float:left; margin:0 0 15px 0; }
+	#pagingoptionsBottom { float:left; margin:15px 0 15px 0; }
+	#pagingoptionsTop p.paging { text-align:left; } 
+    
+    /*****************************************************************************************/	
+    /**  PURPLE CPE TABLE **/ 
+    /*
+    .cpe_table_container { background: none; margin-bottom: 0; }
+    .cpe_table_inner { background: none; padding:0; }
+
+    #content_container .cpe_table_container table { width:auto; }
+    .cpe_table_container table th,.form_container .cpe_table_container th { border: none; background: url(/sup/img/bg/th_bg.jpg) no-repeat bottom left #ad8a71; width:auto; }
+    */
+    .total_due { width:auto; margin-top:0.5em; text-align:left; }
+
+    /**************************************/
+    /* ROUNDED COLOR TABLE STYLES */
+
+    .datatable_container { margin-bottom:0; }
+
+    .datatable_container.berry,
+    .datatable_container.orange,
+    .datatable_container.purple,
+    .datatable_container.green,
+    .datatable_container.blue,
+    .datatable_container.red 
+    { background: none; margin-bottom: 0; }
+
+    .datatable_inner {	 background: none; padding:0;  }
+
+    .datatable_container.berry .datatable_inner,
+    .datatable_container.orange .datatable_inner,
+    .datatable_container.purple .datatable_inner,
+    .datatable_container.green .datatable_inner,
+    .datatable_container.blue .datatable_inner,
+    .datatable_container.red .datatable_inner
+    { background: none; padding:0;  }
+
+    .datatable_container table { border: none; margin: 0px 0px 0px 0px;	padding: 0px; border-collapse: collapse; width:auto; }
+
+    .datatable_container table th {	border-top: none; background: none;	color: #fff; font-weight: bold;	font-size: 1em; line-height: 2.5em; }
+
+    .datatable_container.berry table th,
+    .datatable_container.orange table th,
+    .datatable_container.purple table th,
+    .datatable_container.green table th,
+    .datatable_container.blue table th,
+    .datatable_container.red table th
+    { border: none; background: url(/sup/img/bg/th_bg.jpg) no-repeat bottom left #ad8a71; width:auto; }
+ 
+    /*** CPE SCHEDULE ***/
+    .cpe_schedule .schedule ul { margin-top:2em; }
+    .cpe_schedule .schedule ul li { width:100%; padding:0; margin: 0 0 1.5em 0; }
+
+    /*****************************************************************************************/	
+	/*** CPE & JOIN BUTTON ICONS ***/
+	ul.buttonIcons li {display:block; width:100%; padding:0; float:none; }
+	ul.buttonIcons:nth-child(2n-1) { margin-right:0; }
+    ul.buttonIcons img { width:100%; height:auto; }
+    
+    #sponsorBlock { width:100%;  font-size: 14px;  line-height:18px;}
+    #sponsorBlock #sponsorLevelsTop { width:auto; }
+    
+    #sponsorBlock #sponsorLevels #levelOne { width:auto; display:block; float:none; margin-right:0;}
+    #sponsorBlock #sponsorLevels #levelTwo { width:auto; display:block; float:none; line-height:18px; }
+    #sponsorBlock #sponsorLevels #levelThree { width:auto; display:block; float:none; }
+
+    #sponsorBlock #sponsorLogos { width:auto; height:55px; margin-bottom:15px; display:block; }
+    #sponsorBlock #sponsorLogos #logoOne { width:auto; display:block; float:none; margin-right:0; }
+    #sponsorBlock #sponsorLogos #logoTwo { width:auto; display:block; float:none; }
+    
+
+    /* YELLOW PAGES */
+    .yellow_pages.list #interior_content .yellowpages_container .entry 
+    {  border-top: 1px inset #dadada;  width: auto;  float: none; height: auto;  margin:0; padding: 0.5em 0 0 0; font-size:auto; }
+
+    .yellow_pages.list #interior_content .alpha.nav { width:auto; margin: 0 auto 2em auto; }
+
+    .yellow_pages.list #interior_content .yellowpages_container .entry:nth-child(even) { position:static; }
+    
+    
+    /* CPA REFERRAL SERVICE */
+    
+    /* Results list */
+    .referral_firm_list #interior_content  { min-height: 100px; }
+    .referral_firm_list #interior_content #mapCanvas { width: auto; height: 200px; float:none; top:auto; position:relative; margin:0; padding:0; clear:both; display:block; }
+    .referral_firm_list #interior_content .results {  min-height: 100px;  }
+    .referral_firm_list #interior_content ol  { margin: 15px 0; width: auto; clear:both; }
+    
+    /* Individual firm */
+    .referral_firm_detail #interior_content #details {  width:auto; clear:both; margin-right:0; }
+    .referral_firm_detail #interior_content div.directionsMap { width:auto; height:200px; float:none;  }
+
+    /* CPE DRIVING DIRECTIONS */
+    .cpeDirections .directionsMap { width:auto; height:200px; margin:0; padding:0; }
+    .confLocation .directionsMap { width:auto; height:200px; margin:0 0 20px 0; padding:0; }
+    
+    /* GR */
+    #grPhotos img { width:130px; height:130px; margin-right:2px; margin-bottom:2px; }
+
+	
+	/**************************************/
+	/* ROUNDED COLOR TABLE STYLES */ 
+	.datatable_container { background:none; width:auto; }
+	.datatable_container .datatable_inner { width:auto; }
+	.datatable_container table { width:auto; border:2px solid #a3947e; }
+
+	.datatable_container table th {	color: #333333; border-top:2px solid #a3947e; border:1px solid #cbb89c; background:#faeedc; }
+	.datatable_container table td { border:1px solid #cbb89c; } 
+	
+	.datatable_container.berry { background: none; }
+	.datatable_container.orange { background: none; }
+	.datatable_container.purple { background: none; }
+	.datatable_container.green { background: none; }
+	.datatable_container.green { background: none; }
+	.datatable_container.blue { background: none; }
+	.datatable_container.red { background: none; }
+	
+	.datatable_container.berry .datatable_inner { background: none; }
+	.datatable_container.orange .datatable_inner { background: none; }
+	.datatable_container.purple .datatable_inner { background: none; }
+	.datatable_container.green .datatable_inner { background: none; }
+	.datatable_container.blue .datatable_inner { background: none; }
+	.datatable_container.red .datatable_inner { background: none; }
+
+	/* --------------------------------------------------------------- */	
+    /* DISCOUNT TICKETS */
+    #ticketsForm .logo { margin-bottom:-10px; }
+    #ticketsForm .description { padding:10px; }
+    #ticketsForm .description br { display:inline; }
+
+    #ticketsForm h3 { font-size:1em; margin-top:-0.5em;  margin-bottom:0.5em; }
+    #ticketsForm ul { padding-left: 0.5em; }
+
+	/* --------------------------------------------------------------- */	
+    /* FOOTNOTE */
+    .current_issue .cover { float:none; width:100%; }
+    .current_issue .description { float:none; width:100%; }
+    .footnote_contribution .write { float:none; width:100%; }
+    .footnote_contribution .member_note { float:none; width:100%; }
+
+    .readmag { margin-left:0;} 
+
+	/* --------------------------------------------------------------- */
+	/* TAX HELP PAGE */
+	
+	#taxHelp { width:99%; }
+	
+	/* Header */
+	#taxHelp .taxHelpHeader { height:auto; margin-top:20px; }
+	#taxHelp .taxHelpHeader h1 { background-size:contain; width:auto; }
+	#taxHelp .taxHelpHeader div.logo { display:block; float:none; width:80%; }
+	#taxHelp .taxHelpHeader div.tagline { display:none; }
+	#taxHelp .taxHelpHeader div + div { padding-left:0; }
+	
+	/* Callout box */
+	#taxHelp .taxHelpBox div.personas { display:none; }
+	#taxHelp .taxHelpBox { width:97%; }
+	
+	#taxHelp .taxHelpBox .calltoaction { width:auto; padding:15px 0 15px 15px; height:auto; text-align:left; }
+	#taxHelp .taxHelpBox .calltoaction div.body { display:block; float:none; width:95%; }
+	#taxHelp .taxHelpBox .calltoaction div.buttons { display:block; float:none; width:95%; margin-top:20px; }
+	#taxHelp .taxHelpBox .calltoaction div + div { padding-left:0; }
+	
+	#taxHelp .taxHelpBox .calltoaction div.buttons a { background-size:contain; width:auto; height:54px; }
+	
+	#taxHelpRelated .two-col { height:auto; }
+	#taxHelpRelated .two-col div { display:block; float:none; width:95%; }
+	#taxHelpRelated .two-col div + div { padding-left:0; border-left:none; }
+	
+	
+	/* ------------------------------------------------------------------------  */
+	/* Video and 360 View Handling - Facility Rental
+	*  ------------------------------------------------------------------------  */
+	.googleview { position:relative; padding-bottom:85%; margin-bottom:15px; height:0; overflow:hidden; }
+	.googleview iframe { position:absolute; top:0; left:0; width:100%; height:250px; }	
+
+    /* ------------------------- */
+    .blogpost .postimg { float:none; width:100%; margin-bottom:10px; }
+    .blogpost .postdetails { float:none; width:100%; margin-bottom:20px; }
+
+    /* ------------------------- */
+    /* TAX HELP HOMEPAGE CALLOUT */
+    .cpameasap { width:auto; height:auto; }
+    .cpameasap img { display:block; width:100%; max-width:292px; height:auto; }
+    .cpameasap p { margin-left:10px; margin-right:10px; }
+
+}
+
+	
+	

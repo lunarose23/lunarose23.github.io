@@ -1,0 +1,596 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head id="Head1"><meta name="credits" content="Programming by Sierra Bravo Corp http://www.sierrabravo.com. Design by iMarc http://imarc.net." /><meta id="HeaderKeywords" name="keywords" /><meta id="HeaderDescription" name="description" content="Article archive from the MNCPA member magazine, The Footnote." /><meta http-equiv="content-type" content="text/html; charset=utf-8" /><title>
+	MNCPA Footnote: Monthly member magazine of the Minnesota Society of CPAs
+</title>
+    <script type="text/javascript" src="http://www.mncpa.org/sup/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.mncpa.org/sup/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://www.mncpa.org/sup/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="http://www.mncpa.org/sup/js/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript" src="http://www.mncpa.org/sup/js/jquery.infieldlabel.min.js"></script>
+    <script type="text/javascript" src="http://www.mncpa.org/sup/js/inlinefieldlabel.js"></script>
+    <script type="text/javascript" src="http://www.mncpa.org/sup/js/plugins/hoverintent.min.js"></script>
+    <script type="text/javascript" src="http://www.mncpa.org/sup/js/nav.js"></script>
+    <script type="text/javascript" src="http://www.mncpa.org/sup/js/search_text.js"></script>
+    <script type="text/javascript" src="http://www.mncpa.org/sup/js/swfobject.js"></script>
+    <script type="text/javascript" src="http://www.mncpa.org/sup/js/plugins/cookie.js"></script>
+    
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,900" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="http://www.mncpa.org/sup/js/lightboxes.js" ></script>
+    <script type="text/javascript" src="http://www.mncpa.org/sup/js/recaptcha.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //Fade out success messages after 15 seconds
+            $('.success:not(.no_fade)').each(function () {
+                var obj = this;
+                setTimeout(function () { $(obj).fadeOut(5000) }, 15000);
+            });
+
+            //jquery hack to fix z-index issues on home w/ image rotator, menus being hidden behind
+            if ($.browser.msie && $.browser.version.substr(0, 1) == '7') {
+                var zIndexNumber = 10000;
+                $('div').each(function () {
+                    $(this).css('zIndex', zIndexNumber);
+                    zIndexNumber -= 10;
+                });
+
+            }
+
+			/*
+            $('#email_form').dialog({
+                autoOpen: false,
+                resizable: false,
+                dialogClass: 'email_form',
+                title: 'Email This Page',
+                minWidth: 500,
+                close: function () {
+                    $('[id$=ResetEmailForm]').click();
+                },
+                open: function () {
+                    $('#email_form').parent().appendTo($('form:first'));
+                }
+            }).parent().appendTo($('form:first'));
+            $('a[href$=email_form]').click(function (ev) { ev.preventDefault(); $('#email_form').dialog('open'); return false; });
+
+            $('#email_form input[id$=EmailForm]').live('click', function () {
+                if (Page_IsValid) {
+                    $('#email_form .overlay').show();
+                }
+            });
+			*/
+        });
+
+        function createCaptcha(key) {
+            if ($("#captcha").length > 0) {
+                Recaptcha.create(key, "captcha");
+            }
+        }
+    </script>
+    
+    <meta id="Viewport" name="viewport" content="width=device-width" />
+	
+	<!-- <~> Main MNCPA.org style sheet -->
+	<link rel="stylesheet" type="text/css" href="site.css" media="all" />
+	<!-- <~> -->
+	
+    <!--[if lte IE 6]>
+		<link rel="stylesheet" type="text/css" href="http://www.mncpa.org/sup/css/ie6.css" media="screen" />
+	<![endif]-->
+    <!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="http://www.mncpa.org/sup/css/ie7.css" media="screen" />
+	<![endif]-->
+    <!--[if IE 8]>
+        <link rel="stylesheet" type="text/css" href="http://www.mncpa.org/sup/css/ie8.css" media="screen" />
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="http://www.mncpa.org/sup/css/print.css" media="print" />
+	<link rel="Stylesheet" type="text/css" href="http://www.mncpa.org/sup/css/smoothness/jquery-ui-1.7.2.css" />
+	<link rel="shortcut icon" href="http://www.mncpa.org/sup/img/icons/favicon.ico" type="image/x-icon" />
+	<link rel="Stylesheet" href="http://www.mncpa.org/sup/css/colorbox.css" />
+	
+	<!-- <~> Responsive style sheet -->
+	<link id="MobileMediaQuery" rel="stylesheet" href="responsive.css" />
+	<!-- <~> -->
+	
+	<link id="TabletMediaQuery" rel="stylesheet" href="http://www.mncpa.org/sup/css/tablet.css" />
+    
+
+
+
+    <script type="text/javascript" src="http://www.mncpa.org/sup/js/shared.js"></script>
+</head>
+<body class="two_col no_advertisement">
+
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-KGS2HV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='http://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KGS2HV');</script>
+
+    <form method="post" action="http://www.mncpa.org/publications/footnote/" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMjUwNjU0NTk4D2QWAmYPZBYCZg9kFgJmD2QWBAIBD2QWDAIBDxYCHgdjb250ZW50ZGQCAg8WAh8ABT1BcnRpY2xlIGFyY2hpdmUgZnJvbSB0aGUgTU5DUEEgbWVtYmVyIG1hZ2F6aW5lLCBUaGUgRm9vdG5vdGUuZAIJDxYCHgdWaXNpYmxlZ2QCFg8WAh8BZ2QCFw8WAh8BZ2QCGA9kFgICAQ9kFgJmDxYCHgtfIUl0ZW1Db3VudGZkAgMPFgIeBWNsYXNzBRh0d29fY29sIG5vX2FkdmVydGlzZW1lbnQWAgIBEGRkFgYCBA8WAh8BaGQCCA9kFgQCAQ8PFgYeE21haW5fTGVmdE1lbnVNZW51SUQoKVlTeXN0ZW0uSW50NjQsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQI1Nx4QU2VsZWN0ZWRNZW51SXRlbTLbCwABAAAA/////wEAAAAAAAAADAIAAABIQXBwX0NvZGUuZWxxbzF3Z2ssIFZlcnNpb249MC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAAMU2lkZU1lbnVJdGVtCAAAAAVpdGVtcxY8VGl0bGU+a19fQmFja2luZ0ZpZWxkFTxMaW5rPmtfX0JhY2tpbmdGaWVsZBs8SXNTZWxlY3RlZD5rX19CYWNraW5nRmllbGQTPElkPmtfX0JhY2tpbmdGaWVsZBk8UGFyZW50SWQ+a19fQmFja2luZ0ZpZWxkGjxQYXJlbnRUb3A+a19fQmFja2luZ0ZpZWxkFjxJbWFnZT5rX19CYWNraW5nRmllbGQDAQEAAAAAAXtTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5MaXN0YDFbW1NpZGVNZW51SXRlbSwgQXBwX0NvZGUuZWxxbzF3Z2ssIFZlcnNpb249MC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsXV0BCQkBAgAAAAkDAAAABgQAAAAIRm9vdG5vdGUGBQAAABcvcHVibGljYXRpb25zL2Zvb3Rub3RlLwGIAAAAAAAAAAAAAAAAAAAAAQoEAwAAAHtTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5MaXN0YDFbW1NpZGVNZW51SXRlbSwgQXBwX0NvZGUuZWxxbzF3Z2ssIFZlcnNpb249MC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsXV0DAAAABl9pdGVtcwVfc2l6ZQhfdmVyc2lvbgQAAA5TaWRlTWVudUl0ZW1bXQIAAAAICAkGAAAABgAAAAYAAAAHBgAAAAABAAAACAAAAAQMU2lkZU1lbnVJdGVtAgAAAAkHAAAACQgAAAAJCQAAAAkKAAAACQsAAAAJDAAAAA0CAQcAAAABAAAACQ0AAAAGDgAAAA1Jc3N1ZSBBcmNoaXZlBg8AAAApL3B1YmxpY2F0aW9ucy9mb290bm90ZS9pc3N1ZS1hcmNoaXZlLmFzcHgAXAIAAAAAAAAAAAAAAAAAAAAKAQgAAAABAAAACRAAAAAGEQAAAA9SZWd1bGFyIENvbHVtbnMGEgAAACMvcHVibGljYXRpb25zL2Zvb3Rub3RlL2NvbHVtbnMuYXNweABdAgAAAAAAAAAAAAAAAAAAAAoBCQAAAAEAAAAJEwAAAAYUAAAAEUFydGljbGVzIGJ5IFRvcGljBhUAAAAiL3B1YmxpY2F0aW9ucy9mb290bm90ZS90b3BpY3MuYXNweABeAgAAAAAAAAAAAAAAAAAAAAoBCgAAAAEAAAAJFgAAAAYXAAAAEldyaXRlIGZvciBGb290bm90ZQYYAAAALi9wdWJsaWNhdGlvbnMvZm9vdG5vdGUvYXJ0aWNsZS1zdWJtaXNzaW9uLmFzcHgAVAcAAAAAAAAAAAAAAAAAAAAKAQsAAAABAAAACRkAAAAGGgAAAAlBZHZlcnRpc2UGGwAAACcvbWFya2V0LXRvLWNwYXMvYWR2ZXJ0aXNlL2Zvb3Rub3RlLmFzcHgA2TMAAAAAAAAAAAAAAAAAAAAKAQwAAAABAAAACRwAAAAGHQAAABBEaWdpdGFsIEZvb3Rub3RlBh4AAAAaaHR0cDovL2Zvb3Rub3RlLm1uY3BhLm9yZy8AHQMAAAAAAAAAAAAAAAAAAAAKAQ0AAAADAAAACR8AAAAAAAAAAAAAAAEQAAAAAwAAAAkfAAAAAAAAAAAAAAABEwAAAAMAAAAJHwAAAAAAAAAAAAAAARYAAAADAAAACR8AAAAAAAAAAAAAAAEZAAAAAwAAAAkfAAAAAAAAAAAAAAABHAAAAAMAAAAJHwAAAAAAAAAAAAAABx8AAAAAAQAAAAAAAAAEDFNpZGVNZW51SXRlbQIAAAALHglNZW51SXRlbXMyxBsAAQAAAP////8BAAAAAAAAAAwCAAAASEFwcF9Db2RlLmVscW8xd2drLCBWZXJzaW9uPTAuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAQBAAAAe1N5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkxpc3RgMVtbU2lkZU1lbnVJdGVtLCBBcHBfQ29kZS5lbHFvMXdnaywgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGxdXQMAAAAGX2l0ZW1zBV9zaXplCF92ZXJzaW9uBAAADlNpZGVNZW51SXRlbVtdAgAAAAgICQMAAAAIAAAACAAAAAcDAAAAAAEAAAAIAAAABAxTaWRlTWVudUl0ZW0CAAAACQQAAAAJBQAAAAkGAAAACQcAAAAJCAAAAAkJAAAACQoAAAAJCwAAAAUEAAAADFNpZGVNZW51SXRlbQgAAAAFaXRlbXMWPFRpdGxlPmtfX0JhY2tpbmdGaWVsZBU8TGluaz5rX19CYWNraW5nRmllbGQbPElzU2VsZWN0ZWQ+a19fQmFja2luZ0ZpZWxkEzxJZD5rX19CYWNraW5nRmllbGQZPFBhcmVudElkPmtfX0JhY2tpbmdGaWVsZBo8UGFyZW50VG9wPmtfX0JhY2tpbmdGaWVsZBY8SW1hZ2U+a19fQmFja2luZ0ZpZWxkAwEBAAAAAAF7U3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tTaWRlTWVudUl0ZW0sIEFwcF9Db2RlLmVscW8xd2drLCBWZXJzaW9uPTAuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbF1dAQkJAQIAAAAJDAAAAAYNAAAAF1B1YmxpY2F0aW9ucyAmYW1wOyBOZXdzBg4AAAAOL3B1YmxpY2F0aW9ucy8ALQMAAAAAAAAAAAAAAAAAAAEKAQUAAAAEAAAACQ8AAAAGEAAAAAhG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AAAAAAAAAAAAAAABZgAAAAEAAAAJJAAAAAAAAAAAAAAAC2RkAgIPZBYGAgEPZBYCAgMPZBYCZg8WAh8CZmQCAw9kFgYCAQ9kFgJmDxYCHwICARYCZg9kFgZmDxUCb2h0dHA6Ly93d3cubW5jcGEub3JnL3VwbG9hZGVkSW1hZ2VzL1B1YmxpY2F0aW9uc19hbmRfTmV3cy9QdWJsaWNhdGlvbnMvRm9vdG5vdGUvSXNzdWVzLzIwMTctMDYtbGFyZ2UuanBnP249ODkzMjNodHRwOi8vZm9vdG5vdGUubW5jcGEub3JnL1ZpemlvbjUvdmlld2VyLmFzcHg/aWQ9MzBkAgIPFQMOSnVuZS9KdWx5IDIwMTdnPHA+R2V0IHRocm91Z2ggc3VtbWVyIHdpdGggdGhlIEp1bmUvSnVseSBpc3N1ZSBvZiBGb290bm90ZSwgd2hpY2ggZGl2ZXMgaW50byBtYW55IGltcG9ydGFudCB0b3BpY3MuPC9wPng8dWw+PGxpPkN1bHRpdmF0aW5nIEdlbmVyYXRpb24gWjwvbGk+PGxpPkVmZmVjdGl2ZSBlc3RhdGUgcGxhbm5pbmc8L2xpPjxsaT5NYW5kYXRvcnkgcmV0aXJlbWVudCBmb3IgQ1BBIGZpcm1zPzwvbGk+PC91bD5kAgMPDxYCHgtOYXZpZ2F0ZVVybAUiL3B1YmxpY2F0aW9ucy9mb290bm90ZS8yMDE3LTYuYXNweGRkAgMPFgIfAgIDFgYCAQ9kFgQCAQ8PFgQeBFRleHQFK0plZmYgV2hpdGUsIHRoZSBNTkNQQSYjMzk7cyBuZXcgYm9hcmQgY2hhaXIfBwVHL3B1YmxpY2F0aW9ucy9mb290bm90ZS8yMDE3LTQvamVmZi13aGl0ZS10aGUtbmV3LU1OQ1BBLWJvYXJkLWNoYWlyLmFzcHhkZAICDxUBCkFwcmlsIDIwMTdkAgIPZBYEAgEPDxYEHwgFI0ZyYXVkIGludmVzdGlnYXRpb24gZm9yIHNtYWxsIGZpcm1zHwcFRi9wdWJsaWNhdGlvbnMvZm9vdG5vdGUvMjAxNy0yL2ZyYXVkLWludmVzdGlnYXRpb24tZm9yLXNtYWxsLWZpcm1zLmFzcHhkZAICDxUBE0ZlYnJ1YXJ5L01hcmNoIDIwMTdkAgMPZBYEAgEPDxYEHwgFRFRoZSBTdXBlciBCb3dsIGFuZCBzaG9ydC10ZXJtIHJlbnRhbHM6IFNob3VsZCBJIHN0YXkgb3Igc2hvdWxkIEkgZ28/HwcFRS9wdWJsaWNhdGlvbnMvZm9vdG5vdGUvMjAxNi0xMC9zdXBlci1ib3dsLWFuZC1zaG9ydC10ZXJtLXJlbnRhbHMuYXNweGRkAgIPFQEMT2N0b2JlciAyMDE2ZAIFD2QWAmYPFgIfAgIFFgoCAQ9kFgQCAQ8PFgIfBwUjL3B1YmxpY2F0aW9ucy9mb290bm90ZS8yMDE3LTQvLmFzcHhkFgJmDw8WAh4ISW1hZ2VVcmwFb2h0dHA6Ly93d3cubW5jcGEub3JnL3VwbG9hZGVkSW1hZ2VzL1B1YmxpY2F0aW9uc19hbmRfTmV3cy9QdWJsaWNhdGlvbnMvRm9vdG5vdGUvSXNzdWVzLzIwMTctMDUtc21hbGwuanBnP249OTU5N2RkAgMPDxYEHwgFCE1heSAyMDE3HwcFIy9wdWJsaWNhdGlvbnMvZm9vdG5vdGUvMjAxNy00Ly5hc3B4ZGQCAg9kFgQCAQ8PFgIfBwUfL3B1YmxpY2F0aW9ucy9mb290bm90ZS8yMDE3LTA0L2QWAmYPDxYCHwkFb2h0dHA6Ly93d3cubW5jcGEub3JnL3VwbG9hZGVkSW1hZ2VzL1B1YmxpY2F0aW9uc19hbmRfTmV3cy9QdWJsaWNhdGlvbnMvRm9vdG5vdGUvSXNzdWVzLzIwMTctMDQtc21hbGwuanBnP249NTYxN2RkAgMPDxYEHwgFCkFwcmlsIDIwMTcfBwUfL3B1YmxpY2F0aW9ucy9mb290bm90ZS8yMDE3LTA0L2RkAgMPZBYEAgEPDxYCHwcFHy9wdWJsaWNhdGlvbnMvZm9vdG5vdGUvMjAxNy0wMi9kFgJmDw8WAh8JBW9odHRwOi8vd3d3Lm1uY3BhLm9yZy91cGxvYWRlZEltYWdlcy9QdWJsaWNhdGlvbnNfYW5kX05ld3MvUHVibGljYXRpb25zL0Zvb3Rub3RlL0lzc3Vlcy8yMDE3LTAyLXNtYWxsLmpwZz9uPTY4MDZkZAIDDw8WBB8IBRlGZWJydWFyeS88YnIgLz5NYXJjaCAyMDE3HwcFHy9wdWJsaWNhdGlvbnMvZm9vdG5vdGUvMjAxNy0wMi9kZAIED2QWBAIBDw8WAh8HBR8vcHVibGljYXRpb25zL2Zvb3Rub3RlLzIwMTYtMTIvZBYCZg8PFgIfCQVvaHR0cDovL3d3dy5tbmNwYS5vcmcvdXBsb2FkZWRJbWFnZXMvUHVibGljYXRpb25zX2FuZF9OZXdzL1B1YmxpY2F0aW9ucy9Gb290bm90ZS9Jc3N1ZXMvMjAxNi0xMi1zbWFsbC5qcGc/bj0xMjQ3ZGQCAw8PFgQfCAUgRGVjZW1iZXIgMjAxNi88YnIgLz5KYW51YXJ5IDIwMTcfBwUfL3B1YmxpY2F0aW9ucy9mb290bm90ZS8yMDE2LTEyL2RkAgUPZBYEAgEPDxYCHwcFHy9wdWJsaWNhdGlvbnMvZm9vdG5vdGUvMjAxNi0xMS9kFgJmDw8WAh8JBW9odHRwOi8vd3d3Lm1uY3BhLm9yZy91cGxvYWRlZEltYWdlcy9QdWJsaWNhdGlvbnNfYW5kX05ld3MvUHVibGljYXRpb25zL0Zvb3Rub3RlL0lzc3Vlcy8yMDE2LTExLXNtYWxsLmpwZz9uPTEyMTlkZAIDDw8WBB8IBQ1Ob3ZlbWJlciAyMDE2HwcFHy9wdWJsaWNhdGlvbnMvZm9vdG5vdGUvMjAxNi0xMS9kZAIFDw8WAh8BaGRkAgwPFgIfAWgWAmYPDxYCHwFoZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgQFI2N0bDAwJGN0bDAwJGN0bDAwJExvZ2luU3RhdHVzJGN0bDAxBSNjdGwwMCRjdGwwMCRjdGwwMCRMb2dpblN0YXR1cyRjdGwwMwUkY3RsMDAkY3RsMDAkY3RsMDAkTG9naW5TdGF0dXMyJGN0bDAxBSRjdGwwMCRjdGwwMCRjdGwwMCRMb2dpblN0YXR1czIkY3RsMDMJDBiFfB4mR0bscdM3idWrtjQ3h9KFZsanP9xevc1nww==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+	<div class="aspNetHidden">
+
+		<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9D41B8B9" />
+		<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAc/jZOP6+GaZphZ9bdkjuPaelEpIdnuTqTVK5ZC4e/GtZ9P/WQimXSnr7P/lf3J+QEUBV5N7XPBI/WhUze4HJa4nKy1Ec18f3Q7npHn9k25vZoRw17lfd1oY36M3t3nClb9BaZ996VZ+JsTfmJNPPKOxt1IUH3MX3pBFln/6MBHQ0FbXaPZ43Qt07dOcPSGr04=" />
+	</div>
+     
+    
+    <div id="print_header">
+        <h1>Minnesota Society of Certified Public Accountants</h1>
+        <p>1650 West 82nd Street, Ste 600<br />
+            Bloomington MN 55431<br />
+            Ph: 952-831-2707 &nbsp;&nbsp;&nbsp; Fax: 952-831-7875<br />
+            www.mncpa.org </p>
+    </div>
+
+    
+    
+    <script type="text/javascript">
+        $(document).ready(setNoMobileMsg);
+
+        function setNoMobileMsg() {
+            var noMobMsgId = 'pnlNoMobileMessage';
+            if (noMobMsgId != "") {
+
+                if ($('#' + noMobMsgId).length) {
+                    if ($("#header").width() > $(window).width()) {
+                        $('#' + noMobMsgId).show();
+                    }
+                    else {
+                        $('#' + noMobMsgId).hide();
+                    }
+                }
+            }
+        }
+
+    </script>
+
+    
+
+
+    <div id="header_container_interior">
+        <div id="header">
+            <div id="logo"><a href="/"><img src="http://www.mncpa.org/sup/img/template/mncpa-logo-white.png" alt="Minnesota Society of Certified Public Accountants" /></a></div>
+            <a id="mobileSearch" href="#"><span>Show search</span></a>
+            <div class="site_search">
+                <fieldset class="inline_labels">
+                    <div onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;SearchGo&#39;)">
+	
+                        <label for="Search">Search</label>
+                        <input name="ctl00$ctl00$ctl00$Search" type="text" id="Search" class="search_field" />
+                        <input type="submit" name="ctl00$ctl00$ctl00$SearchGo" value="" id="SearchGo" class="search_go" ImageAlign="AbsMiddle" />
+                    
+</div>
+                </fieldset>
+            </div>
+			
+
+        </div>
+    </div>
+	
+	
+	
+
+	<div id="nav">
+		<div class="nav_interior">
+			<ul class="major_nav">
+				<li class="home"><a href="/" class="main_nav_link">Home</a></li>
+
+				<li class="my_mncpa"><a href="/my-mncpa/" class="main_nav_link">My MNCPA</a>
+					<ul class="sub_nav" id="sub_nav_my_mncpa">
+						<li class="showOnMobileOnly"><a href="/my-mncpa/">My MNCPA</a></li>
+                        <li><a href="/my-mncpa/my-account/">My Account</a></li>
+						<li><a href="/my-mncpa/my-cpe/">My CPE</a></li>
+						<li><a href="/my-mncpa/email-subscriptions.aspx">My Email Subscriptions<img src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
+						<li><a href="/my-mncpa/my-legislators/">My Legislators <img src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
+						<li><a href="/my-mncpa/member-savings/">Member Savings <img src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
+						<li><a href="/member-directory/">Member Directory <img src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
+					    <li><a href="/my-mncpa/membership-faq.aspx">Membership FAQ</a></li>
+					    <li><a href="/Firm-Admin/Login.aspx">Firm Administration</a></li>
+					</ul>
+				</li>
+				<li class="cpe"><a href="/cpe/" class="main_nav_link">CPE</a>
+					<ul class="sub_nav" id="sub_nav_cpe">
+                        <li class="showOnMobileOnly"><a href="/cpe/">CPE Home</a></li>
+					    <li><a href="/my-mncpa/my-cpe/">My CPE</a></li>
+					    <li class="showOnMobileOnly"><a href="/cpe/search-mn-cpe.aspx">Search CPE Catalog</a></li>
+                        <li class="showOnDesktopOnly"><a href="/cpe/catalog/mn-cpe.aspx">Search CPE Catalog</a></li>
+						<li><a href="/cpe/programs-and-products/">CPE Programs &amp; Products</a></li>
+						<li><a href="/cpe/mn-cpe-calendar.aspx">CPE Calendar</a></li>
+						<li><a href="/cpe/on-site-training/">On-site Training</a></li>
+						<li><a href="/cpe/directions-and-travel/">Directions &amp; Travel</a></li>
+						<li><a href="/cpe/cpe-rules/">CPE Rules</a></li>
+						<li><a href="/market-to-cpas/">Exhibiting &amp; Sponsorships</a></li>
+						<li><a href="/cpe/faq/">FAQ</a></li>
+                        
+					</ul>
+				</li>
+				<li id="active" class="pub_news"><a href="/publications/" class="main_nav_link">Publications &amp; News</a>
+					<ul class="sub_nav" id="sub_nav_pub_news">
+                        <li><a href="http://www.mncpa.org/publications/footnote/">Footnote</a></li>
+						<li><a href="/publications/mncpa-publications.aspx">eNewsletters</a></li>
+                        <li><a href="/perspectives/">MNCPA Perspectives</a></li>
+						<li><a href="/publications/tax-podcasts/">Tax Podcasts</a></li>
+						<li><a href="/topics/">Topics of Interest</a></li>
+						<li><a href="/involvement/legislative/">Legislative Activities</a></li>
+						
+						<li><a href="/press/">Press Room</a></li>
+					</ul>
+				</li>
+				<li class="tech_resources"><a href="/resources/" class="main_nav_link">Technical Resources</a>
+					<ul class="sub_nav" id="sub_nav_tech_resources">
+                        <li><a href="/boa-rules-certification/">Rules &amp; Certification</a></li>
+						<li><a href="/resources/tax/">Tax</a></li>
+						<li><a href="/resources/human-resources/">Human Resources</a></li>
+						<li><a href="/resources/firm-management/">Firm Management</a></li>						
+						<li><a href="/resources/report-review/">Report Review</a></li>
+						<li><a href="/resources/peer-review/">Peer Review</a></li>
+						<li><a href="/resources/ethics/">Professional Ethics</a></li>
+					</ul>
+				</li>
+				<li class="involvement"><a href="/involvement/" class="main_nav_link">Involvement</a>
+					<ul class="sub_nav" id="sub_nav_involvement">
+ 
+						<li><a href="/member-directory/">Member Directory <img src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
+						<li><a href="/involvement/mncpa-connect/">MNCPA Connect <img src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
+                        <li><a href="/involvement/events/">Events</a></li>
+						<li><a href="/involvement/volunteer/">Volunteer</a></li>
+						<li><a href="/involvement/member-groups/">Member Groups</a></li>
+                        <li><a href="/involvement/member-recognition/">Member Recognition</a></li>
+						<li><a href="/involvement/legislative/">Legislative Activities</a></li>
+						<li><a href="/involvement/financial-literacy/">Financial Literacy</a></li>
+						<li><a href="/involvement/accountants-concerned-for-accountants.aspx">Accountants Concerned for Accountants</a></li>
+					</ul>
+				</li>
+				<li class="careers"><a href="/cpa-careers/" class="main_nav_link">Careers</a>
+					<ul class="sub_nav" id="sub_nav_careers">
+						<li><a href="/cpa-careers/cpa-classifieds/">Classifieds</a></li>
+	                    <li><a href="/cpa-careers/clips/">Leading Edge Career Clips</a></li>
+						<li><a href="/cpa-careers/job-seeker-resources/">Job Seeker Resources</a></li>
+                        <li><a href="/cpa-careers/graduate-accounting-degrees.aspx">Graduate Accounting Programs</a></li>
+						<li><a href="/cpa-careers/find-cpa-accounting-employees/">Find Employees</a></li>
+						<li><a href="/cpa-careers/market-my-firm/">Market My Firm</a></li>
+						<li><a href="/becoming-a-cpa/">Become a CPA</a></li>
+					</ul>
+				</li>
+				<li class="about_us"><a href="/about/" class="main_nav_link">About Us</a>
+					<ul class="sub_nav" id="sub_nav_about_us">
+						<li><a href="/about/mncpa-info/">MNCPA Info</a></li>
+						<li><a href="/about/contact-us/">Contact Us</a></li>
+						<li><a href="/join/">Join the MNCPA</a></li>
+						<li><a href="/press/">Press Room</a></li>
+						<li><a href="/market-to-cpas/">Marketing Opportunities</a></li>
+						<li><a href="/minneapolis-meeting-room-rental.aspx">Facility Rental</a></li>
+					</ul>
+				</li>
+
+
+				<!-- Mobile only -->
+				<li class="findacpa"><a href="/find-a-cpa/" class="main_nav_link">Find a CPA</a>
+					<ul class="sub_nav" id="sub_nav_findacpa">
+						<li><a href="/find-a-cpa/mn-cpa-referral/">CPA Referral Service</a></li>
+						<li><a href="/find-a-cpa/cpa-directories.aspx">CPA Directories</a></li>
+						<li><a href="/find-a-cpa/hire-a-cpa.aspx">Hire a CPA</a></li>
+						<li><a href="/find-a-cpa/cpa-speakers.aspx">Speakers</a></li>
+						<li><a href="/resources/peer-review/firms.aspx">Peer Reviewers</a></li>
+						<li><a href="/find-a-cpa/government-auditors/directory.aspx">Government Auditors</a></li>
+					</ul>
+				</li>
+
+				<li class="more"><a href="/mobile/directory.aspx" class="main_nav_link">More</a>
+					<ul class="sub_nav" id="sub_nav_more">
+                        <li class="showOnMobileOnly"><a href="/mobile/directory.aspx">Quick Links &amp; Site Map</a></li>
+						<li><a href="/publications/">Publications</a></li>
+						<li><a href="/resources/">Technical Resources</a></li>
+						<li><a href="/involvement/">Involvement</a></li>
+						<li><a href="/cpa-careers/">Careers</a></li>
+						<li><a href="/becoming-a-cpa/">Becoming a CPA</a></li>
+						<li><a href="/public/">Public Resources</a></li>
+						<li><a href="/about/">Marketing Opportunities</a></li>
+                        <li><a href="/">Home</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	
+    <div id="content_container">
+        <div id="content_shadow">
+            
+    <div id="interior_content_container_full">
+        <div id="advertisement">
+            
+
+	
+	
+	
+	<div class="ad_interior">
+		<div class="ad_intro">
+			A message from <br />
+			(Advertisement)
+		</div>
+		<div class="ad_message">
+			<h3></h3>
+			<p>
+				
+				<a id="main_BannerAdvertisements_lbtnLearnMore" href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$main$BannerAdvertisements$lbtnLearnMore&#39;,&#39;&#39;)">Learn more</a>
+			</p>
+		</div>
+		<div class="ad_image">
+			
+		</div>
+	</div>
+        </div>
+        <div id="sub_navigation">
+            <ul>
+	<li><a href="/publications/">Publications &amp; News</a></li><li class="expanded"><a href="http://www.mncpa.org/publications/footnote/">Footnote</a><ul><li><a href="http://www.mncpa.org/publications/footnote/issue-archive.aspx">Issue Archive</a></li><li><a href="http://www.mncpa.org/publications/footnote/columns.aspx">Regular Columns</a></li><li><a href="http://www.mncpa.org/publications/footnote/topics.aspx">Articles by Topic</a></li><li><a href="http://www.mncpa.org/publications/footnote/article-submission.aspx">Write for Footnote</a></li><li><a href="/market-to-cpas/advertise/footnote.aspx">Advertise</a></li><li><a href="http://footnote.mncpa.org/">Digital Footnote</a></li></ul></li><li><a href="/publications/mncpa-publications.aspx">eNewsletters</a></li><li><a href="/perspectives/">MNCPA Perspectives</a></li><li><a href="/publications/tax-podcasts/">Tax Podcasts</a></li><li><a href="/topics/">Topics of Interest</a></li><li><a href="/involvement/legislative.aspx">Legislative Activities</a></li><li><a href="/press/">Press Room</a></li></ul>
+        </div>
+         
+        
+    <div id="interior_content">
+        <div id="main_main_messages" class="messages">
+            
+            
+            <div id="main_main_ContentTwoMasterValidationSummary" style="display:none;">
+
+	</div>
+        </div>
+        
+
+    <h1>Footnote Magazine</h1>
+
+
+    
+    
+        
+        <div id="footnote_container">
+            <div class="current_issue">
+
+                <div class="cover">
+                    <a class="cover" style="background:url(http://www.mncpa.org/uploadedImages/Publications_and_News/Publications/Footnote/Issues/2017-06-large.jpg?n=8932) no-repeat;" href="http://footnote.mncpa.org/Vizion5/viewer.aspx?id=30" target="_blank">
+                        <img src="http://www.mncpa.org/sup/img/buttons/text/read-this-issue-footnote.png" alt="READ THIS ISSUE" style="height:40px;width:164px;" />
+                    </a>
+                </div>
+                
+                <div class="description">
+
+                    <h2>Current issue: June/July 2017</h2>
+                    <p>Get through summer with the June/July issue of Footnote, which dives into many important topics.</p>
+                    <ul><li>Cultivating Generation Z</li><li>Effective estate planning</li><li>Mandatory retirement for CPA firms?</li></ul>
+
+                    <p><a id="main_main_MainContent_ctrlCurrentIssue_rptFeature_lnkDigitalVersion_0" class="action" href="http://www.mncpa.org/publications/footnote/2017-6.aspx">Read web version</a></p>
+
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+    
+
+
+    
+    
+    
+            <h2>Popular articles</h2>
+            <ul>
+        
+            <li>
+                <a href="http://www.mncpa.org/publications/footnote/2017-4/jeff-white-the-new-MNCPA-board-chair.aspx">Jeff White, the MNCPA&#39;s new board chair</a>
+                <span class="nowrap">(April 2017)</span>
+            </li>
+        
+            <li>
+                <a href="http://www.mncpa.org/publications/footnote/2017-2/fraud-investigation-for-small-firms.aspx">Fraud investigation for small firms</a>
+                <span class="nowrap">(February/March 2017)</span>
+            </li>
+        
+            <li>
+                <a href="http://www.mncpa.org/publications/footnote/2016-10/super-bowl-and-short-term-rentals.aspx">The Super Bowl and short-term rentals: Should I stay or should I go?</a>
+                <span class="nowrap">(October 2016)</span>
+            </li>
+        
+            </ul>
+        
+
+    
+    <div class="past_footnote">
+        <h2>Past issues</h2>
+        
+        <div class="past_footnote">
+            <ul class="past_issues">
+    
+        <li>
+            <a id="main_main_MainContent_ctrlArchive_rptArchive_lnkCover_0" href="http://www.mncpa.org/publications/footnote/2017-4/.aspx"><img id="main_main_MainContent_ctrlArchive_rptArchive_imgCover_0" src="http://www.mncpa.org/uploadedImages/Publications_and_News/Publications/Footnote/Issues/2017-05-small.jpg?n=9597" /></a>
+
+            <a id="main_main_MainContent_ctrlArchive_rptArchive_lnkDate_0" href="http://www.mncpa.org/publications/footnote/2017-4/.aspx">May 2017</a>
+        </li>
+    
+        <li>
+            <a id="main_main_MainContent_ctrlArchive_rptArchive_lnkCover_1" href="http://www.mncpa.org/publications/footnote/2017-04/"><img id="main_main_MainContent_ctrlArchive_rptArchive_imgCover_1" src="http://www.mncpa.org/uploadedImages/Publications_and_News/Publications/Footnote/Issues/2017-04-small.jpg?n=5617" /></a>
+
+            <a id="main_main_MainContent_ctrlArchive_rptArchive_lnkDate_1" href="http://www.mncpa.org/publications/footnote/2017-04/">April 2017</a>
+        </li>
+    
+        <li>
+            <a id="main_main_MainContent_ctrlArchive_rptArchive_lnkCover_2" href="http://www.mncpa.org/publications/footnote/2017-02/"><img id="main_main_MainContent_ctrlArchive_rptArchive_imgCover_2" src="http://www.mncpa.org/uploadedImages/Publications_and_News/Publications/Footnote/Issues/2017-02-small.jpg?n=6806" /></a>
+
+            <a id="main_main_MainContent_ctrlArchive_rptArchive_lnkDate_2" href="http://www.mncpa.org/publications/footnote/2017-02/">February/<br />March 2017</a>
+        </li>
+    
+        <li>
+            <a id="main_main_MainContent_ctrlArchive_rptArchive_lnkCover_3" href="http://www.mncpa.org/publications/footnote/2016-12/"><img id="main_main_MainContent_ctrlArchive_rptArchive_imgCover_3" src="http://www.mncpa.org/uploadedImages/Publications_and_News/Publications/Footnote/Issues/2017-02-small.jpg?n=6806" /></a>
+
+            <a id="main_main_MainContent_ctrlArchive_rptArchive_lnkDate_3" href="http://www.mncpa.org/publications/footnote/2016-12/">December 2016/<br />January 2017</a>
+        </li>
+    
+        <li>
+            <a id="main_main_MainContent_ctrlArchive_rptArchive_lnkCover_4" href="http://www.mncpa.org/publications/footnote/2016-11/"><img id="main_main_MainContent_ctrlArchive_rptArchive_imgCover_4" src="http://www.mncpa.org/uploadedImages/Publications_and_News/Publications/Footnote/Issues/2017-02-small.jpg?n=6806" /></a>
+
+            <a id="main_main_MainContent_ctrlArchive_rptArchive_lnkDate_4" href="http://www.mncpa.org/publications/footnote/2016-11/">November 2016</a>
+        </li>
+    
+            </ul>
+        </div>
+    
+
+
+        <p><a class="action" href="http://www.mncpa.org/publications/footnote/issue-archive.aspx">View full Footnote archive</a></p>
+    </div>
+
+    
+    <div>
+		<!-- DIGITAL FOOTNOTE CALLOUT -->
+<h2>Digital Footnote email alerts<br/></h2>
+<p>Receive alerts when a new Footnote is available. Sign up today to have an email delivered to you detailing each new issue. Don't worry -- you'll still receive the print edition, so you're covered anywhere you go. </p>
+<p><a href="https://www.mncpa.org/my-mncpa/email-subscriptions.aspx" class="action">Sign up today</a></p>
+<div id="footnote_container">              
+    <div class="digital_footnote">                      
+        <a href="http://footnote.mncpa.org/" target="_blank">                         
+            <img src="http://www.mncpa.org/images/footnote/covers/footnote-devices.png" alt="Digital Footnote displayed on laptop, tablet and cellphone" class="photoRight" border="0"/>        </a>                      
+        <h2>Digital Footnote</h2>                           
+        <p>Read Footnote on your phone, tablet and computer. Share articles, click on links and CPE courses and view past issues in this version of Footnote specifically designed for your mobile device.                          
+            <br/>                         
+            <a class="action" href="http://footnote.mncpa.org/" target="_blank">Read the latest digital issue of Footnote</a>        </p>    </div>
+</div>
+<!-- TWO COLUMN FOOTNOTE MODULE - REPLACES OLD RHC -->
+<div class="footnote_contribution">              
+    <div class="write">                        
+        <h2>Write for Footnote</h2>                          
+        <p>Share your expertise and knowledge with members of the MNCPA by contributing an article to Footnote magazine.</p>                          
+        <p>                         
+            <a class="action" href="http://www.mncpa.org/publications/footnote/article-submission.aspx">Submit an article to Footnote</a>        </p>    </div>              
+    <div class="member_note">                        
+        <h2>Submit a Member Note</h2>                          
+        <p>Have exciting news to share? A promotion, new job, speaking engagement or award? Share it with other MNCPA members in Footnote. Send your items to Corey Butler at                           
+            <a href="mailto:cbutler@mncpa.org">cbutler@mncpa.org</a>.</p>    </div>
+</div>
+<div class="clear"></div>
+<h2>Get noticed, grow your business and build relationships</h2>
+<p>                   
+    <img src="http://www.mncpa.org/images/footnote/advertising01.jpg" class="photoRight" alt="CPA reading magazine" style="margin-top:3px;"/> Do you offer vital services for CPAs’ careers and business practices? Showcase your company to more than 9,000 members by advertising in Footnote. </p>
+<p>                                            
+    <a href="/market-to-cpas/advertise/footnote.aspx" class="action" title="Learn more about advertising in Footnote">Learn more about advertising in Footnote</a>
+</p>
+	</div>
+
+        
+    </div>
+    <!--  Close #interior_content -->
+
+
+        <span class="clear"></span>
+
+        </div>
+    </div>
+	
+
+	<!-- <~> -->
+	<!-- ========================================================= --> 
+	<!-- FOOTER -->
+    <div id="footer">
+       <div class="footer_container">
+       
+        <div class="footer_block">
+            <a href="/about/"><img src="http://www.mncpa.org/sup/img/template/mncpa-logo-footer.png" alt="MNCPA logo" /></a>
+                                   </div>
+       
+        <div class="footer_block">
+            <p class="contact">
+            
+                <span class="nowrap">1650 West 82nd Street, Suite 600,</span> <span class="nowrap">Bloomington, MN 55431</span><br />
+                                                                <a href="/cpe/directions-and-travel/">Directions</a><br /><br />
+                
+                <span class="phone">952-831-2707</span> &nbsp;|&nbsp; <span class="tollfree">1-800-331-4288</span><br />
+                <a href="mailto:CustomerService@mncpa.org" class="white">CustomerService@mncpa.org</a>
+			</p>		
+			
+			<ul class="socnet">
+                <li><a href="https://www.linkedin.com/company/55775"><img src="http://www.mncpa.org/sup/img/template/linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="http://www.facebook.com/pages/Bloomington-MN/Minnesota-Society-of-CPAs/142886476185"><img src="http://www.mncpa.org/sup/img/template/facebook.png" alt="Facebook"></a></li>
+                <li><a href="http://twitter.com/MNCPATweet"><img src="http://www.mncpa.org/sup/img/template/twitter.png" alt="Twitter"></a></li>
+                <li><a href="http://www.youtube.com/user/mncpageneral"><img src="http://www.mncpa.org/sup/img/template/youtub.png" alt="YouTube"></a></li>
+                <li><a href="http://www.flickr.com/photos/mncpa-photos/"><img src="http://www.mncpa.org/sup/img/template/flickr.png" alt="Flickr"></a></li>
+                <li><a href="https://www.instagram.com/mncpa/"><img src="http://www.mncpa.org/sup/img/template/instagram.png" alt="Instagram"></a></li>
+            </ul>
+
+        </div>
+        <div class="footer_block">
+            <ul class="links">
+                <li id="liFullSite" class="showOnMobileOnly"><a id="lnkFullSite" href="javascript:__doPostBack(&#39;ctl00$ctl00$lnkFullSite&#39;,&#39;&#39;)">Use full site</a></li>
+                <li><a href="/about/contact-us/">Contact us</a></li>
+                <li><a href="/about/policies.aspx">Policies</a></li>
+                                                                <li><a href="/cpe/faq/">FAQs</a></li>
+                                                </ul>
+            <ul class="links">
+               <li><a href="/press/">Press room</a></li>
+                <li><a href="/market-to-cpas/">Marketing opportunities</a></li>
+                                                                <li><a href="/minneapolis-meeting-room-rental.aspx">Facility rental</a></li>
+
+	
+																
+            </ul>     
+        </div>
+    </div>
+	<!-- ========================================================= --> 
+
+		
+
+	
+    
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("main_main_ContentTwoMasterValidationSummary"));
+	//]]>
+</script>
+
+	
+<script type="text/javascript">
+//<![CDATA[
+
+(function(id) {
+    var e = document.getElementById(id);
+    if (e) {
+        e.dispose = function() {
+            Array.remove(Page_ValidationSummaries, document.getElementById(id));
+        }
+        e = null;
+    }
+})('main_main_ContentTwoMasterValidationSummary');
+//]]>
+</script>
+</form>
+
+</body>
+</html>
