@@ -28,8 +28,10 @@
 	#minor_nav { display:none; }
 	
 	/* <~> Adding www.mncpa.org */
-	a#mobileSearch { display:block; height:72px; width:57px; margin:0; padding:0;  position:absolute; top: 0; right:15px; background:url('http://www.mncpa.org/sup/img/mobi/template/search-btn.png') center 15px no-repeat; }
-	#mobileSearch span { display:none; }
+	.mobile-icons{ display:block; height:72px; width:57px; margin:0; padding:0; float: right; }
+	a#mobileSearchButton { background:url('http://www.mncpa.org/sup/img/mobi/template/search-btn.png') center 15px no-repeat; }
+	a#mobileMenuButton { background:url('http://www.mncpa.org/sup/img/mobi/template/menu-btn.png') center 15px no-repeat; }
+	#mobileSearchButton span, #mobileMenuButton span { display:none; }
 	
 	/********************************************/
 	/** MAIN (TOP) NAVIGATION **/
