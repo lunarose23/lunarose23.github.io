@@ -5125,5 +5125,8 @@ a.preheader { color:#1369ab; text-decoration:none; font-size:14px; font-weight:7
 /* MMENU
 *  ------------------------------------------------------------------------  */
 
-.mm-title{ text-transform: uppercase; font-weight: bold; }
+.mm-title{ text-transform: uppercase; font-weight: bold; text-decoration: none!important; }
 .mm-listview a:link, .mm-listview a:active { text-decoration: none; font-weight: bold; text-transform: uppercase; }
+.mm-listview li:hover { color: #a5a5a5;}
+.mm-listview img.members-only { float: right; }
+.mm-panels a:focus { outline: thin dotted; }
