@@ -1,18 +1,28 @@
-
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head id="Head1"><meta name="credits" content="Programming by Sierra Bravo Corp http://www.sierrabravo.com. Design by iMarc http://imarc.net." /><meta id="HeaderKeywords" name="keywords" /><meta id="HeaderDescription" name="description" content="Article archive from the MNCPA member magazine, The Footnote." /><meta http-equiv="content-type" content="text/html; charset=utf-8" /><title>
 	MNCPA Footnote: Monthly member magazine of the Minnesota Society of CPAs
 </title>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.mncpa.org/sup/js/jquery.min.js"></script>
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/jquery.scrollTo-1.4.2-min.js"></script>
-    <script type="text/javascript" src="http://www.mncpa.org/sup/js/jquery.infieldlabel.min.js"></script>
-    <script type="text/javascript" src="http://www.mncpa.org/sup/js/inlinefieldlabel.js"></script>
-    <script type="text/javascript" src="http://www.mncpa.org/sup/js/plugins/hoverintent.min.js"></script>
+    <!--<script type="text/javascript" src="http://www.mncpa.org/sup/js/jquery.infieldlabel.min.js"></script>
+    <script type="text/javascript" src="http://www.mncpa.org/sup/js/inlinefieldlabel.js"></script>-->
+
+    <script type="text/javascript" src="/jquery.infieldlabel.js"></script>
+    <!-- jquery migrate -->
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <!-- developement version -->
+    <!--<script src="http://code.jquery.com/jquery-migrate-1.4.1.js"></script>-->
+    <!-- production version -->
+    <script src="http://code.jquery.com/jquery-migrate-1.4.1.min.js "></script>
+    
+
+    <!-- update hoverIntent -->
+    <!--<script type="text/javascript" src="http://www.mncpa.org/sup/js/plugins/hoverintent.min.js"></script>-->
+    <script type="text/javascript" src="/jquery.hoverIntent.js"></script>
+    
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/nav.js"></script>
     <!-- mmenu jquery file -->
     <script type="text/javascript" src="/jquery.mmenu/jquery.mmenu.all.js"></script>
@@ -186,7 +196,7 @@ function __doPostBack(eventTarget, eventArgument) {
         <div id="header">
             <div id="logo"><a href="/"><img src="http://www.mncpa.org/sup/img/template/mncpa-logo-white.png" alt="Minnesota Society of Certified Public Accountants" /></a></div>
             <a id="mobileMenuButton" class="showOnMobileOnly mobile-icons" href="#mobile-menu"><span>Show Menu</span></a>
-            <a id="mobileSearchButton" class="showOnMobileOnly mobile-icons" href="#"><span>Show search</span></a>
+            <a id="mobileSearch" class="showOnMobileOnly mobile-icons" href="#"><span>Show search</span></a>
             <div class="site_search">
                 <fieldset class="inline_labels">
                     <div onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;SearchGo&#39;)">
@@ -207,103 +217,608 @@ function __doPostBack(eventTarget, eventArgument) {
 	<nav id="mobile-menu">
        <ul>
             <li><a href="/"><div id="logo" alt="Minnesota Society of Certified Public Accountants"><span class="hide">Home</span></div></a></li>
-            <li><a href="/my-mncpa/">My MNCOA</a>
-             <ul>
-                <li><a href="/my-mncpa/my-account/">My Account</a></li>
-                <li><a href="/my-mncpa/my-cpe/">My CPE</a></li>
-                <li><a href="/my-mncpa/email-subscriptions.aspx">My Email Subscriptions<img class="members-only" src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
-                <li><a href="/my-mncpa/my-legislators/">My Legislators <img class="members-only" src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
-                <li><a href="/my-mncpa/member-savings/">Member Savings <img class="members-only" src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
-                <li><a href="/member-directory/">Member Directory <img class="members-only" src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
-                <li><a href="/my-mncpa/membership-faq.aspx">Membership FAQ</a></li>
-                <li><a href="/Firm-Admin/Login.aspx">Firm Administration</a></li>
-             </ul>
+            <li><a href="/">My MNCPA</a>
+                 <ul>
+                    <li><a href="/">My Record</a>
+                            <ul>
+                                <li><a href="/">Pay Dues</a></li>
+                                <li><a href="/">My Profile</a></li>
+                                <li><a href="/">Username &amp; password</a></li>
+                                <li><a href="/">Account Settings</a></li>
+                                <li><a href="/">Email Subscriptions</a></li>
+                                <li><a href="/">Email Account</a></li>
+                                <li><a href="/">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">My CPE</a>
+                            <ul>
+                                <li><a href="/">Schedule</a></li>
+                                <li><a href="/">Transcript</a></li>
+                                <li><a href="/">CPE Log</a></li>
+                                <li><a href="/">CPE materials</a></li>
+                                <li><a href="/">Saved CPE list</a></li>
+                                <li><a href="/">Make a payment</a></li>
+                                <li><a href="/">Cancel an order</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Member Connections <img class="members-only" src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a>
+                            <ul>
+                                <li><a href="/">Member Directory</a></li>
+                                <li><a href="/">MNCPA Connect</a></li>
+                                <li><a href="/">My Legislators</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Featured Benefits</a>
+                            <ul>
+                                <li><a href="/">Member Savings</a></li>
+                                <li><a href="/">CPE Log</a></li>
+                                <li><a href="/">Online CCH Tax Research</a></li>
+                                <li><a href="/">HR Hotline</a></li>
+                                <li><a class="italics" href="/">More...</a></li>
+                            </ul>
+                        </li>
+                 </ul>
             </li>       
             <li><a href="/cpe/">CPE</a>
                 <ul>
-                    <li><a href="/my-mncpa/my-cpe/">My CPE</a></li>
-                    <li class="showOnMobileOnly"><a href="/cpe/search-mn-cpe.aspx">Search CPE Catalog</a></li>
-                    <li class="showOnDesktopOnly"><a href="/cpe/catalog/mn-cpe.aspx">Search CPE Catalog</a></li>
-                    <li><a href="/cpe/programs-and-products/">CPE Programs &amp; Products</a></li>
-                    <li><a href="/cpe/mn-cpe-calendar.aspx">CPE Calendar</a></li>
-                    <li><a href="/cpe/on-site-training/">On-site Training</a></li>
-                    <li><a href="/cpe/directions-and-travel/">Directions &amp; Travel</a></li>
-                    <li><a href="/cpe/cpe-rules/">CPE Rules</a></li>
-                    <li><a href="/market-to-cpas/">Exhibiting &amp; Sponsorships</a></li>
-                    <li><a href="/cpe/faq/">FAQ</a></li>
-                </ul>
-            </li>
-            <li><a href="/publications/">Publications &amp; News</a>
-                <ul>
-                    <li><a href="http://www.mncpa.org/publications/footnote/">Footnote</a>
+                    <li><a href="/">Find CPE</a>
                         <ul>
-                            <li><a href="/">Issue Archive</a></li>
-                            <li><a href="/">Regular Columns</a></li>
-                            <li><a href="/">Articles by Topic</a></li>
-                            <li><a href="/">Write for Footnote</a></li>
-                            <li><a href="/">Advertise</a></li>
-                            <li><a href="/">Digital Footnote</a></li>
+                            <li><a href="/">Search Catalog</a></li>
+                            <li><a href="/">Calendar</a></li>
+                            <li><a href="/">Seminars</a></li>
+                            <li><a href="/">Conferences</a></li>
+                            <li><a href="/">Webinars</a></li>
+                            <li><a href="/">Self-Study</a></li>
+                            <li><a href="/">Packages</a></li>
+                            <li><a href="/">On-Site Training</a></li>
                         </ul>
                     </li>
-                    <li><a href="/publications/mncpa-publications.aspx">eNewsletters</a></li>
-                    <li><a href="/perspectives/">MNCPA Perspectives</a></li>
-                    <li><a href="/publications/tax-podcasts/">Tax Podcasts</a></li>
-                    <li><a href="/topics/">Topics of Interest</a></li>
-                    <li><a href="/involvement/legislative/">Legislative Activities</a></li>
-                    <li><a href="/press/">Press Room</a></li>
+                    <li><a href="/">My CPE</a>
+                        <ul>
+                            <li><a href="/">Schedule</a></li>
+                            <li><a href="/">Transcript</a></li>
+                            <li><a href="/">CPE Log</a></li>
+                            <li><a href="/">CPE materials</a></li>
+                            <li><a href="/">Saved CPE list</a></li>
+                            <li><a href="/">Make a payment</a></li>
+                            <li><a href="/">Cancel an order</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">CPE Rules</a>
+                        <ul>
+                            <li><a href="/">CPE Requirements</a></li>
+                            <li><a href="/">Ethics Requirements</a></li>
+                            <li><a href="/">Reporting &amp; Records</a></li>
+                            <li><a class="italics" href="/">More...</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Directions &amp; Travel</a></li>
+                    <li><a href="/">Firm Administrators</a></li>
+                    <li><a href="/">Meeting Room Rental</a></li>
+                    <li><a href="/">Exhibit &amp; Sponspr</a></li>
+                    <li><a href="/">FAQ</a></li>
                 </ul>
             </li>
-            <li><a href="/resources/">Techical Resources</a>
+            <li><a href="/publications/">News &amp; Resources</a>
                 <ul>
-                    <li><a href="/boa-rules-certification/">Rules &amp; Certification</a></li>
-                    <li><a href="/resources/tax/">Tax</a></li>
-                    <li><a href="/resources/human-resources/">Human Resources</a></li>
-                    <li><a href="/resources/firm-management/">Firm Management</a></li>
-                    <li><a href="/resources/report-review/">Report Review</a></li>
-                    <li><a href="/resources/peer-review/">Peer Review</a></li>
-                    <li><a href="/resources/ethics/">Professional Ethics</a></li>
+                    <li><a href="#">Technical Resources</a>
+                        <ul>
+                            <li><a href="/">Tax</a></li>
+                            <li><a href="/">Human Resources</a></li>
+                            <li><a href="/">Firm Management</a></li>
+                            <li><a href="/">Peer Review</a></li>
+                            <li><a href="/">Professional Ethics</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/publications/">Publications</a>
+                        <ul>
+                            <li><a href="/">Footnote</a></li>
+                            <li><a href="/">eNewsletters</a></li>
+                            <li><a href="/">MNCPA Perspectives</a></li>
+                            <li><a href="/">Tax Podcasts</a></li>
+                            <li><a href="/">Article Archive</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Rules &amp; Certification</a>
+                        <ul>
+                            <li><a href="/">CPE Rules</a></li>
+                            <li><a href="/">CPE Log</a></li>
+                            <li><a href="/">CPA Certificate</a></li>
+                            <li><a href="/">Public Accounting</a></li>
+                            <li><a href="/">MNCPA &amp; BOA</a></li>
+                            <li><a href="/">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Press Room</a>
+                        <ul>
+                            <li><a href="/">Media Contacts</a></li>
+                            <li><a href="/">MNCPA in the News</a></li>
+                            <li><a class="italics" href="/">More...</a></li>
+                        </ul>
+                    </li>
+                    <li></li>
+                    <li><a href="/">Legislative Issues</a></li>
                 </ul>
             </li>
-            <li><a href="/involvement/">Involvement</a>
+            <li><a href="/">Involvement</a>
                 <ul>
-                    <li><a href="/member-directory/">Member Directory <img class="members-only" src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
-                    <li><a href="/involvement/mncpa-connect/">MNCPA Connect <img class="members-only" src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
-                    <li><a href="/involvement/events/">Events</a></li>
-                    <li><a href="/involvement/volunteer/">Volunteer</a></li>
-                    <li><a href="/involvement/member-groups/">Member Groups</a></li>
-                    <li><a href="/involvement/member-recognition/">Member Recognition</a></li>
-                    <li><a href="/involvement/legislative/">Legislative Activities</a></li>
-                    <li><a href="/involvement/financial-literacy/">Financial Literacy</a></li>
-                    <li><a href="/involvement/accountants-concerned-for-accountants.aspx">Accountants Concerned for Accountants</a></li>
+                    <li><a href="/">Member Connections</a>
+                        <ul>
+                            <li><a href="/">Member Directory</a></li>
+                            <li><a href="/">MNCPA Connect</a></li>
+                            <li><a href="/">My Legislators</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Member Groups</a>
+                        <ul>
+                            <li><a href="/">Young Professionals</a></li>
+                            <li><a href="/">Business &amp; Industry</a></li>
+                            <li><a href="/">Chapters</a></li>
+                            <li><a href="/">Firm Administrators</a></li>
+                            <li><a href="/">Retired Members</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Events</a>
+                        <ul>
+                            <li><a href="/">Celebrate CPAs</a></li>
+                            <li><a href="/">CPA Day at the Capital</a></li>
+                            <li><a href="/">Leadership Summit</a></li>
+                            <li><a href="/">MBAC</a></li>
+                            <li><a href="/">Recognition Dinner</a></li>
+                            <li><a href="/">Tax Conference</a></li>
+                            <li><a class="italics" href="/">More...</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Legislative Activities</a>
+                        <ul>
+                            <li><a href="/">Legislative Issues</a></li>
+                            <li><a href="/">PAC</a></li>
+                            <li><a href="/">Get Involved</a></li>
+                            <li><a href="/">My Legislators</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Volunteer</a></li>
+                    <li><a href="/">Member Recognition</a></li>
+                    <li><a href="/">Financial Literacy</a></li>
+                    <li><a href="/">Accountants Concerned for Accountants</a></li>
                 </ul>
             </li>
             <li><a href="/cpa-careers/">Careers</a>
                 <ul>
-                    <li><a href="/cpa-careers/cpa-classifieds/">Classifieds</a></li>
-                    <li><a href="/cpa-careers/clips/">Leading Edge Career Clips</a></li>
-                    <li><a href="/cpa-careers/job-seeker-resources/">Job Seeker Resources</a></li>
-                    <li><a href="/cpa-careers/graduate-accounting-degrees.aspx">Graduate Accounting Programs</a></li>
-                    <li><a href="/cpa-careers/find-cpa-accounting-employees/">Find Employees</a></li>
-                    <li><a href="/cpa-careers/market-my-firm/">Market My Firm</a></li>
-                    <li><a href="/becoming-a-cpa/">Become a CPA</a></li>
+                    <li><a href="/">Classified Ads</a>
+                        <ul>
+                            <li><a href="/">Employment</a></li>
+                            <li><a href="/">Firms for sale/wanted</a></li>
+                            <li><a href="/">Office Space</a></li>
+                            <li><a href="/">Volunteer</a></li>
+                            <li><a class="italics" href="/">More</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">For Job Seekers</a></li>
+                    <li><a href="/">For Employers</a></li>
+                    <li><a href="/">Market My Firm</a></li>
+                    <li><a href="/">Leading Edge Career Clips</a></li>
+                    <li><a href="/">Graduate Accounting Programs</a></li>
+                </ul>
+            </li>
+            <li><a href="/">Become a CPA</a>
+                <ul>
+                    <li><a href="/">Process Step-by-Step</a>
+                        <ul>
+                            <li><a href="/">Video Overview</a></li>
+                            <li><a href="/">Education Requirements</a></li>
+                            <li><a href="/">CPA Exams</a></li>
+                            <li><a href="/">Experience Requirements</a></li>
+                            <li><a href="/">CPA Cerificate</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Education</a>
+                        <ul>
+                            <li><a href="/">Requirements</a></li>
+                            <li><a href="/">Accrediation Levels</a></li>
+                            <li><a href="/">Accounting Programs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">CPA Exam</a>
+                        <ul>
+                            <li><a href="/">Exam Facts</a></li>
+                            <li><a href="/">Exam Tips</a></li>
+                            <li><a href="/">Application Process</a></li>
+                            <li><a href="/">CPA Exam Review</a></li>
+                            <li><a href="/">Sorting</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Student Resources</a>
+                        <ul>
+                            <li><a href="/">Student Mentors</a></li>
+                            <li><a href="/">Career Resources</a></li>
+                            <li><a href="/">Scholarships</a></li>
+                            <li><a href="/">Research Employers</a></li>
+                            <li><a href="/">Student Conference</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
             <li><a href="/about/">About Us</a>
                 <ul>
-                    <li><a href="/about/mncpa-info/">MNCPA Info</a></li>
-                    <li><a href="/about/contact-us/">Contact Us</a></li>
-                    <li><a href="/join/">Join the MNCPA</a></li>
-                    <li><a href="/press/">Press Room</a></li>
-                    <li><a href="/market-to-cpas/">Marketing Opportunities</a></li>
-                    <li><a href="/minneapolis-meeting-room-rental.aspx">Facility Rental</a></li>
+                    <li><a href="/">MNCPA Info</a>
+                        <ul>
+                            <li><a href="/">Fact Sheet</a></li>
+                            <li><a href="/">History</a></li>
+                            <li><a href="/">Board of Directors</a></li>
+                            <li><a href="/">About Our Staff</a></li>
+                            <li><a href="/">Legislative Issues</a></li>
+                            <li><a class="italics" href="/">More</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Contact Us</a>
+                        <ul>
+                            <li><a href="/">General Contacts</a></li>
+                            <li><a href="/">Staff Directory</a></li>
+                            <li><a href="/">Media Contacts</a></li>
+                            <li><a href="/">Map &amp; Directions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Join the MNCPA</a>
+                        <ul>
+                            <li><a href="/">Apply Now</a></li>
+                            <li><a href="/">Dues Information</a></li>
+                            <li><a href="/">Membership Types</a></li>
+                            <li><a href="/">Benefits</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Market to CPAs</a>
+                        <ul>
+                            <li><a href="/">Advertising</a></li>
+                            <li><a href="/">Exhibit &amp; Sponsor</a></li>
+                            <li><a href="/">Mailing Lists</a></li>
+                            <li><a href="/">Media Kit</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Press Room</a>
+                        <ul>
+                            <li><a href="/">Media Contacts</a></li>
+                            <li><a href="/">Media Spokespersons</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Meeting Room Rental</a></li>
+                    <li><a href="/">Find a CPA</a></li>
                 </ul>
             </li>
+            <li><a href="/join/">Join</a></li>
             <li class="mm-spacer"></li>
-            <li class="mm-border"><a class="button" href="/my-mncpa/login/">Login</a></li>
+            <li class="mm-border"><a class="button" href="/my-mncpa/login/">Login</a>
+            </li>
        </ul>
     </nav>
 
-	<div id="nav">
+    <nav id="primary-nav" class="primary">
+        <ul>
+            <li class="">
+                <a href="/my-mncpa/">My MNCPA</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="/">My Record</a>
+                            <ul>
+                                <li><a href="/">Pay Dues</a></li>
+                                <li><a href="/">My Profile</a></li>
+                                <li><a href="/">Username &amp; password</a></li>
+                                <li><a href="/">Account Settings</a></li>
+                                <li><a href="/">Email Subscriptions</a></li>
+                                <li><a href="/">Email Account</a></li>
+                                <li><a href="/">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">My CPE</a>
+                            <ul>
+                                <li><a href="/">Schedule</a></li>
+                                <li><a href="/">Transcript</a></li>
+                                <li><a href="/">CPE Log</a></li>
+                                <li><a href="/">CPE materials</a></li>
+                                <li><a href="/">Saved CPE list</a></li>
+                                <li><a href="/">Make a payment</a></li>
+                                <li><a href="/">Cancel an order</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Member Connections <img class="members-only" src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a>
+                            <ul>
+                                <li><a href="/">Member Directory</a></li>
+                                <li><a href="/">MNCPA Connect</a></li>
+                                <li><a href="/">My Legislators</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Featured Benefits</a>
+                            <ul>
+                                <li><a href="/">Member Savings</a></li>
+                                <li><a href="/">CPE Log</a></li>
+                                <li><a href="/">Online CCH Tax Research</a></li>
+                                <li><a href="/">HR Hotline</a></li>
+                                <li><a class="italics" href="/">More...</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="">
+                <a href="/cpe/">CPE</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="/">Find CPE</a>
+                            <ul>
+                                <li><a href="/">Search Catalog</a></li>
+                                <li><a href="/">Calendar</a></li>
+                                <li><a href="/">Seminars</a></li>
+                                <li><a href="/">Conferences</a></li>
+                                <li><a href="/">Webinars</a></li>
+                                <li><a href="/">Self-Study</a></li>
+                                <li><a href="/">Packages</a></li>
+                                <li><a href="/">On-Site Training</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">My CPE</a>
+                            <ul>
+                                <li><a href="/">Schedule</a></li>
+                                <li><a href="/">Transcript</a></li>
+                                <li><a href="/">CPE Log</a></li>
+                                <li><a href="/">CPE materials</a></li>
+                                <li><a href="/">Saved CPE list</a></li>
+                                <li><a href="/">Make a payment</a></li>
+                                <li><a href="/">Cancel an order</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">CPE Rules</a>
+                            <ul>
+                                <li><a href="/">CPE Requirements</a></li>
+                                <li><a href="/">Ethics Requirements</a></li>
+                                <li><a href="/">Reporting &amp; Records</a></li>
+                                <li><a class="italics" href="/">More...</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Directions &amp; Travel</a></li>
+                        <li><a href="/">Firm Administrators</a></li>
+                        <li><a href="/">Meeting Room Rental</a></li>
+                        <li><a href="/">Exhibit &amp; Sponspr</a></li>
+                        <li><a href="/">FAQ</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="">
+                <a href="/resouces/">News &amp; Resources</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">Technical Resources</a>
+                                <ul>
+                                    <li><a href="/">Tax</a></li>
+                                    <li><a href="/">Human Resources</a></li>
+                                    <li><a href="/">Firm Management</a></li>
+                                    <li><a href="/">Peer Review</a></li>
+                                    <li><a href="/">Professional Ethics</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/publications/">Publications</a>
+                                <ul>
+                                    <li><a href="/">Footnote</a></li>
+                                    <li><a href="/">eNewsletters</a></li>
+                                    <li><a href="/">MNCPA Perspectives</a></li>
+                                    <li><a href="/">Tax Podcasts</a></li>
+                                    <li><a href="/">Article Archive</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/">Rules &amp; Certification</a>
+                                <ul>
+                                    <li><a href="/">CPE Rules</a></li>
+                                    <li><a href="/">CPE Log</a></li>
+                                    <li><a href="/">CPA Certificate</a></li>
+                                    <li><a href="/">Public Accounting</a></li>
+                                    <li><a href="/">MNCPA &amp; BOA</a></li>
+                                    <li><a href="/">FAQ</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/">Press Room</a>
+                                <ul>
+                                    <li><a href="/">Media Contacts</a></li>
+                                    <li><a href="/">MNCPA in the News</a></li>
+                                    <li><a class="italics" href="/">More...</a></li>
+                                </ul>
+                            </li>
+                            <li></li>
+                            <li><a href="/">Legislative Issues</a></li>
+                        </ul>
+                    </div>
+            </li>
+            <li>
+                <a href="/involvement/">Involvement</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="/">Member Connections</a>
+                            <ul>
+                                <li><a href="/">Member Directory</a></li>
+                                <li><a href="/">MNCPA Connect</a></li>
+                                <li><a href="/">My Legislators</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Member Groups</a>
+                            <ul>
+                                <li><a href="/">Young Professionals</a></li>
+                                <li><a href="/">Business &amp; Industry</a></li>
+                                <li><a href="/">Chapters</a></li>
+                                <li><a href="/">Firm Administrators</a></li>
+                                <li><a href="/">Retired Members</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Events</a>
+                            <ul>
+                                <li><a href="/">Celebrate CPAs</a></li>
+                                <li><a href="/">CPA Day at the Capital</a></li>
+                                <li><a href="/">Leadership Summit</a></li>
+                                <li><a href="/">MBAC</a></li>
+                                <li><a href="/">Recognition Dinner</a></li>
+                                <li><a href="/">Tax Conference</a></li>
+                                <li><a class="italics" href="/">More...</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Legislative Activities</a>
+                            <ul>
+                                <li><a href="/">Legislative Issues</a></li>
+                                <li><a href="/">PAC</a></li>
+                                <li><a href="/">Get Involved</a></li>
+                                <li><a href="/">My Legislators</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Volunteer</a></li>
+                        <li><a href="/">Member Recognition</a></li>
+                        <li><a href="/">Financial Literacy</a></li>
+                        <li><a href="/">Accountants Concerned for Accountants</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="/cpa-careers/">Careers</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="/">Classified Ads</a>
+                            <ul>
+                                <li><a href="/">Employment</a></li>
+                                <li><a href="/">Firms for sale/wanted</a></li>
+                                <li><a href="/">Office Space</a></li>
+                                <li><a href="/">Volunteer</a></li>
+                                <li><a class="italics" href="/">More</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">For Job Seekers</a></li>
+                        <li><a href="/">For Employers</a></li>
+                        <li><a href="/">Market My Firm</a></li>
+                        <li><a href="/">Leading Edge Career Clips</a></li>
+                        <li><a href="/">Graduate Accounting Programs</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="/become/">Become a CPA</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="/">Process Step-by-Step</a>
+                            <ul>
+                                <li><a href="/">Video Overview</a></li>
+                                <li><a href="/">Education Requirements</a></li>
+                                <li><a href="/">CPA Exams</a></li>
+                                <li><a href="/">Experience Requirements</a></li>
+                                <li><a href="/">CPA Cerificate</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Education</a>
+                            <ul>
+                                <li><a href="/">Requirements</a></li>
+                                <li><a href="/">Accrediation Levels</a></li>
+                                <li><a href="/">Accounting Programs</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">CPA Exam</a>
+                            <ul>
+                                <li><a href="/">Exam Facts</a></li>
+                                <li><a href="/">Exam Tips</a></li>
+                                <li><a href="/">Application Process</a></li>
+                                <li><a href="/">CPA Exam Review</a></li>
+                                <li><a href="/">Sorting</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Student Resources</a>
+                            <ul>
+                                <li><a href="/">Student Mentors</a></li>
+                                <li><a href="/">Career Resources</a></li>
+                                <li><a href="/">Scholarships</a></li>
+                                <li><a href="/">Research Employers</a></li>
+                                <li><a href="/">Student Conference</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="">
+                <a href="/about/">About Us</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="/">MNCPA Info</a>
+                            <ul>
+                                <li><a href="/">Fact Sheet</a></li>
+                                <li><a href="/">History</a></li>
+                                <li><a href="/">Board of Directors</a></li>
+                                <li><a href="/">About Our Staff</a></li>
+                                <li><a href="/">Legislative Issues</a></li>
+                                <li><a class="italics" href="/">More</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Contact Us</a>
+                            <ul>
+                                <li><a href="/">General Contacts</a></li>
+                                <li><a href="/">Staff Directory</a></li>
+                                <li><a href="/">Media Contacts</a></li>
+                                <li><a href="/">Map &amp; Directions</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Join the MNCPA</a>
+                            <ul>
+                                <li><a href="/">Apply Now</a></li>
+                                <li><a href="/">Dues Information</a></li>
+                                <li><a href="/">Membership Types</a></li>
+                                <li><a href="/">Benefits</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Market to CPAs</a>
+                            <ul>
+                                <li><a href="/">Advertising</a></li>
+                                <li><a href="/">Exhibit &amp; Sponsor</a></li>
+                                <li><a href="/">Mailing Lists</a></li>
+                                <li><a href="/">Media Kit</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Press Room</a>
+                            <ul>
+                                <li><a href="/">Media Contacts</a></li>
+                                <li><a href="/">Media Spokespersons</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/">Meeting Room Rental</a></li>
+                        <li><a href="/">Find a CPA</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="">
+                <a href="/join/">Join</a>
+            </li>
+            <li class="login">
+                <a class="login" href="/login">Login</a>
+                <div class="dropdown">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li>
+                            <h2>Member Login</h2>
+                            <p>Login to view your member dashboard and access all member benefits.</p>
+                            <h4>Not a member?</h4>
+                            <p>See why becoming a member of the MNCPA is the best way to connect to professionals like you.
+                            <p><a class="convince uppercase expanded" href="#">Let us Convince You</a></p>
+                        </li>
+                        <li>
+                            <label>Username</label>
+                            <input></input>
+                            <label>Password</label>
+                            <input></input>
+                            <p><a class="forgot"href="#">Forgot your password?</a></p>
+                            <button class="button"><a href="#">LOGIN</a></button>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="secondary-menu" style="display: block!important;">
+        <button class="close"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+        <div class="container">
+        </div>
+    </div>
+
+	<!--<div id="nav">
 		<div class="nav_interior">
 			<ul class="major_nav">
 				<li class="home"><a href="/" class="main_nav_link">Home</a></li>
@@ -394,36 +909,9 @@ function __doPostBack(eventTarget, eventArgument) {
 						<li><a href="/minneapolis-meeting-room-rental.aspx">Facility Rental</a></li>
 					</ul>
 				</li>
-
-
-				<!-- Mobile only -->
-				<li class="findacpa"><a href="/find-a-cpa/" class="main_nav_link">Find a CPA</a>
-					<ul class="sub_nav" id="sub_nav_findacpa">
-						<li><a href="/find-a-cpa/mn-cpa-referral/">CPA Referral Service</a></li>
-						<li><a href="/find-a-cpa/cpa-directories.aspx">CPA Directories</a></li>
-						<li><a href="/find-a-cpa/hire-a-cpa.aspx">Hire a CPA</a></li>
-						<li><a href="/find-a-cpa/cpa-speakers.aspx">Speakers</a></li>
-						<li><a href="/resources/peer-review/firms.aspx">Peer Reviewers</a></li>
-						<li><a href="/find-a-cpa/government-auditors/directory.aspx">Government Auditors</a></li>
-					</ul>
-				</li>
-
-				<li class="more"><a href="/mobile/directory.aspx" class="main_nav_link">More</a>
-					<ul class="sub_nav" id="sub_nav_more">
-                        <li class="showOnMobileOnly"><a href="/mobile/directory.aspx">Quick Links &amp; Site Map</a></li>
-						<li><a href="/publications/">Publications</a></li>
-						<li><a href="/resources/">Technical Resources</a></li>
-						<li><a href="/involvement/">Involvement</a></li>
-						<li><a href="/cpa-careers/">Careers</a></li>
-						<li><a href="/becoming-a-cpa/">Becoming a CPA</a></li>
-						<li><a href="/public/">Public Resources</a></li>
-						<li><a href="/about/">Marketing Opportunities</a></li>
-                        <li><a href="/">Home</a></li>
-					</ul>
-				</li>
 			</ul>
 		</div>
-	</div>
+	</div> -->
 
 	
     <div id="content_container">
@@ -680,6 +1168,62 @@ function __doPostBack(eventTarget, eventArgument) {
 
       
    });
+
+    var $navItems  = $('nav.primary');
+    var $secondary = $('.secondary-menu');
+    var $close     = $('.close');
+
+    // Desktop Navigation
+    var navDrawer = {
+        close: function () {
+            $secondary.removeClass('login');
+            if ($('.secondary-menu:hover').length == 0) {
+                $(this).removeClass('active');
+                $secondary.slideUp(250);
+            }
+        },
+        open: function () {
+            if ($(this).find('.dropdown').length > 0) {
+                var clone = $(this).find('.dropdown > ul').clone(true, true);
+                $(this).addClass('active');
+                console.log($(this));
+                $secondary
+                    .find(' .container')
+                    .html(clone).end()
+                    .slideDown(250);
+            }
+            if ($(this).hasClass('login')) {
+                $secondary.addClass('login');
+            }
+        }
+    };
+    /*<nav id="primary-nav" class="primary">
+        <ul>
+            <li class="">
+                <a href="/my-mncpa/">My MNCPA</a>
+                <div class="dropdown">
+                    <ul>
+*/
+    $navItems.hoverIntent({
+        over: navDrawer.open,
+        out: navDrawer.close,
+        timeout: 50,
+        selector: 'ul > li'
+    });
+
+    $secondary.hoverIntent(function () {
+        $(this).show();
+    }, function () {
+        $(this).slideUp(250);
+        $navItems.find('li.active').removeClass('active');
+    });
+
+    $close.on('click', function () {
+        $secondary.slideUp(250);
+
+    });
+    
+
 </script>
 
 	
