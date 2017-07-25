@@ -2279,14 +2279,14 @@ ul.error li
 *  ------------------------------------------------------------------------  */
  #mobile-menu{ display: none; }
 
-/* option 1 dark background */
+/* dark background */
 .mm-menu { background: #333333; }
 .mm-title, .mm-listview li a, .mm-panels a.button  { color: white!important; }
 .mm-listview li a {-webkit-display: flex;display:-webkit-box;display: flex;display: flex;-webkit-align-items: center;-ms-align-items: center;align-items: center;-webkit-justify-content: space-between;justify-content: space-between;}
 .mm-listview li.mm-border a {-webkit-justify-content: center;justify-content: center;}
 .mm-menu, .mm-menu .mm-listview, .mm-menu .mm-listview>li .mm-next:after, .mm-menu .mm-btn:after, .mm-menu .mm-btn:before { border-color: rgba(255,255,255,0.5); }
 .mm-spacer, .mm-border { border-color: transparent!important; }
-.mm-panels a.button { background-color: #63af5e;}
+.mm-panels a.button { background-color: #9ce684;}
 .mm-listview li:hover a { color: #63af5e!important;}
 .mm-listview li:hover a.button { background-color: white!important;}
 .mm-title{ font-weight: bold; text-decoration: none!important; }
@@ -2296,7 +2296,6 @@ ul.error li
 .mm-panels .hide { display: none; }
 .mm-panels a.button { text-align: center; line-height: 40px;}
 
-
 #home-icon{
 	background: url(/home-icon.png) top left no-repeat;
 	width: 24px;
@@ -2305,32 +2304,6 @@ ul.error li
 #home-icon span{
 	display: none;
 }
-/* option 2 light background */
-/*
-.mm-menu { background: #e2e2e2; }
-.mm-panels a.button  { color: white!important; }
-.mm-spacer, .mm-border { border-color: transparent!important; }
-.mm-panels a.button { background-color: #63af5e;}
-.mm-listview li:hover a.button { background-color: white!important;}
-.mm-listview li:hover { color: #63af5e;}
-.mm-title{ font-weight: bold; text-decoration: none!important; }
-.mm-listview a:link, .mm-listview a:active { text-decoration: none; font-weight: bold; }
-.mm-listview img.members-only { float: right; }
-.mm-panels a:focus { outline: thin dotted; }
-.mm-panels #logo { 
-	margin: 0 0 0 0; 
-	float: left;
-    position: relative;
-    top: 15px;
-    width: 136px;
-    max-width: 328px;
-    height: 92px;
-    background: url(http://www.mncpa.org/sup/img/mobi/template/mncpa-logo.png) top left no-repeat;
-}
-.mm-panels .hide { display: none; }
-.mm-panels a.button { text-align: center; line-height: 40px}
-*/
-
 
 /****** DESKTOP NAV ****/
 
@@ -2357,7 +2330,7 @@ ul.error li
 nav.primary ul li{ margin-bottom:0; position: relative; }
 nav.primary ul li a{ color:#415061;font-weight:800;padding:0.2em 1em;text-decoration:none; cursor: pointer; }
 nav.primary ul li a:hover{ text-decoration: underline; }
-nav.primary .login{ color: #9ce684; }
+nav.primary .login{ color: #63af5e; }
 nav.primary .login a{border-left: 1px solid darkgrey; }
 nav.primary ul .dropdown{background-color:#99867C;display:none;position:absolute;z-index:1;}
 nav.primary ul .dropdown ul{margin-left:auto;margin-right:auto;max-width:1200px;padding-left:1rem;padding-right:1rem;position:relative;}

@@ -1131,13 +1131,13 @@ function __doPostBack(eventTarget, eventArgument) {
     // Desktop Navigation
     var navDrawer = {
         close: function () {
-            $secondary.removeClass('login');
             if ($('.secondary-menu:hover').length == 0) {
                 $(this).removeClass('active');
                 $secondary.slideUp(250);
             }
         },
         open: function () {
+            $secondary.removeClass('login');
             if ($(this).find('.dropdown').length > 0) {
                 var clone = $(this).find('.dropdown > ul').clone(true, true);
                 $(this).addClass('active');
