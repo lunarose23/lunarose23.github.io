@@ -2274,18 +2274,76 @@ ul.error li
 
 #print_header, .print_header, .printonly { display: none; }
 
-/****** NAV ****/
-#desktop-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    list-style-type: none;
-}
-
-/*************************************************************************/
-/* MAJOR NAV */
-
+/* ------------------------------------------------------------------------  */
+/* MMENU
+*  ------------------------------------------------------------------------  */
  #mobile-menu{ display: none; }
+
+/* option 1 dark background */
+.mm-menu { background: #333333; }
+.mm-title, .mm-listview li a, .mm-panels a.button  { color: white!important; }
+.mm-listview li a {-webkit-display: flex;display:-webkit-box;display: flex;display: flex;-webkit-align-items: center;-ms-align-items: center;align-items: center;-webkit-justify-content: space-between;justify-content: space-between;}
+.mm-listview li.mm-border a {-webkit-justify-content: center;justify-content: center;}
+.mm-menu, .mm-menu .mm-listview, .mm-menu .mm-listview>li .mm-next:after, .mm-menu .mm-btn:after, .mm-menu .mm-btn:before { border-color: rgba(255,255,255,0.5); }
+.mm-spacer, .mm-border { border-color: transparent!important; }
+.mm-panels a.button { background-color: #63af5e;}
+.mm-listview li:hover a { color: #63af5e!important;}
+.mm-listview li:hover a.button { background-color: white!important;}
+.mm-title{ font-weight: bold; text-decoration: none!important; }
+.mm-listview a:link, .mm-listview a:active { text-decoration: none; font-weight: bold; }
+.mm-listview img.members-only { float: right; }
+.mm-panels a:focus { outline: thin dotted; }
+.mm-panels #home-logo { 
+	margin: 0 0 0 0; 
+	float: left;
+    position: relative;
+    top: 15px;
+    width: 95%;
+    max-width: 328px;
+    height: 92px;
+    background: url(http://www.mncpa.org/sup/img/template/mncpa-logo-white.png) top left no-repeat;
+    background-size: contain;
+}
+.mm-panels .hide { display: none; }
+.mm-panels a.button { text-align: center; line-height: 40px;}
+
+
+#home-icon{
+	background: url(/home-icon.png) top left no-repeat;
+	width: 24px;
+	height: 24px;
+}
+#home-icon span{
+	display: none;
+}
+/* option 2 light background */
+/*
+.mm-menu { background: #e2e2e2; }
+.mm-panels a.button  { color: white!important; }
+.mm-spacer, .mm-border { border-color: transparent!important; }
+.mm-panels a.button { background-color: #63af5e;}
+.mm-listview li:hover a.button { background-color: white!important;}
+.mm-listview li:hover { color: #63af5e;}
+.mm-title{ font-weight: bold; text-decoration: none!important; }
+.mm-listview a:link, .mm-listview a:active { text-decoration: none; font-weight: bold; }
+.mm-listview img.members-only { float: right; }
+.mm-panels a:focus { outline: thin dotted; }
+.mm-panels #logo { 
+	margin: 0 0 0 0; 
+	float: left;
+    position: relative;
+    top: 15px;
+    width: 136px;
+    max-width: 328px;
+    height: 92px;
+    background: url(http://www.mncpa.org/sup/img/mobi/template/mncpa-logo.png) top left no-repeat;
+}
+.mm-panels .hide { display: none; }
+.mm-panels a.button { text-align: center; line-height: 40px}
+*/
+
+
+/****** DESKTOP NAV ****/
 
  .primary{ background-color:#FFF;max-width: 1150px;margin: 0 auto; }
  nav.primary{-webkit-flex-basis:100%;flex-basis:100%;}
@@ -2380,67 +2438,11 @@ nav.primary>ul>li.active.login::after {
     background: url(http://www.mncpa.org/sup/img/template/left-nav.gif) no-repeat 0 10px transparent;
 }
 
+/***** STYLES *****/
 .uppercase{ text-transform: uppercase; }
 .bold{ font-weight: bold; }
 .italics{ font-style: italic; }
 
-#nav { 
-	width: 100%; 
-	margin: 0 auto;
-	margin-top:15px;
-}
-.nav_interior {
-	width: 100%;
-}
-
-.major_nav
-{
-	width: 100%;
-	top: 0;
-    height: 50px;
-    list-style-type: none;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    z-index: 50;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.major_nav li
-{
-    float: left;
-    margin: 0;
-	padding:0;
-	list-style: none;
-	background: none;
-	margin-left: 40px;
-}
-
-.major_nav li a.main_nav_link:link, .major_nav li a.main_nav_link:visited
-{
-	position: relative;
-	top: 0;
-    height: 50px;
-	background-image:none;
-	background: none;
-	color: #333333;
-	text-decoration:none;
-}
-.major_nav li a.main_nav_link:hover {
-	/*background: url(/sup/img/template/down-arrow-white-sm.png) no-repeat bottom center;*/
-	height:100px;
-	min-width:43px;
-	padding-bottom:42px;
-	z-index:300;
-}
-.major_nav li:hover {
-	border-bottom:2px solid #666666;
-	display:inline;
-}
-
-.major_nav .findacpa, .major_nav .more { display: none; }
 
 /*****************************************************************************************/
 /* SUB-NAVIGATION */
@@ -5234,69 +5236,3 @@ a.preheader { color:#1369ab; text-decoration:none; font-size:14px; font-weight:7
 
 .blogpost .postdetails .topicbar { font-size:14px; color:#4e4e4e; float:left; padding:3px 10px 3px 10px; margin-bottom:10px; background-color:#e7e7e7; }
 
-/* ------------------------------------------------------------------------  */
-/* MMENU
-*  ------------------------------------------------------------------------  */
-
-/* option 1 dark background */
-.mm-menu { background: #333333; }
-.mm-title, .mm-listview li a, .mm-panels a.button  { color: white!important; }
-.mm-listview li a {-webkit-display: flex;display:-webkit-box;display: flex;display: flex;-webkit-align-items: center;-ms-align-items: center;align-items: center;-webkit-justify-content: space-between;justify-content: space-between;}
-.mm-listview li.mm-border a {-webkit-justify-content: center;justify-content: center;}
-.mm-menu, .mm-menu .mm-listview, .mm-menu .mm-listview>li .mm-next:after, .mm-menu .mm-btn:after, .mm-menu .mm-btn:before { border-color: rgba(255,255,255,0.5); }
-.mm-spacer, .mm-border { border-color: transparent!important; }
-.mm-panels a.button { background-color: #63af5e;}
-.mm-listview li:hover a { color: #63af5e!important;}
-.mm-listview li:hover a.button { background-color: white!important;}
-.mm-title{ font-weight: bold; text-decoration: none!important; }
-.mm-listview a:link, .mm-listview a:active { text-decoration: none; font-weight: bold; }
-.mm-listview img.members-only { float: right; }
-.mm-panels a:focus { outline: thin dotted; }
-.mm-panels #home-logo { 
-	margin: 0 0 0 0; 
-	float: left;
-    position: relative;
-    top: 15px;
-    width: 95%;
-    max-width: 328px;
-    height: 92px;
-    background: url(http://www.mncpa.org/sup/img/template/mncpa-logo-white.png) top left no-repeat;
-    background-size: contain;
-}
-.mm-panels .hide { display: none; }
-.mm-panels a.button { text-align: center; line-height: 40px;}
-
-
-#home-icon{
-	background: url(/home-icon.png) top left no-repeat;
-	width: 24px;
-	height: 24px;
-}
-#home-icon span{
-	display: none;
-}
-/* option 2 light background */
-/*
-.mm-menu { background: #e2e2e2; }
-.mm-panels a.button  { color: white!important; }
-.mm-spacer, .mm-border { border-color: transparent!important; }
-.mm-panels a.button { background-color: #63af5e;}
-.mm-listview li:hover a.button { background-color: white!important;}
-.mm-listview li:hover { color: #63af5e;}
-.mm-title{ font-weight: bold; text-decoration: none!important; }
-.mm-listview a:link, .mm-listview a:active { text-decoration: none; font-weight: bold; }
-.mm-listview img.members-only { float: right; }
-.mm-panels a:focus { outline: thin dotted; }
-.mm-panels #logo { 
-	margin: 0 0 0 0; 
-	float: left;
-    position: relative;
-    top: 15px;
-    width: 136px;
-    max-width: 328px;
-    height: 92px;
-    background: url(http://www.mncpa.org/sup/img/mobi/template/mncpa-logo.png) top left no-repeat;
-}
-.mm-panels .hide { display: none; }
-.mm-panels a.button { text-align: center; line-height: 40px}
-*/

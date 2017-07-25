@@ -28,38 +28,9 @@
 	a#mobileMenuButton { background:url('http://www.mncpa.org/sup/img/mobi/template/menu-btn.png') center 15px no-repeat; }
 	#mobileSearch span, #mobileMenuButton span { display:none; }
 
-	#minor_nav { display:none; }
-
-		/********************************************/
+	/********************************************/
 	/** MAIN (TOP) NAVIGATION **/
 	.secondary-menu, .primary { display: none; }
-
-
-	
-	.major_nav
-	{
-		position:relative;
-		top:15px;
-		left:0;
-		height:72px;
-		/** Hiding nav for now**/
-		display:none;
-	}
-	
-	.major_nav>li /* Individual cells (e.g., My MNCPA, CPE) */
-	{
-		list-style-type: none;
-		background-image:none;
-		padding: 10px 0 0 0;
-		background-color:#fcecc5;
-		height: 34px;
-	}
-
-	.major_nav li a.main_nav_link:link, .major_nav li a.main_nav_link:visited
-	{
-		height: 55px;
-		background-image:auto;
-	}
 
 	#sub_navigation{ display: none; }
 	#interior_content_container_full #interior_content { float: none; }
@@ -75,18 +46,6 @@
 
 	/*****************************************************************************************/	
 
-	
-	/*****************************************/
-	/**** HOME (not visible on mobile site) ****/
-	.major_nav .home a.main_nav_link:link, .major_nav .home a.main_nav_link:visited
-	{ /*	left: 0px; width: 76px;*/ }
-	
-	.major_nav .home a.main_nav_link:hover, .major_nav .home a.main_nav_link:focus
-	{
-/*			background: url(/sup/img/template/nav/nav.gif) no-repeat 0px -43px;*/
-	}
-	
-	.major_nav .nav_home_active { display:none; }
 	
 	
 	/*****************************************/
@@ -184,103 +143,11 @@
 	.two-column div.right { float:none; width:100%; }
 	
 	
-
-	/*****************************************/
-	/**** MY MNCPA ****/
-	.major_nav .my_mncpa a.main_nav_link:link, 
-	.major_nav .my_mncpa a.main_nav_link:visited
-	{
-		left:0;
-		width:24%; 
-		border-right:1px solid #fff;
-		background: url('/sup/img/mobi/template/btn-my-mncpa.gif') no-repeat center center;
-		/*		
-		left: 79px;
-		width: 101px;
-		*/
-	}
-	.major_nav .my_mncpa a.main_nav_link:hover, .major_nav .my_mncpa a.main_nav_link:focus
-	{
-		/*background: url(/sup/img/template/nav/nav.gif) no-repeat -79px -43px;*/
-
-	}
-	
-	.nav_my_mncpa, .nav_my_mncpa_active
-	{
-		position:relative; 
-		left:0; 
-		background:none;	
-		width:70px;
-	}
-
-	.nav_my_mncpa_active
-	{
-	/* background: url(/sup/img/template/nav/nav.gif) no-repeat -79px -86px;*/	
-	}
-	
-
-	/*****************************************/
-	/** CPE NAVIGATION **/
-	
-	/* Header */
-	.major_nav .cpe a.main_nav_link:link, .major_nav .cpe a.main_nav_link:visited
-	{
-		left:24%;
-		width:24%; 
-		border-right:1px solid #fff;
-		background: url('/sup/img/mobi/template/btn-cpe.gif') no-repeat center center;
-	}
-	
-	.nav_cpe, .nav_cpe_active
-	{
-		position:relative; 
-		left:75px; 
-		width:24%; 
-		background:none;
-	}
-	
-	.major_nav .nav_my_mncpa_active,
-	.major_nav .nav_cpe_active,
-	.major_nav .nav_pub_news_active,
-	.major_nav .nav_tech_resources_active,
-	.major_nav .nav_involvement_active,
-	.major_nav .nav_careers_active,
-	.major_nav .nav_about_us_active
-	{ display:none; }
-
-	/*****************************************/
-	/** FIND A CPA **/
-	.major_nav .findacpa { display:block; }
-	
-	.major_nav .findacpa a.main_nav_link:link, 
-	.major_nav .findacpa a.main_nav_link:visited 
-	{ 
-		left:48%; 
-		width: 24%; 
-		border-right:1px solid #fff;
-		background: url('/sup/img/mobi/template/btn-find-cpa.gif') no-repeat center center;
-	}
-	.major_nav .findacpa a.main_nav_link:hover, .major_nav .findacpa a.main_nav_link:focus { }
-	
-	/*****************************************/
-	/** MORE **/
-	.major_nav .more { display:block; }
-	.major_nav .more a.main_nav_link:link, .major_nav .more a.main_nav_link:visited
-	{
-		left:72%; 
-		width: 24%; 
-		background: url('/sup/img/mobi/template/btn-more.gif') no-repeat center center;
-	}
-	.major_nav .more a.main_nav_link:hover, .major_nav .more a.main_nav_link:focus { } 
-	
-	
-	
 	/** Hide other, desktop site nav categories **/
 	.pub_news, .tech_resources, .involvement, .careers, .about_us { display:none; }
 	
 	/*****************************************************************************************/
 	/* SUB-NAVIGATION */
-	/* UL contained in the li of a UL.major_nav */
 	/* Submenu: Actual dropdown menu block. */
 	.sub_nav
 	{
@@ -340,17 +207,6 @@
 		width: auto;
 	}
 	
-
-	/************************/
-	/* Hide items not in the mobile menu */
-	.major_nav .nav_my_mncpa_active,
-	.major_nav .nav_cpe_active,
-	.major_nav .nav_pub_news_active,
-	.major_nav .nav_tech_resources_active,
-	.major_nav .nav_involvement_active,
-	.major_nav .nav_careers_active,
-	.major_nav .nav_about_us_active
-	{ display:none; }
 
 	/*****************************************************************************************/	
 	/** PAGE ELEMENTS **/
