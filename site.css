@@ -2287,7 +2287,7 @@ ul.error li
 .mm-menu, .mm-menu .mm-listview, .mm-menu .mm-listview>li .mm-next:after, .mm-menu .mm-btn:after, .mm-menu .mm-btn:before { border-color: rgba(255,255,255,0.5); }
 .mm-spacer, .mm-border { border-color: transparent!important; }
 .mm-panels a.button { background-color: #9ce684;}
-.mm-listview li:hover a { color: #63af5e!important;}
+.mm-listview li:hover a { color: #9ce684!important;}
 .mm-listview li:hover a.button { background-color: white!important;}
 .mm-title{ font-weight: bold; text-decoration: none!important; }
 .mm-listview a:link, .mm-listview a:active { text-decoration: none; font-weight: bold; }
@@ -2373,6 +2373,7 @@ nav.primary>ul>li.active.login::after {
 .secondary-menu ul > li > ul {list-style-type: none; padding-left: 0;}
 .secondary-menu ul a{text-decoration: none; color: black; cursor: pointer;}
 .secondary-menu ul a:hover{color: #4aa145;}
+.secondary-menu button a:hover, .secondary-menu button.button:hover a, .secondary-menu .button:hover {color: #9ce684; text-decoration: none!important;}
 .secondary-menu .container ul > li { font-weight: bold; -webkit-flex: 0 1 21%; -ms-flex: 0 1 21%; flex: 0 1 21%; padding: 1em 0em; }
 .secondary-menu .container ul > li > ul > li { font-weight: normal; padding: 0; }
 .secondary-menu .container ul li { padding: 0.2em 1em; }
