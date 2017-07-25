@@ -2597,7 +2597,7 @@ nav.primary>ul>li.active.login::after {
 /* --------------------------------------------------------------------- */
 
 #interior_content { width: 50%; float:middle; display:inline-block; z-index: 10; padding-top: 15px;  }
-#interior_content_container_full #interior_content { width: 75%; float:right; display:inline-block; z-index: 10; padding-top: 15px; }
+#interior_content_container_full #interior_content { width: 74%; float:right; display:inline-block; z-index: 10; padding-top: 15px; }
 
 
 
