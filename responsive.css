@@ -24,14 +24,17 @@
 
 	/* <~> Adding www.mncpa.org */
 	.mobile-icons{ display:block; height:72px; width:57px; margin:0; padding:0; float: right; }
-	a#mobileSearchButton { background:url('http://www.mncpa.org/sup/img/mobi/template/search-btn.png') center 15px no-repeat; }
+	a#mobileSearch { background:url('http://www.mncpa.org/sup/img/mobi/template/search-btn.png') center 15px no-repeat; }
 	a#mobileMenuButton { background:url('http://www.mncpa.org/sup/img/mobi/template/menu-btn.png') center 15px no-repeat; }
-	#mobileSearchButton span, #mobileMenuButton span { display:none; }
+	#mobileSearch span, #mobileMenuButton span { display:none; }
 
 	#minor_nav { display:none; }
 
 		/********************************************/
 	/** MAIN (TOP) NAVIGATION **/
+	.secondary-menu, .primary { display: none; }
+
+
 	
 	.major_nav
 	{
