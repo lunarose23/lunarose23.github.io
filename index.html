@@ -216,7 +216,8 @@ function __doPostBack(eventTarget, eventArgument) {
 	
 	<nav id="mobile-menu">
        <ul>
-            <li><a href="/"><div id="logo" alt="Minnesota Society of Certified Public Accountants"><span class="hide">Home</span></div></a></li>
+            <li><a href="/"><div id="home-logo" alt="Minnesota Society of Certified Public Accountants"><span class="hide">Home</span></div></a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/">My MNCPA</a>
                  <ul>
                     <li><a href="/">My Record</a>
@@ -494,6 +495,7 @@ function __doPostBack(eventTarget, eventArgument) {
 
     <nav id="primary-nav" class="primary">
         <ul>
+            <li><a href="/"><div id="home-icon" alt="Minnesota Society of Certified Public Accountants Home"><span class="hide">Home</span></div></a></li>
             <li class="">
                 <a href="/my-mncpa/">My MNCPA</a>
                 <div class="dropdown">
@@ -574,11 +576,15 @@ function __doPostBack(eventTarget, eventArgument) {
                                 <li><a class="italics" href="/">More...</a></li>
                             </ul>
                         </li>
-                        <li><a href="/">Directions &amp; Travel</a></li>
-                        <li><a href="/">Firm Administrators</a></li>
-                        <li><a href="/">Meeting Room Rental</a></li>
-                        <li><a href="/">Exhibit &amp; Sponspr</a></li>
-                        <li><a href="/">FAQ</a></li>
+                        <li><a href="/">Directions &amp; Travel</a>
+                            <ul>
+                                <li><a class="bold" href="/">Firm Administrators</a></li>
+                                <li><a class="bold" href="/">Meeting Room Rental</a></li>
+                                <li><a class="bold" href="/">Exhibit &amp; Sponspr</a></li>
+                                <li><a class="bold" href="/">FAQ</a></li>
+                            </ul>
+                        </li>
+                        
                     </ul>
                 </div>
             </li>
@@ -621,7 +627,6 @@ function __doPostBack(eventTarget, eventArgument) {
                                     <li><a class="italics" href="/">More...</a></li>
                                 </ul>
                             </li>
-                            <li></li>
                             <li><a href="/">Legislative Issues</a></li>
                         </ul>
                     </div>
@@ -682,14 +687,18 @@ function __doPostBack(eventTarget, eventArgument) {
                                 <li><a href="/">Firms for sale/wanted</a></li>
                                 <li><a href="/">Office Space</a></li>
                                 <li><a href="/">Volunteer</a></li>
-                                <li><a class="italics" href="/">More</a></li>
+                                <li><a class="italics" href="/">More...</a></li>
                             </ul>
                         </li>
-                        <li><a href="/">For Job Seekers</a></li>
-                        <li><a href="/">For Employers</a></li>
-                        <li><a href="/">Market My Firm</a></li>
-                        <li><a href="/">Leading Edge Career Clips</a></li>
-                        <li><a href="/">Graduate Accounting Programs</a></li>
+                        <li><a href="/">For Job Seekers</a>
+                            <ul>
+                                <li><a class="bold" href="/">For Employers</a></li>
+                                <li><a class="bold" href="/">Market My Firm</a></li>
+                                <li><a class="bold" href="/">Leading Edge Career Clips</a></li>
+                                <li><a class="bold" href="/">Graduate Accounting Programs</a></li>
+                            </ul>
+                        </li>
+                        
                     </ul>
                 </div>
             </li>
@@ -778,8 +787,12 @@ function __doPostBack(eventTarget, eventArgument) {
                                 <li><a href="/">Media Spokespersons</a></li>
                             </ul>
                         </li>
-                        <li><a href="/">Meeting Room Rental</a></li>
-                        <li><a href="/">Find a CPA</a></li>
+                        <li><a href="/">Meeting Room Rental</a>
+                            <ul>
+                                <li><a class="bold" href="/">Find a CPA</a></li>
+                            </ul>
+                        </li>
+                        
                     </ul>
                 </div>
             </li>
@@ -790,7 +803,6 @@ function __doPostBack(eventTarget, eventArgument) {
                 <a class="login" href="/login">Login</a>
                 <div class="dropdown">
                     <ul>
-                        <li></li>
                         <li></li>
                         <li>
                             <h2>Member Login</h2>
@@ -812,106 +824,14 @@ function __doPostBack(eventTarget, eventArgument) {
             </li>
         </ul>
     </nav>
-    <div class="secondary-menu" style="display: block!important;">
+
+    <div class="secondary-menu" style="display:none;
         <button class="close"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
         <div class="container">
         </div>
     </div>
 
-	<!--<div id="nav">
-		<div class="nav_interior">
-			<ul class="major_nav">
-				<li class="home"><a href="/" class="main_nav_link">Home</a></li>
-
-				<li class="my_mncpa"><a href="/my-mncpa/" class="main_nav_link">My MNCPA</a>
-					<ul class="sub_nav" id="sub_nav_my_mncpa">
-						<li class="showOnMobileOnly"><a href="/my-mncpa/">My MNCPA</a></li>
-                        <li><a href="/my-mncpa/my-account/">My Account</a></li>
-						<li><a href="/my-mncpa/my-cpe/">My CPE</a></li>
-						<li><a href="/my-mncpa/email-subscriptions.aspx">My Email Subscriptions<img src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
-						<li><a href="/my-mncpa/my-legislators/">My Legislators <img src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
-						<li><a href="/my-mncpa/member-savings/">Member Savings <img src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
-						<li><a href="/member-directory/">Member Directory <img src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
-					    <li><a href="/my-mncpa/membership-faq.aspx">Membership FAQ</a></li>
-					    <li><a href="/Firm-Admin/Login.aspx">Firm Administration</a></li>
-					</ul>
-				</li>
-				<li class="cpe"><a href="/cpe/" class="main_nav_link">CPE</a>
-					<ul class="sub_nav" id="sub_nav_cpe">
-                        <li class="showOnMobileOnly"><a href="/cpe/">CPE Home</a></li>
-					    <li><a href="/my-mncpa/my-cpe/">My CPE</a></li>
-					    <li class="showOnMobileOnly"><a href="/cpe/search-mn-cpe.aspx">Search CPE Catalog</a></li>
-                        <li class="showOnDesktopOnly"><a href="/cpe/catalog/mn-cpe.aspx">Search CPE Catalog</a></li>
-						<li><a href="/cpe/programs-and-products/">CPE Programs &amp; Products</a></li>
-						<li><a href="/cpe/mn-cpe-calendar.aspx">CPE Calendar</a></li>
-						<li><a href="/cpe/on-site-training/">On-site Training</a></li>
-						<li><a href="/cpe/directions-and-travel/">Directions &amp; Travel</a></li>
-						<li><a href="/cpe/cpe-rules/">CPE Rules</a></li>
-						<li><a href="/market-to-cpas/">Exhibiting &amp; Sponsorships</a></li>
-						<li><a href="/cpe/faq/">FAQ</a></li>
-                        
-					</ul>
-				</li>
-				<li id="active" class="pub_news"><a href="/publications/" class="main_nav_link">Publications &amp; News</a>
-					<ul class="sub_nav" id="sub_nav_pub_news">
-                        <li><a href="http://www.mncpa.org/publications/footnote/">Footnote</a></li>
-						<li><a href="/publications/mncpa-publications.aspx">eNewsletters</a></li>
-                        <li><a href="/perspectives/">MNCPA Perspectives</a></li>
-						<li><a href="/publications/tax-podcasts/">Tax Podcasts</a></li>
-						<li><a href="/topics/">Topics of Interest</a></li>
-						<li><a href="/involvement/legislative/">Legislative Activities</a></li>
-						<li><a href="/press/">Press Room</a></li>
-					</ul>
-				</li>
-				<li class="tech_resources"><a href="/resources/" class="main_nav_link">Technical Resources</a>
-					<ul class="sub_nav" id="sub_nav_tech_resources">
-                        <li><a href="/boa-rules-certification/">Rules &amp; Certification</a></li>
-						<li><a href="/resources/tax/">Tax</a></li>
-						<li><a href="/resources/human-resources/">Human Resources</a></li>
-						<li><a href="/resources/firm-management/">Firm Management</a></li>
-						<li><a href="/resources/report-review/">Report Review</a></li>
-						<li><a href="/resources/peer-review/">Peer Review</a></li>
-						<li><a href="/resources/ethics/">Professional Ethics</a></li>
-					</ul>
-				</li>
-				<li class="involvement"><a href="/involvement/" class="main_nav_link">Involvement</a>
-					<ul class="sub_nav" id="sub_nav_involvement">
- 
-						<li><a href="/member-directory/">Member Directory <img src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
-						<li><a href="/involvement/mncpa-connect/">MNCPA Connect <img src="http://www.mncpa.org/sup/img/backgrounds/memebrs_only_icon_secondary.gif" alt="members_only" /></a></li>
-                        <li><a href="/involvement/events/">Events</a></li>
-						<li><a href="/involvement/volunteer/">Volunteer</a></li>
-						<li><a href="/involvement/member-groups/">Member Groups</a></li>
-                        <li><a href="/involvement/member-recognition/">Member Recognition</a></li>
-						<li><a href="/involvement/legislative/">Legislative Activities</a></li>
-						<li><a href="/involvement/financial-literacy/">Financial Literacy</a></li>
-						<li><a href="/involvement/accountants-concerned-for-accountants.aspx">Accountants Concerned for Accountants</a></li>
-					</ul>
-				</li>
-				<li class="careers"><a href="/cpa-careers/" class="main_nav_link">Careers</a>
-					<ul class="sub_nav" id="sub_nav_careers">
-						<li><a href="/cpa-careers/cpa-classifieds/">Classifieds</a></li>
-	                    <li><a href="/cpa-careers/clips/">Leading Edge Career Clips</a></li>
-						<li><a href="/cpa-careers/job-seeker-resources/">Job Seeker Resources</a></li>
-                        <li><a href="/cpa-careers/graduate-accounting-degrees.aspx">Graduate Accounting Programs</a></li>
-						<li><a href="/cpa-careers/find-cpa-accounting-employees/">Find Employees</a></li>
-						<li><a href="/cpa-careers/market-my-firm/">Market My Firm</a></li>
-						<li><a href="/becoming-a-cpa/">Become a CPA</a></li>
-					</ul>
-				</li>
-				<li class="about_us"><a href="/about/" class="main_nav_link">About Us</a>
-					<ul class="sub_nav" id="sub_nav_about_us">
-						<li><a href="/about/mncpa-info/">MNCPA Info</a></li>
-						<li><a href="/about/contact-us/">Contact Us</a></li>
-						<li><a href="/join/">Join the MNCPA</a></li>
-						<li><a href="/press/">Press Room</a></li>
-						<li><a href="/market-to-cpas/">Marketing Opportunities</a></li>
-						<li><a href="/minneapolis-meeting-room-rental.aspx">Facility Rental</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</div> -->
+	
 
 	
     <div id="content_container">
@@ -1197,13 +1117,7 @@ function __doPostBack(eventTarget, eventArgument) {
             }
         }
     };
-    /*<nav id="primary-nav" class="primary">
-        <ul>
-            <li class="">
-                <a href="/my-mncpa/">My MNCPA</a>
-                <div class="dropdown">
-                    <ul>
-*/
+
     $navItems.hoverIntent({
         over: navDrawer.open,
         out: navDrawer.close,
