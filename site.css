@@ -2375,7 +2375,7 @@ nav.primary>ul>li.active.login::after {
 .secondary-menu ul a:hover{color: #4aa145;}
 .secondary-menu button a:hover, .secondary-menu button.button:hover a, .secondary-menu .button:hover {color: #9ce684; text-decoration: none!important;}
 .secondary-menu .container ul > li { font-weight: bold; -webkit-flex: 0 1 21%; -ms-flex: 0 1 21%; flex: 0 1 21%; padding: 1em 0em; }
-.secondary-menu .container ul > li > ul > li { font-weight: normal; padding: 0; }
+.secondary-menu .container ul > li > ul > li { font-weight: normal; padding: 0; margin-bottom: 0; }
 .secondary-menu .container ul li { padding: 0.2em 1em; }
 .secondary-menu .container ul:first-child { display:-webkit-box;display:-webkit-flex; display:flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-justify-content: left; -ms-justify-content: left; justify-content: left;}
 .secondary-menu .container .members-only { display:inline-block; padding-left: 5px; }
