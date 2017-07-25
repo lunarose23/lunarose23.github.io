@@ -2293,17 +2293,6 @@ ul.error li
 .mm-listview a:link, .mm-listview a:active { text-decoration: none; font-weight: bold; }
 .mm-listview img.members-only { float: right; }
 .mm-panels a:focus { outline: thin dotted; }
-.mm-panels #home-logo { 
-	margin: 0 0 0 0; 
-	float: left;
-    position: relative;
-    top: 15px;
-    width: 95%;
-    max-width: 328px;
-    height: 92px;
-    background: url(http://www.mncpa.org/sup/img/template/mncpa-logo-white.png) top left no-repeat;
-    background-size: contain;
-}
 .mm-panels .hide { display: none; }
 .mm-panels a.button { text-align: center; line-height: 40px;}
 
@@ -2368,7 +2357,7 @@ ul.error li
 nav.primary ul li{ margin-bottom:0; position: relative; }
 nav.primary ul li a{ color:#415061;font-weight:800;padding:0.2em 1em;text-decoration:none; cursor: pointer; }
 nav.primary ul li a:hover{ text-decoration: underline; }
-nav.primary .login{ color: #63af5e; }
+nav.primary .login{ color: #9ce684; }
 nav.primary .login a{border-left: 1px solid darkgrey; }
 nav.primary ul .dropdown{background-color:#99867C;display:none;position:absolute;z-index:1;}
 nav.primary ul .dropdown ul{margin-left:auto;margin-right:auto;max-width:1200px;padding-left:1rem;padding-right:1rem;position:relative;}
@@ -2431,8 +2420,8 @@ nav.primary>ul>li.active.login::after {
 .secondary-menu.login .forgot{ text-decoration: underline; }
 .secondary-menu.login .convince{ font-weight: bold; }
 .secondary-menu.login span.convince{ font-weight: normal; }
-.secondary-menu.login button{ border: 1px solid #63af5e; background-color: #63af5e; color: white; text-transform: underline; float: right; }
-.secondary-menu.login button:hover{ background-color: white; color: #63af5e;}
+.secondary-menu.login button{ border: 1px solid #9ce684; background-color: #9ce684; color: white; text-transform: underline; float: right; }
+.secondary-menu.login button:hover{ background-color: white; color: #9ce684;}
 
 .secondary-menu.login p.expanded:before{
     background: url(http://www.mncpa.org/sup/img/template/left-nav.gif) no-repeat 0 10px transparent;
