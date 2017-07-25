@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head id="Head1"><meta name="credits" content="Programming by Sierra Bravo Corp http://www.sierrabravo.com. Design by iMarc http://imarc.net." /><meta id="HeaderKeywords" name="keywords" /><meta id="HeaderDescription" name="description" content="Article archive from the MNCPA member magazine, The Footnote." /><meta http-equiv="content-type" content="text/html; charset=utf-8" /><title>
+<head id="Head1"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="credits" content="Programming by Sierra Bravo Corp http://www.sierrabravo.com. Design by iMarc http://imarc.net." /><meta id="HeaderKeywords" name="keywords" /><meta id="HeaderDescription" name="description" content="Article archive from the MNCPA member magazine, The Footnote." /><meta http-equiv="content-type" content="text/html; charset=utf-8" /><title>
 	MNCPA Footnote: Monthly member magazine of the Minnesota Society of CPAs
 </title>
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/jquery.min.js"></script>
@@ -495,9 +496,14 @@ function __doPostBack(eventTarget, eventArgument) {
 
     <nav id="primary-nav" class="primary">
         <ul>
+            <!-- THIS SHOWS AS TOP ROW OF DESKTOP MENU  -->
             <li><a href="/"><div id="home-icon" alt="Minnesota Society of Certified Public Accountants Home"><span class="hide">Home</span></div></a></li>
+
+            <!-- THIS SHOWS AS TOP ROW OF DESKTOP MENU  -->
             <li class="">
                 <a href="/my-mncpa/">My MNCPA</a>
+
+                <!-- THIS SHOWS AS DROPDOWN DESKTOP MENU  -->
                 <div class="dropdown">
                     <ul>
                         <li><a href="/">My Record</a>
@@ -541,8 +547,11 @@ function __doPostBack(eventTarget, eventArgument) {
                     </ul>
                 </div>
             </li>
+            <!-- THIS SHOWS AS TOP ROW OF DESKTOP MENU  -->
             <li class="">
                 <a href="/cpe/">CPE</a>
+
+                <!-- THIS SHOWS AS DROPDOWN DESKTOP MENU  -->
                 <div class="dropdown">
                     <ul>
                         <li><a href="/">Find CPE</a>
@@ -588,8 +597,11 @@ function __doPostBack(eventTarget, eventArgument) {
                     </ul>
                 </div>
             </li>
+            <!-- THIS SHOWS AS TOP ROW OF DESKTOP MENU  -->
             <li class="">
                 <a href="/resouces/">News &amp; Resources</a>
+
+                <!-- THIS SHOWS AS DROPDOWN DESKTOP MENU  -->
                     <div class="dropdown">
                         <ul>
                             <li><a href="#">Technical Resources</a>
@@ -631,8 +643,11 @@ function __doPostBack(eventTarget, eventArgument) {
                         </ul>
                     </div>
             </li>
+            <!-- THIS SHOWS AS TOP ROW OF DESKTOP MENU  -->
             <li>
                 <a href="/involvement/">Involvement</a>
+
+                <!-- THIS SHOWS AS DROPDOWN DESKTOP MENU  -->
                 <div class="dropdown">
                     <ul>
                         <li><a href="/">Member Connections</a>
@@ -677,8 +692,11 @@ function __doPostBack(eventTarget, eventArgument) {
                     </ul>
                 </div>
             </li>
+            <!-- THIS SHOWS AS TOP ROW OF DESKTOP MENU  -->
             <li>
                 <a href="/cpa-careers/">Careers</a>
+
+                <!-- THIS SHOWS AS DROPDOWN DESKTOP MENU  -->
                 <div class="dropdown">
                     <ul>
                         <li><a href="/">Classified Ads</a>
@@ -702,8 +720,11 @@ function __doPostBack(eventTarget, eventArgument) {
                     </ul>
                 </div>
             </li>
+            <!-- THIS SHOWS AS TOP ROW OF DESKTOP MENU  -->
             <li>
                 <a href="/become/">Become a CPA</a>
+
+                <!-- THIS SHOWS AS DROPDOWN DESKTOP MENU  -->
                 <div class="dropdown">
                     <ul>
                         <li><a href="/">Process Step-by-Step</a>
@@ -743,8 +764,11 @@ function __doPostBack(eventTarget, eventArgument) {
                     </ul>
                 </div>
             </li>
+            <!-- THIS SHOWS AS TOP ROW OF DESKTOP MENU  -->
             <li class="">
                 <a href="/about/">About Us</a>
+
+                <!-- THIS SHOWS AS DROPDOWN DESKTOP MENU  -->
                 <div class="dropdown">
                     <ul>
                         <li><a href="/">MNCPA Info</a>
@@ -796,11 +820,15 @@ function __doPostBack(eventTarget, eventArgument) {
                     </ul>
                 </div>
             </li>
+            <!-- THIS SHOWS AS TOP ROW OF DESKTOP MENU  -->
             <li class="">
                 <a href="/join/">Join</a>
             </li>
+            <!-- THIS SHOWS AS TOP ROW OF DESKTOP MENU  -->
             <li class="login">
                 <a class="login" href="/login">Login</a>
+
+                <!-- THIS SHOWS AS DROPDOWN DESKTOP MENU  -->
                 <div class="dropdown">
                     <ul>
                         <li></li>
@@ -1073,11 +1101,11 @@ function __doPostBack(eventTarget, eventArgument) {
         </div>
     </div>
 	<!-- ========================================================= --> 
-
-<!-- mmenu init and options -->		
 <script type="text/javascript">
    $(document).ready(function() {
-      $("#mobile-menu").mmenu({
+
+      //MOBILE MENU
+      var $mobileMenu =  $("#mobile-menu").mmenu({
          // options
       }, {
          // configuration
@@ -1086,9 +1114,27 @@ function __doPostBack(eventTarget, eventArgument) {
          }
       });
 
+      //here to show mobile menu on click so that it does not show when page loads
+      $('#mobileMenuButton').on('click', function(){
+        $('#mobile-menu').show();
+      });
+
+      var API = $mobileMenu.data( "mmenu" );
+
+      // close and hide mobile menu if it is not supposed to be on screen
+      $(window).resize(function(){
+        
+        if ($(window).width() <= 1024){
+            API.close();
+            $('#mobile-menu').hide();
+        }
+    });
       
    });
 
+
+
+    //DESKTOP MENU
     var $navItems  = $('nav.primary');
     var $secondary = $('.secondary-menu');
     var $close     = $('.close');
