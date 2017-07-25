@@ -5242,6 +5242,7 @@ a.preheader { color:#1369ab; text-decoration:none; font-size:14px; font-weight:7
 .mm-menu { background: #333333; }
 .mm-title, .mm-listview li a, .mm-panels a.button  { color: white!important; }
 .mm-listview li a {-webkit-display: flex;display:-webkit-box;display: flex;display: flex;-webkit-align-items: center;-ms-align-items: center;align-items: center;-webkit-justify-content: space-between;justify-content: space-between;}
+.mm-listview li.mm-border a {-webkit-justify-content: center;justify-content: center;}
 .mm-menu, .mm-menu .mm-listview, .mm-menu .mm-listview>li .mm-next:after, .mm-menu .mm-btn:after, .mm-menu .mm-btn:before { border-color: rgba(255,255,255,0.5); }
 .mm-spacer, .mm-border { border-color: transparent!important; }
 .mm-panels a.button { background-color: #63af5e;}
