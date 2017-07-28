@@ -23,6 +23,7 @@
     <!--<script type="text/javascript" src="http://www.mncpa.org/sup/js/nav.js"></script>-->
     <!-- mmenu jquery file -->
     <script type="text/javascript" src="/jquery.mmenu/jquery.mmenu.all.js"></script>
+    <script src="/jquery.mmenu/addons/searchfield/jquery.mmenu.searchfield.min.js" type="text/javascript"></script>
     <!--<script type="text/javascript" src="http://www.mncpa.org/sup/js/search_text.js"></script>
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/swfobject.js"></script>
     <script type="text/javascript" src="http://www.mncpa.org/sup/js/plugins/cookie.js"></script>-->
@@ -84,6 +85,7 @@
 	
     <!-- Mmenu style sheet -->
     <link rel="stylesheet" type="text/css" href="/jquery.mmenu/jquery.mmenu.all.css" media="all" />
+    <link href="/jquery.mmenu/addons/searchfield/jquery.mmenu.searchfield.css" type="text/css" rel="stylesheet" />
 	<!-- <~> Main MNCPA.org style sheet -->
 	<link rel="stylesheet" type="text/css" href="site.css" media="all" />
 	<!-- <~> -->
@@ -1096,6 +1098,22 @@ function __doPostBack(eventTarget, eventArgument) {
       //MOBILE MENU
       var $mobileMenu =  $("#mobile-menu").mmenu({
          // options
+         "searchfield": {
+            "resultsPanel": true,
+            "showTextItems": true
+         },
+         "navbars": [
+            {
+               "position": "top",
+               "content": [
+                  "searchfield"
+               ]
+            }
+         ]
+      }, {
+         "searchfield": {
+            "clear": true
+         },
       }, {
          // configuration
          offCanvas: {
@@ -1133,7 +1151,7 @@ function __doPostBack(eventTarget, eventArgument) {
         close: function () {
             if ($('.secondary-menu:hover').length == 0) {
                 $(this).removeClass('active');
-                $secondary.slideUp(250);
+                $secondary.fadeOut(50);
             }
         },
         open: function () {
@@ -1145,7 +1163,7 @@ function __doPostBack(eventTarget, eventArgument) {
                 $secondary
                     .find(' .container')
                     .html(clone).end()
-                    .slideDown(250);
+                    .fadeIn(50);
             }
             if ($(this).hasClass('login')) {
                 $secondary.addClass('login');
@@ -1163,12 +1181,12 @@ function __doPostBack(eventTarget, eventArgument) {
     $secondary.hoverIntent(function () {
         $(this).show();
     }, function () {
-        $(this).slideUp(250);
+        $(this).fadeOut(50);
         $navItems.find('li.active').removeClass('active');
     });
 
     $close.on('click', function () {
-        $secondary.slideUp(250);
+        $secondary.fadeOut(50);
 
     });
     

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* up to tablet size */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1030px) {
 	.showOnMobileOnly, .smo { display: block !important; }
     .showOnMobileOnlyInline { display: inline !important; }
     .showOnDesktopOnly, .sdo, .showOnDesktopOnlyInline, .showOnDesktopOnlyTable { display:none !important; }

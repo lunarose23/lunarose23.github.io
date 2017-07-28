@@ -2286,8 +2286,8 @@ ul.error li
 .mm-listview li.mm-border a {-webkit-justify-content: center;justify-content: center;}
 .mm-menu, .mm-menu .mm-listview, .mm-menu .mm-listview>li .mm-next:after, .mm-menu .mm-btn:after, .mm-menu .mm-btn:before { border-color: rgba(255,255,255,0.5); }
 .mm-spacer, .mm-border { border-color: transparent!important; }
-.mm-panels a.button { background-color: #9ce684;}
-.mm-listview li:hover a { color: #9ce684!important;}
+.mm-panels a.button { background-color: #50a035;}
+.mm-listview li:hover a { color: #50a035!important;}
 .mm-listview li:hover a.button { background-color: white!important;}
 .mm-title{ font-weight: bold; text-decoration: none!important; }
 .mm-listview a:link, .mm-listview a:active { text-decoration: none; font-weight: bold; }
@@ -2295,6 +2295,14 @@ ul.error li
 .mm-panels a:focus { outline: thin dotted; }
 .mm-panels .hide { display: none; }
 .mm-panels a.button { text-align: center; line-height: 40px;}
+
+/* search bar css */
+.mm-menu .mm-search input{
+    background-color: white;
+}
+.mm-divider {
+    color: #50a035;
+}
 
 #home-icon{
 	background: url(/home-icon.png) top left no-repeat;
@@ -2304,6 +2312,8 @@ ul.error li
 #home-icon span{
 	display: none;
 }
+
+
 
 /****** DESKTOP NAV ****/
 
@@ -2330,7 +2340,7 @@ ul.error li
 nav.primary ul li{ margin-bottom:0; position: relative; }
 nav.primary ul li a{ color:#415061;font-weight:800;padding:0.2em 1em;text-decoration:none; cursor: pointer; }
 nav.primary ul li a:hover{ text-decoration: underline; }
-nav.primary .login{ color: #63af5e; }
+nav.primary .login{ color: #50a035; }
 nav.primary .login a{border-left: 1px solid darkgrey; }
 nav.primary ul .dropdown{background-color:#99867C;display:none;position:absolute;z-index:1;}
 nav.primary ul .dropdown ul{margin-left:auto;margin-right:auto;max-width:1200px;padding-left:1rem;padding-right:1rem;position:relative;}
@@ -2343,10 +2353,10 @@ nav.primary>ul>li.active::after {
     animation-fill-mode: both;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    border-color: transparent transparent rgba(0,0,0,0.2) transparent;
+    border-color: transparent transparent rgba(255,255,255,1) transparent;
     border-style: solid;
     border-width: 0 10px 10px 10px;
-    bottom: -25px;
+    bottom: -34px;
     content: "";
     height: 0;
     left: 0;
@@ -2354,11 +2364,15 @@ nav.primary>ul>li.active::after {
     position: absolute;
     right: 0;
     width: 0;
+    z-index: 60;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
 }
 nav.primary>ul>li.active.login::after {
     border-color: transparent transparent #434343;
 }
-.secondary-menu{background:#e3e3e3;box-shadow:inset 0 8px 10px -10px rgba(0,0,0,0.5);position:relative;}
+.secondary-menu{background:#e3e3e3;box-shadow:inset 0 8px 10px -10px rgba(0,0,0,0.5);position:absolute; width: 100%;}
 .secondary-menu button.close{position:absolute;right:0;top:0;}
 .secondary-menu .dropdown{padding:2em 0 1em;}
 .secondary-menu .dropdown>ul>li>a:hover::after{-webkit-transform:translateX(5px);transform:translateX(5px);-webkit-transition:-webkit-transform 0.2s;transition:-webkit-transform 0.2s;transition:transform 0.2s;transition:transform 0.2s, -webkit-transform 0.2s;}
@@ -2394,8 +2408,8 @@ nav.primary>ul>li.active.login::after {
 .secondary-menu.login .forgot{ text-decoration: underline; }
 .secondary-menu.login .convince{ font-weight: bold; }
 .secondary-menu.login span.convince{ font-weight: normal; }
-.secondary-menu.login button{ border: 1px solid #9ce684; background-color: #9ce684; color: white; text-transform: underline; float: right; }
-.secondary-menu.login button:hover{ background-color: white; color: #9ce684;}
+.secondary-menu.login button{ border: 1px solid #50a035; background-color: #50a035; color: white; text-transform: underline; float: right; }
+.secondary-menu.login button:hover{ background-color: white; color: #50a035;}
 
 .secondary-menu.login p.expanded:before{
     background: url(http://www.mncpa.org/sup/img/template/left-nav.gif) no-repeat 0 10px transparent;
@@ -2403,7 +2417,7 @@ nav.primary>ul>li.active.login::after {
 
 /***** STYLES *****/
 .uppercase{ text-transform: uppercase; }
-.bold{ font-weight: bold; }
+.bold{ font-weight: bold; margin-top: 8px; }
 .italics{ font-style: italic; }
 .no-margin-top{ margin-top: 0;}
 
