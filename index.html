@@ -1144,7 +1144,7 @@ function __doPostBack(eventTarget, eventArgument) {
     //DESKTOP MENU
     var $navItems  = $('nav.primary');
     var $secondary = $('.secondary-menu');
-    var $close     = $('.close');
+    var $close     = $('body');
 
     // Desktop Navigation
     var navDrawer = {
@@ -1152,7 +1152,9 @@ function __doPostBack(eventTarget, eventArgument) {
             if ($('.secondary-menu:hover').length == 0) {
                 $(this).removeClass('active');
                 $secondary.fadeOut(50);
+                console.log('close fadeout');
             }
+            console.log('Close');
         },
         open: function () {
             $secondary.removeClass('login');
@@ -1164,23 +1166,26 @@ function __doPostBack(eventTarget, eventArgument) {
                     .find(' .container')
                     .html(clone).end()
                     .fadeIn(50);
+                    console.log('fadeIn secondary');
             }
             if ($(this).hasClass('login')) {
                 $secondary.addClass('login');
             }
+            console.log('open');
         }
     };
 
     $navItems.hoverIntent({
         over: navDrawer.open,
         out: navDrawer.close,
-        timeout: 150,
+        timeout: 200,
         selector: 'ul > li'
     });
-
-    $secondary.hoverIntent(function () {
+    $secondary.hover(function () {
         $(this).show();
+        console.log('Show');
     }, function () {
+        console.log('Fade Out');
         $(this).fadeOut(50);
         $navItems.find('li.active').removeClass('active');
     });
